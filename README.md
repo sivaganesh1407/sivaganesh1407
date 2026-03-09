@@ -4,8 +4,6 @@
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sivaganesh1407&layout=compact)
 
-Java Full Stack Developer with 5+ years of experience building scalable enterprise applications...
-
 Java Full Stack Developer with 5+ years of experience building scalable enterprise applications using **Java, Spring Boot, Microservices, React, Docker, Kubernetes, and AWS**.
 
 📍 Tampa, FL, USA  
