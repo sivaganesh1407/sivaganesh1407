@@ -81,7 +81,7 @@ Feb 2024 – Dec 2024
 **System Engineer – Infosys**  
 Jun 2021 – Jun 2022  
 
-**Associate Software Engineer – Elder Pharmaceuticals**  
+**Associate System Engineer – Elder Pharmaceuticals**  
 Jun 2019 – May 2021  
 
 ---
