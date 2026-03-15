@@ -132,11 +132,11 @@ doc.moveDown(0.5);
 body();
 doc.font('Times-Bold').text("Master's Degree", { continued: true });
 doc.font('Times-Roman').text(', Indiana Wesleyan University');
-doc.text('Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals.', { indent: 15 });
+doc.text('Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Participated in technology-focused academic collaboration and peer learning activities related to information systems and emerging technologies.', { indent: 15 });
 doc.moveDown(0.5);
 doc.font('Times-Bold').text("Bachelor's, Electrical, Electronics and Communications Engineering", { continued: true });
 doc.font('Times-Roman').text(', Karunya Institute of Technology and Sciences');
-doc.text('Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering.', { indent: 15 });
+doc.text('Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS), participating in community outreach programs and social service initiatives.', { indent: 15 });
 doc.moveDown(0.8);
 
 h2();
