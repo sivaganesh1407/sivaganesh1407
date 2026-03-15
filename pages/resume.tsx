@@ -251,7 +251,7 @@ export default function ResumePage() {
         .resume-contact a { color: #16a34a; text-decoration: none; }
         .resume-contact a:hover { text-decoration: underline; }
         .resume-section { margin-bottom: 18px; }
-        .resume-h2 { font-size: 12pt; font-weight: 700; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #333; text-transform: uppercase; letter-spacing: 0.5px; }
+        .resume-h2 { font-size: 12pt; font-weight: 700; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #333; letter-spacing: 0.5px; }
         .resume-summary { margin: 0; text-align: justify; }
         .resume-skills { margin: 0; font-size: 10pt; }
         .resume-job { margin-bottom: 14px; page-break-inside: avoid; }
