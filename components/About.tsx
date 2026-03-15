@@ -16,14 +16,14 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-10 items-start">
           <div className="flex-shrink-0 mx-auto md:mx-0">
-            <div className="w-48 h-48 rounded-full border-2 border-accent-primary overflow-hidden bg-dark-card flex items-center justify-center">
+            <div className="w-52 h-52 rounded-full border-2 border-accent-primary overflow-hidden bg-dark-card flex items-center justify-center">
               {!profileImageError ? (
                 <Image
                   src={profileImageSrc}
                   alt="Siva Ganesh Golla"
-                  width={192}
-                  height={192}
-                  className="w-full h-full object-cover"
+                  width={208}
+                  height={208}
+                  className="w-full h-full object-cover object-[center_25%]"
                   onError={() => setProfileImageError(true)}
                   unoptimized={useExternal}
                 />
