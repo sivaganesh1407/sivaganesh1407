@@ -8,6 +8,7 @@ const {
   HeadingLevel,
   AlignmentType,
   BorderStyle,
+  ExternalHyperlink,
 } = require('docx');
 
 const sectionHeading = (text) =>
@@ -42,9 +43,20 @@ const doc = new Document({
         }),
         new Paragraph({
           children: [
-            new TextRun({
-              text: 'Tampa, FL, USA | gsg1499@gmail.com | linkedin.com/in/ganeshg7 | github.com/sivaganesh1407',
-              size: 20,
+            new TextRun({ text: 'Tampa, FL, USA | ', size: 20 }),
+            new ExternalHyperlink({
+              children: [new TextRun({ text: 'gsg1499@gmail.com', style: 'Hyperlink', size: 20 })],
+              link: 'mailto:gsg1499@gmail.com',
+            }),
+            new TextRun({ text: ' | ', size: 20 }),
+            new ExternalHyperlink({
+              children: [new TextRun({ text: 'linkedin.com/in/ganeshg7', style: 'Hyperlink', size: 20 })],
+              link: 'https://www.linkedin.com/in/ganeshg7/',
+            }),
+            new TextRun({ text: ' | ', size: 20 }),
+            new ExternalHyperlink({
+              children: [new TextRun({ text: 'github.com/sivaganesh1407', style: 'Hyperlink', size: 20 })],
+              link: 'https://github.com/sivaganesh1407',
             }),
           ],
           alignment: AlignmentType.CENTER,

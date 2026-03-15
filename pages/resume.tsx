@@ -110,9 +110,10 @@ export default function ResumePage() {
             <h1 className="resume-name">Siva Ganesh Golla</h1>
             <p className="resume-title">Java Full Stack Developer</p>
             <p className="resume-contact">
-              Tampa, FL, USA &nbsp;|&nbsp; gsg1499@gmail.com &nbsp;|&nbsp;{' '}
-              <a href="https://www.linkedin.com/in/ganeshg7/">linkedin.com/in/ganeshg7</a> &nbsp;|&nbsp;{' '}
-              <a href="https://github.com/sivaganesh1407">github.com/sivaganesh1407</a>
+              Tampa, FL, USA &nbsp;|&nbsp;{' '}
+              <a href="mailto:gsg1499@gmail.com">gsg1499@gmail.com</a> &nbsp;|&nbsp;{' '}
+              <a href="https://www.linkedin.com/in/ganeshg7/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ganeshg7</a> &nbsp;|&nbsp;{' '}
+              <a href="https://github.com/sivaganesh1407" target="_blank" rel="noopener noreferrer">github.com/sivaganesh1407</a>
             </p>
           </header>
 
