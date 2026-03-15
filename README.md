@@ -89,6 +89,8 @@ Issued: March 2025 | Expires: March 2027
 **AWS Certified Solutions Architect – Associate**  
 Issued: February 2025 | Expires: February 2028  
 
+**HashiCorp Certified: Terraform Associate (003)**
+Issued: Mar 2025 | Expires: Mar 2027
 ---
 
 # 💼 Professional Experience
