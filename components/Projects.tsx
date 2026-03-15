@@ -40,7 +40,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/user-management-service',
     thumbnail: 'auth',
     stack: 'Spring Boot · JPA · H2',
-    image: 'https://images.unsplash.com/photo-1768839722988-91767bb82b10?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?w=400&h=200&fit=crop',
   },
   {
     name: 'Restaurant Order Service',
@@ -48,7 +48,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/restaurant-order-service',
     thumbnail: 'microservice',
     stack: 'Spring Boot · Microservices',
-    image: 'https://images.unsplash.com/photo-1763568258388-25a20ddd8a95?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=200&fit=crop',
   },
 ];
 
