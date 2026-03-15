@@ -7,7 +7,7 @@ I specialize in developing **RESTful APIs, microservices architectures, and data
 📍 Tampa, FL, USA  
 📧 gsg1499@gmail.com  
 🔗 LinkedIn: https://www.linkedin.com/in/ganeshg7/  
-💻 Portfolio: https://github.com/sivaganesh1407/portfolio  
+💻 Portfolio: https://github.com/sivaganesh1407/sivaganesh1407.git  
 
 ---
 
