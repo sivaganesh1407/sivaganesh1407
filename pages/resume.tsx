@@ -118,10 +118,17 @@ export default function ResumePage() {
             <h2 className="resume-h2">Education</h2>
             <div className="resume-job">
               <div className="resume-job-head">
-                <strong>B.Tech, Computer Science & Engineering</strong>
-                <span className="resume-date">—</span>
+                <strong>Master&apos;s Degree</strong>, Indiana Wesleyan University
+                <span className="resume-date">2022 – 2024</span>
               </div>
-              <p className="resume-edu">Relevant coursework: Data Structures, Algorithms, DBMS, Web Technologies, Software Engineering.</p>
+              <p className="resume-edu">Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Technology-focused collaboration in information systems and emerging technologies.</p>
+            </div>
+            <div className="resume-job">
+              <div className="resume-job-head">
+                <strong>Bachelor&apos;s, Electrical, Electronics and Communications Engineering</strong>, Karunya Institute of Technology and Sciences
+                <span className="resume-date">2015 – 2019</span>
+              </div>
+              <p className="resume-edu">Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer, National Service Scheme (NSS).</p>
             </div>
           </section>
 
