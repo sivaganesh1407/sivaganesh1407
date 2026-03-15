@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const PDFDocument = require('pdfkit');
 
-const doc = new PDFDocument({ margin: 50, size: 'A4' });
+const doc = new PDFDocument({ margin: 40, size: 'A4' });
 const outPath = path.join(__dirname, '..', 'public', 'resume.pdf');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const stream = fs.createWriteStream(outPath);
@@ -16,7 +16,7 @@ const bullet = () => { doc.text('• ', { continued: true }); };
 doc.fontSize(22).font('Helvetica-Bold').text('Siva Ganesh Golla', { align: 'center' });
 doc.fontSize(12).font('Helvetica').text('Java Full Stack Developer', { align: 'center' });
 doc.fontSize(9).text('Tampa, FL, USA | gsg1499@gmail.com | linkedin.com/in/ganeshg7 | github.com/sivaganesh1407', { align: 'center' });
-doc.moveDown(1);
+doc.moveDown(0.8);
 
 h2();
 doc.text('PROFESSIONAL SUMMARY');
@@ -25,7 +25,7 @@ doc.rect(50, doc.y, 500, 1).fill('#333');
 doc.moveDown(0.5);
 body();
 doc.text('Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.', { align: 'justify' });
-doc.moveDown(1);
+doc.moveDown(0.6);
 
 h2();
 doc.text('TECHNICAL SKILLS');
@@ -34,7 +34,7 @@ doc.rect(50, doc.y, 500, 1).fill('#333');
 doc.moveDown(0.5);
 body();
 doc.text('Backend: Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | Messaging & Data: Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization | Frontend: React, Angular 17, JavaScript, HTML5, CSS3 | Cloud & DevOps: AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | Databases: Oracle, SQL, MySQL, PostgreSQL, MongoDB | Other: Agile, Git, Data Workflows, GitHub Copilot', { align: 'justify' });
-doc.moveDown(1);
+doc.moveDown(0.6);
 
 h2();
 doc.text('PROFESSIONAL EXPERIENCE');
@@ -56,7 +56,7 @@ const madMobile = [
   'Delivered full-stack features using Angular 17 / React and used AI-powered tools (e.g., GitHub Copilot, OpenAI APIs) to improve engineering productivity.',
 ];
 madMobile.forEach((item) => { bullet(); doc.text(item); });
-doc.moveDown(0.5);
+doc.moveDown(0.4);
 
 doc.font('Helvetica-Bold').text('Java Full Stack Developer', { continued: true });
 doc.font('Helvetica').text(', Corebridge Financial');
@@ -70,7 +70,7 @@ const corebridge = [
   'Collaborated with cross-functional teams in an Agile environment to deliver features across development, QA, and production for financial services applications.',
 ];
 corebridge.forEach((item) => { bullet(); doc.text(item); });
-doc.moveDown(0.5);
+doc.moveDown(0.4);
 
 doc.font('Helvetica-Bold').text('Java Full Stack Developer', { continued: true });
 doc.font('Helvetica').text(', ConocoPhillips');
@@ -82,7 +82,7 @@ const conocophillips = [
   'Delivered full-stack features; built backend REST API with Java 11, Spring Boot, and Spring Data JPA for portfolio and asset tracking.',
 ];
 conocophillips.forEach((item) => { bullet(); doc.text(item); });
-doc.moveDown(0.5);
+doc.moveDown(0.4);
 
 doc.font('Helvetica-Bold').text('System Engineer', { continued: true });
 doc.font('Helvetica').text(', Infosys');
@@ -99,7 +99,7 @@ const infosys = [
   'Assisted in troubleshooting production data pipelines supporting vehicle manufacturing and supply chain reporting systems.',
 ];
 infosys.forEach((item) => { bullet(); doc.text(item); });
-doc.moveDown(0.5);
+doc.moveDown(0.4);
 
 doc.font('Helvetica-Bold').text('Associate System Engineer', { continued: true });
 doc.font('Helvetica').text(', Elder Pharmaceuticals');
@@ -116,7 +116,7 @@ const elder = [
   'Collaborated with quality assurance teams to ensure data consistency for pharmaceutical manufacturing and compliance audits.',
 ];
 elder.forEach((item) => { bullet(); doc.text(item); });
-doc.moveDown(1);
+doc.moveDown(0.6);
 
 h2();
 doc.text('CERTIFICATIONS');
@@ -130,7 +130,7 @@ bullet(); doc.font('Helvetica-Bold').text('AWS Certified Solutions Architect –
 doc.font('Helvetica').text(' (February 2025 – February 2028)');
 bullet(); doc.font('Helvetica-Bold').text('HashiCorp Certified: Terraform Associate (003)', { continued: true });
 doc.font('Helvetica').text(' (March 2025 – March 2027)');
-doc.moveDown(1);
+doc.moveDown(0.6);
 
 h2();
 doc.text('EDUCATION');
@@ -141,11 +141,11 @@ body();
 doc.font('Helvetica-Bold').text("Master's Degree", { continued: true });
 doc.font('Helvetica').text(', Indiana Wesleyan University');
 doc.text('Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals.', { indent: 15 });
-doc.moveDown(0.5);
+doc.moveDown(0.4);
 doc.font('Helvetica-Bold').text("Bachelor's, Electrical, Electronics and Communications Engineering", { continued: true });
 doc.font('Helvetica').text(', Karunya Institute of Technology and Sciences');
 doc.text('Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering.', { indent: 15 });
-doc.moveDown(1);
+doc.moveDown(0.6);
 
 h2();
 doc.text('KEY PROJECTS');

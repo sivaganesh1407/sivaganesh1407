@@ -10,11 +10,10 @@ const {
   BorderStyle,
 } = require('docx');
 
-const sectionHeading = (text, pageBreakBefore = false) =>
+const sectionHeading = (text) =>
   new Paragraph({
     text,
     heading: HeadingLevel.HEADING_2,
-    pageBreakBefore,
     border: {
       bottom: {
         color: '333333',
@@ -23,13 +22,13 @@ const sectionHeading = (text, pageBreakBefore = false) =>
         size: 6,
       },
     },
-    spacing: { before: 240, after: 120 },
+    spacing: { before: 120, after: 80 },
   });
 
 const doc = new Document({
   sections: [
     {
-      properties: { page: { margin: { top: 720, right: 720, bottom: 720, left: 720 } } },
+      properties: { page: { margin: { top: 576, right: 576, bottom: 576, left: 576 } } },
       children: [
         new Paragraph({
           children: [new TextRun({ text: 'Siva Ganesh Golla', bold: true, size: 44 })],
@@ -49,7 +48,7 @@ const doc = new Document({
             }),
           ],
           alignment: AlignmentType.CENTER,
-          spacing: { after: 200 },
+          spacing: { after: 120 },
         }),
 
         sectionHeading('Professional Summary'),
@@ -76,7 +75,7 @@ const doc = new Document({
               '. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.'
             ),
           ],
-          spacing: { after: 200 },
+          spacing: { after: 120 },
         }),
 
         sectionHeading('Technical Skills'),
@@ -99,10 +98,10 @@ const doc = new Document({
             new TextRun({ text: 'Other:', bold: true }),
             new TextRun(' Agile, Git, Data Workflows, GitHub Copilot'),
           ],
-          spacing: { after: 200 },
+          spacing: { after: 120 },
         }),
 
-        sectionHeading('Professional Experience', true),
+        sectionHeading('Professional Experience'),
 
         new Paragraph({
           children: [
@@ -110,7 +109,7 @@ const doc = new Document({
             new TextRun(', Mad Mobile'),
             new TextRun({ text: '\tNov 2025 – Present', italics: true }),
           ],
-          spacing: { after: 80 },
+          spacing: { after: 60 },
           keepLines: true,
         }),
         new Paragraph({
@@ -160,7 +159,7 @@ const doc = new Document({
             ),
           ],
           bullet: { level: 0 },
-          spacing: { after: 120 },
+          spacing: { after: 80 },
         }),
 
         new Paragraph({
@@ -211,7 +210,7 @@ const doc = new Document({
             ),
           ],
           bullet: { level: 0 },
-          spacing: { after: 120 },
+          spacing: { after: 80 },
         }),
 
         new Paragraph({
@@ -246,7 +245,7 @@ const doc = new Document({
             ),
           ],
           bullet: { level: 0 },
-          spacing: { after: 120 },
+          spacing: { after: 80 },
         }),
 
         new Paragraph({
@@ -321,7 +320,7 @@ const doc = new Document({
             ),
           ],
           bullet: { level: 0 },
-          spacing: { after: 120 },
+          spacing: { after: 80 },
         }),
 
         new Paragraph({
@@ -399,7 +398,7 @@ const doc = new Document({
           spacing: { after: 120 },
         }),
 
-        sectionHeading('Certifications', true),
+        sectionHeading('Certifications'),
         new Paragraph({
           children: [
             new TextRun({ text: 'AWS Certified DevOps Engineer – Professional', bold: true }),
@@ -420,16 +419,16 @@ const doc = new Document({
             new TextRun(' (March 2025 – March 2027)'),
           ],
           bullet: { level: 0 },
-          spacing: { after: 200 },
+          spacing: { after: 120 },
         }),
 
-        sectionHeading('Education', true),
+        sectionHeading('Education'),
         new Paragraph({
           children: [
             new TextRun({ text: "Master's Degree", bold: true }),
             new TextRun(', Indiana Wesleyan University'),
           ],
-          spacing: { after: 80 },
+          spacing: { after: 60 },
         }),
         new Paragraph({
           children: [
@@ -444,7 +443,7 @@ const doc = new Document({
             new TextRun({ text: "Bachelor's, Electrical, Electronics and Communications Engineering", bold: true }),
             new TextRun(', Karunya Institute of Technology and Sciences'),
           ],
-          spacing: { after: 80 },
+          spacing: { after: 60 },
         }),
         new Paragraph({
           children: [
@@ -455,7 +454,7 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Key Projects', true),
+        sectionHeading('Key Projects'),
         new Paragraph({
           children: [
             new TextRun({ text: 'Retirement Investment Management Platform', bold: true }),
