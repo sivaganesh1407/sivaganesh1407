@@ -11,7 +11,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). Build for production: `npm run build` then `npm start`.
 
-**Profile photo:** Add your photo to `public/profile.jpg` (e.g. save from LinkedIn) to show it in the About section. Or set `NEXT_PUBLIC_PROFILE_IMAGE_URL` to a full image URL (e.g. LinkedIn profile picture URL) in `.env.local`.
+**Profile photo:** Add your photo to `public/profile.jpg` (e.g. save from LinkedIn) to show it in the About section. Or set `NEXT_PUBLIC_PROFILE_IMAGE_URL` in `.env.local`.
+
+**Resume:** Your resume is at `/resume`. Click &quot;View / Download Resume&quot; on the site, then use your browser’s Print → Save as PDF to get a PDF.
+
+**Education:** Edit `components/Education.tsx` to add your degree(s), school(s), dates, GPA, and coursework.
 
 ### Deploy to Vercel
 
