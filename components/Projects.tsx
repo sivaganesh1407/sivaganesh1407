@@ -1,10 +1,22 @@
-const projects = [
+import Image from 'next/image';
+
+type Project = {
+  name: string;
+  description: string;
+  href: string;
+  thumbnail: string;
+  stack: string;
+  image?: string;
+};
+
+const projects: Project[] = [
   {
     name: 'Retirement Investment Management Platform',
     description: 'Secure financial services platform for retirement planning, investment portfolio management, and customer financial workflows built with Spring Boot, JWT authentication, and React.',
     href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',
     thumbnail: 'retirement',
     stack: 'Spring Boot · JWT · React',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop',
   },
   {
     name: 'Investment Portfolio Manager',
@@ -12,6 +24,7 @@ const projects = [
     href: 'https://github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager',
     thumbnail: 'portfolio',
     stack: 'Spring Boot · React',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
   },
   {
     name: 'Smart Restaurant Platform',
@@ -19,6 +32,7 @@ const projects = [
     href: 'https://github.com/sivaganesh1407/smart-restaurant-platform',
     thumbnail: 'restaurant',
     stack: 'Spring Boot · React · MySQL',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=200&fit=crop',
   },
   {
     name: 'User Management Service',
@@ -26,6 +40,7 @@ const projects = [
     href: 'https://github.com/sivaganesh1407/user-management-service',
     thumbnail: 'auth',
     stack: 'Spring Boot · JPA · H2',
+    image: 'https://images.unsplash.com/photo-1633265486064-086b6854588b?w=400&h=200&fit=crop',
   },
   {
     name: 'Restaurant Order Service',
@@ -33,6 +48,7 @@ const projects = [
     href: 'https://github.com/sivaganesh1407/restaurant-order-service',
     thumbnail: 'microservice',
     stack: 'Spring Boot · Microservices',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=200&fit=crop',
   },
 ];
 
@@ -64,8 +80,34 @@ const thumbnailStyles: Record<string, { gradient: string; icon: string; label: s
   },
 };
 
-function ProjectThumbnail({ type }: { type: string }) {
+function ProjectThumbnail({ type, image }: { type: string; image?: string }) {
   const style = thumbnailStyles[type] || thumbnailStyles.auth;
+
+  if (image) {
+    return (
+      <div className="relative w-full h-40 rounded-t-xl overflow-hidden bg-dark-card">
+        <Image
+          src={image}
+          alt=""
+          width={400}
+          height={200}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between">
+          <span className="text-white/95 text-sm font-medium drop-shadow-md">{style.label}</span>
+          <div className="flex gap-1.5">
+            {['Java', 'React', 'API'].slice(0, type === 'auth' ? 2 : 3).map((t) => (
+              <span key={t} className="px-2 py-0.5 rounded bg-white/20 text-white text-xs backdrop-blur-sm">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`w-full h-40 rounded-t-xl bg-gradient-to-br ${style.gradient} flex flex-col items-center justify-center gap-2 p-4`}>
       <span className="text-4xl" aria-hidden>{style.icon}</span>
@@ -98,7 +140,7 @@ export default function Projects() {
               key={project.href}
               className="bg-dark-card border border-dark-border rounded-xl overflow-hidden hover:border-accent-primary/50 transition-all flex flex-col"
             >
-              <ProjectThumbnail type={project.thumbnail} />
+              <ProjectThumbnail type={project.thumbnail} image={project.image} />
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold text-white mb-2">{project.name}</h3>
                 <p className="text-zinc-400 text-sm flex-1 mb-4 line-clamp-3">{project.description}</p>
