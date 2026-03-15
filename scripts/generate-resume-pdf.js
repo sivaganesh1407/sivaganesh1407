@@ -15,7 +15,13 @@ const bullet = () => { doc.text('• ', { continued: true }); };
 
 doc.fontSize(22).font('Helvetica-Bold').text('Siva Ganesh Golla', { align: 'center' });
 doc.fontSize(12).font('Helvetica').text('Java Full Stack Developer', { align: 'center' });
-doc.fontSize(9).text('Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407', { align: 'center' });
+doc.fontSize(9);
+doc.text('Tampa, FL, USA  •  ', { align: 'center', continued: true });
+doc.text('gsg1499@gmail.com', { link: 'mailto:gsg1499@gmail.com', continued: true });
+doc.text('  •  ', { continued: true });
+doc.text('linkedin.com/in/ganeshg7', { link: 'https://www.linkedin.com/in/ganeshg7/', continued: true });
+doc.text('  •  ', { continued: true });
+doc.text('github.com/sivaganesh1407', { link: 'https://github.com/sivaganesh1407' });
 doc.moveDown(0.8);
 
 h2();
