@@ -151,7 +151,7 @@ export default function ResumePage() {
               </div>
               <ul>
                 <li>Modernized legacy Spring MVC systems by designing and developing scalable <strong>Java 17 / Spring Boot microservices</strong> to improve performance, reliability, and deployment flexibility.</li>
-                <li>Built <strong>event-driven architectures</strong> using <strong>Redis, RabbitMQ, and Kafka</strong> for asynchronous processing, real-time communication, and distributed system scalability.</li>
+                <li>Built <strong>event-driven architecture</strong> using <strong>Redis, RabbitMQ, and Kafka</strong> handling <strong>high-volume real-time</strong> transactions.</li>
                 <li>Developed end-to-end <strong>RESTful APIs</strong>, secured services with <strong>Spring Security</strong>, and optimized data workflows with <strong>Oracle, SQL, and MongoDB</strong> for high-volume applications.</li>
                 <li>Deployed and managed <strong>cloud-native applications</strong> on <strong>AWS ECS, EC2, and ECR</strong> using <strong>Docker and Kubernetes</strong> for containerization, orchestration, and production resilience.</li>
                 <li>Implemented <strong>CI/CD pipelines</strong> using <strong>Bitbucket Pipelines</strong> to automate builds, tests, deployments, and versioning across dev, QA, staging, and production.</li>

@@ -123,7 +123,7 @@ const doc = new Document({
         new Paragraph({
           children: [
             new TextRun(
-              '• Built event-driven architectures using Redis, RabbitMQ, and Kafka for asynchronous processing, real-time communication, and distributed system scalability.'
+              '• Built event-driven architecture using Redis, RabbitMQ, and Kafka handling high-volume real-time transactions.'
             ),
           ],
           bullet: { level: 0 },

@@ -49,7 +49,7 @@ doc.font('Helvetica-Oblique').text('Nov 2025 – Present', { align: 'right' });
 doc.font('Helvetica');
 const madMobile = [
   'Modernized legacy Spring MVC systems by designing and developing scalable Java 17 / Spring Boot microservices to improve performance, reliability, and deployment flexibility.',
-  'Built event-driven architectures using Redis, RabbitMQ, and Kafka for asynchronous processing, real-time communication, and distributed system scalability.',
+  'Built event-driven architecture using Redis, RabbitMQ, and Kafka handling high-volume real-time transactions.',
   'Developed end-to-end RESTful APIs, secured services with Spring Security, and optimized data workflows with Oracle, SQL, and MongoDB for high-volume applications.',
   'Deployed and managed cloud-native applications on AWS ECS, EC2, and ECR using Docker and Kubernetes for containerization, orchestration, and production resilience.',
   'Implemented CI/CD pipelines using Bitbucket Pipelines to automate builds, tests, deployments, and versioning across dev, QA, staging, and production.',
