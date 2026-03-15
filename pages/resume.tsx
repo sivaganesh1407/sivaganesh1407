@@ -110,9 +110,9 @@ export default function ResumePage() {
             <h1 className="resume-name">Siva Ganesh Golla</h1>
             <p className="resume-title">Java Full Stack Developer</p>
             <p className="resume-contact">
-              Tampa, FL, USA &nbsp;|&nbsp;{' '}
-              <a href="mailto:gsg1499@gmail.com">gsg1499@gmail.com</a> &nbsp;|&nbsp;{' '}
-              <a href="https://www.linkedin.com/in/ganeshg7/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ganeshg7</a> &nbsp;|&nbsp;{' '}
+              Tampa, FL, USA &nbsp;&nbsp;•&nbsp;&nbsp;
+              <a href="mailto:gsg1499@gmail.com">gsg1499@gmail.com</a> &nbsp;&nbsp;•&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/ganeshg7/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ganeshg7</a> &nbsp;&nbsp;•&nbsp;&nbsp;
               <a href="https://github.com/sivaganesh1407" target="_blank" rel="noopener noreferrer">github.com/sivaganesh1407</a>
             </p>
           </header>
@@ -275,8 +275,9 @@ export default function ResumePage() {
         .resume-header { text-align: center; margin-bottom: 20px; }
         .resume-name { font-size: 22pt; font-weight: 700; margin: 0 0 4px 0; }
         .resume-title { font-size: 12pt; margin: 0 0 8px 0; color: #333; }
-        .resume-contact { font-size: 10pt; margin: 0; color: #444; }
+        .resume-contact { font-size: 10pt; margin: 0; color: #444; line-height: 1.6; white-space: normal; word-break: break-word; }
         .resume-contact a { color: #16a34a; text-decoration: none; }
+        .resume-contact a:hover { text-decoration: underline; }
         .resume-section { margin-bottom: 18px; }
         .resume-h2 { font-size: 12pt; font-weight: 700; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #333; text-transform: uppercase; letter-spacing: 0.5px; }
         .resume-summary { margin: 0; text-align: justify; }
