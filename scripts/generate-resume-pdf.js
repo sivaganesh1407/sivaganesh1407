@@ -24,7 +24,7 @@ doc.moveDown(0.3);
 doc.rect(50, doc.y, 500, 1).fill('#333');
 doc.moveDown(0.5);
 body();
-doc.text('Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.', { align: 'justify' });
+doc.text('Results-driven Java Full Stack Developer with 5+ years of experience designing and delivering scalable enterprise applications. Expert in Java, Spring Boot, Microservices, REST APIs, React, and AWS cloud platforms. Proven track record building high-performance backend services, RESTful APIs, and modern React/Angular interfaces for financial services, fintech, and enterprise sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Passionate about clean code, system design, CI/CD automation, and infrastructure as code. Strong collaborator in Agile/Scrum teams.', { align: 'justify' });
 doc.moveDown(1);
 
 h2();
@@ -33,7 +33,7 @@ doc.moveDown(0.3);
 doc.rect(50, doc.y, 500, 1).fill('#333');
 doc.moveDown(0.5);
 body();
-doc.text('Backend: Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | Messaging & Data: Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization | Frontend: React, Angular 17, JavaScript, HTML5, CSS3 | Cloud & DevOps: AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | Databases: Oracle, SQL, MySQL, PostgreSQL, MongoDB | Other: Agile, Git, Data Workflows, GitHub Copilot', { align: 'justify' });
+doc.text('Backend: Java, Java 11/17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | Frontend: React, Angular 17, JavaScript, TypeScript, HTML5, CSS3 | Cloud & DevOps: AWS (ECS, EC2, ECR, S3), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | Databases: Oracle, MySQL, PostgreSQL, MongoDB, SQL | Messaging: Redis, RabbitMQ, Kafka, ETL Pipelines | Tools: Git, Agile/Scrum, JIRA, GitHub Copilot', { align: 'justify' });
 doc.moveDown(1);
 
 h2();
@@ -148,17 +148,23 @@ doc.text('Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Mi
 doc.moveDown(1);
 
 h2();
-doc.text('KEY PROJECTS');
+doc.text('PORTFOLIO PROJECTS');
 doc.moveDown(0.3);
 doc.rect(50, doc.y, 500, 1).fill('#333');
 doc.moveDown(0.5);
 body();
 bullet(); doc.font('Helvetica-Bold').text('Retirement Investment Management Platform', { continued: true });
-doc.font('Helvetica').text(' — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management.');
+doc.font('Helvetica').text(' — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management. github.com/sivaganesh1407/retirement-investment-management-platform');
+bullet(); doc.font('Helvetica-Bold').text('Investment Portfolio Manager', { continued: true });
+doc.font('Helvetica').text(' — Spring Boot, React. Full-stack investment portfolio management for tracking assets and analyzing financial data. github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager');
 bullet(); doc.font('Helvetica-Bold').text('Smart Restaurant Platform', { continued: true });
-doc.font('Helvetica').text(' — Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics.');
+doc.font('Helvetica').text(' — Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics. github.com/sivaganesh1407/smart-restaurant-platform');
 bullet(); doc.font('Helvetica-Bold').text('User Management Service', { continued: true });
-doc.font('Helvetica').text(' — Spring Boot, JPA, H2. REST API for user management and authentication.');
+doc.font('Helvetica').text(' — Spring Boot, JPA, H2. REST API for user management and authentication. github.com/sivaganesh1407/user-management-service');
+bullet(); doc.font('Helvetica-Bold').text('Restaurant Order Service', { continued: true });
+doc.font('Helvetica').text(' — Spring Boot, Microservices. Microservice for restaurant order management and integration. github.com/sivaganesh1407/restaurant-order-service');
+doc.font('Helvetica-Bold').text('Portfolio: ', { continued: true });
+doc.font('Helvetica').text('sivaganesh1407.vercel.app');
 
 doc.end();
 stream.on('finish', () => console.log('Generated public/resume.pdf'));
