@@ -98,12 +98,19 @@ export default function ResumePage() {
           <section className="resume-section">
             <h2 className="resume-h2">Technical Skills</h2>
             <p className="resume-skills">
-              <strong>Backend:</strong> Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture &nbsp;|&nbsp;
-              <strong>Messaging & Data:</strong> Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization &nbsp;|&nbsp;
-              <strong>Frontend:</strong> React, Angular 17, JavaScript, HTML5, CSS3 &nbsp;|&nbsp;
-              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
-              <strong>Databases:</strong> Oracle, SQL, MySQL, PostgreSQL, MongoDB &nbsp;|&nbsp;
-              <strong>Other:</strong> Agile, Git, Data Workflows, GitHub Copilot
+              <strong>Languages & Frameworks:</strong> Java, Spring Boot, Spring MVC, Hibernate, JavaScript, TypeScript &nbsp;|&nbsp;
+              <strong>Frontend:</strong> React, Angular, Vue.js, HTML5, CSS3, Bootstrap &nbsp;|&nbsp;
+              <strong>Backend:</strong> Node.js, RESTful APIs, Microservices, JAX-RS, JDBC, Servlets &nbsp;|&nbsp;
+              <strong>CI/CD & DevOps:</strong> Jenkins, GitLab, Docker, Kubernetes, Maven, Git, Bitbucket &nbsp;|&nbsp;
+              <strong>Databases:</strong> SQL, PL/SQL, Oracle, MongoDB, MySQL, PostgreSQL &nbsp;|&nbsp;
+              <strong>Testing:</strong> JUnit, Mockito, Selenium, Postman, Karma, Cypress, Jasmine &nbsp;|&nbsp;
+              <strong>Cloud:</strong> AWS (EC2, S3, RDS), Azure, Google Cloud, AWS Lambda &nbsp;|&nbsp;
+              <strong>Monitoring:</strong> ELK Stack, Prometheus, Grafana &nbsp;|&nbsp;
+              <strong>API & Data:</strong> API Gateway, Apigee, Swagger, JSON, XML, YAML &nbsp;|&nbsp;
+              <strong>Project & Config:</strong> JIRA, Asana, Trello, Chef, Ansible, Confluence &nbsp;|&nbsp;
+              <strong>Architecture:</strong> Microservices, MVC, RESTful, SOAP, Monolithic &nbsp;|&nbsp;
+              <strong>Java:</strong> EJB, J2EE, JSP, JSTL, JNDI, JMS, JAXB &nbsp;|&nbsp;
+              <strong>IDEs:</strong> IntelliJ IDEA, VSCode, Eclipse
             </p>
           </section>
 

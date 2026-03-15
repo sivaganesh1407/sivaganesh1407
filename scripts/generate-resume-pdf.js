@@ -34,7 +34,7 @@ doc.moveDown(0.8);
 
 sectionHeading('Technical Skills');
 body();
-doc.text('Backend: Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | Messaging & Data: Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization | Frontend: React, Angular 17, JavaScript, HTML5, CSS3 | Cloud & DevOps: AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | Databases: Oracle, SQL, MySQL, PostgreSQL, MongoDB | Other: Agile, Git, Data Workflows, GitHub Copilot', { align: 'justify' });
+doc.text('Languages & Frameworks: Java, Spring Boot, Spring MVC, Hibernate, JavaScript, TypeScript | Frontend: React, Angular, Vue.js, HTML5, CSS3, Bootstrap | Backend: Node.js, RESTful APIs, Microservices, JAX-RS, JDBC, Servlets | CI/CD & DevOps: Jenkins, GitLab, Docker, Kubernetes, Maven, Git, Bitbucket | Databases: SQL, PL/SQL, Oracle, MongoDB, MySQL, PostgreSQL | Testing: JUnit, Mockito, Selenium, Postman, Karma, Cypress, Jasmine | Cloud: AWS (EC2, S3, RDS), Azure, Google Cloud, AWS Lambda | Monitoring: ELK Stack, Prometheus, Grafana | API & Data: API Gateway, Apigee, Swagger, JSON, XML, YAML | Project & Config: JIRA, Asana, Trello, Chef, Ansible, Confluence | Architecture: Microservices, MVC, RESTful, SOAP, Monolithic | Java: EJB, J2EE, JSP, JSTL, JNDI, JMS, JAXB | IDEs: IntelliJ IDEA, VSCode, Eclipse', { align: 'justify' });
 doc.moveDown(0.8);
 
 sectionHeading('Professional Experience');
