@@ -8,11 +8,18 @@ fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const stream = fs.createWriteStream(outPath);
 doc.pipe(stream);
 
-// ATS-friendly: Times-Roman (like view), clean layout, sentence case
+// ATS-friendly: Times-Roman (like view), clean layout, sentence case, borders like Word
 const h1 = () => { doc.fontSize(22).font('Times-Bold'); };
 const h2 = () => { doc.fontSize(12).font('Times-Bold'); };
 const body = () => { doc.fontSize(10).font('Times-Roman'); };
 const bullet = () => { doc.text('• ', { continued: true }); };
+const sectionHeading = (text) => {
+  h2();
+  doc.text(text);
+  doc.moveDown(0.3);
+  doc.rect(40, doc.y, 515, 1).fill('#333333');
+  doc.moveDown(0.5);
+};
 
 h1();
 doc.text('Siva Ganesh Golla', { align: 'center' });
@@ -20,23 +27,17 @@ doc.fontSize(12).font('Times-Roman').text('Java Full Stack Developer', { align: 
 doc.fontSize(10).text('Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407', { align: 'center' });
 doc.moveDown(1);
 
-h2();
-doc.text('Professional Summary');
-doc.moveDown(0.5);
+sectionHeading('Professional Summary');
 body();
 doc.text('Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.', { align: 'justify' });
 doc.moveDown(0.8);
 
-h2();
-doc.text('Technical Skills');
-doc.moveDown(0.5);
+sectionHeading('Technical Skills');
 body();
 doc.text('Backend: Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | Messaging & Data: Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization | Frontend: React, Angular 17, JavaScript, HTML5, CSS3 | Cloud & DevOps: AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | Databases: Oracle, SQL, MySQL, PostgreSQL, MongoDB | Other: Agile, Git, Data Workflows, GitHub Copilot', { align: 'justify' });
 doc.moveDown(0.8);
 
-h2();
-doc.text('Professional Experience');
-doc.moveDown(0.5);
+sectionHeading('Professional Experience');
 body();
 
 doc.font('Times-Bold').text('Full Stack Engineer', { continued: true });
@@ -114,9 +115,7 @@ const elder = [
 elder.forEach((item) => { bullet(); doc.text(item); });
 doc.moveDown(0.8);
 
-h2();
-doc.text('Certifications');
-doc.moveDown(0.5);
+sectionHeading('Certifications');
 body();
 bullet(); doc.font('Times-Bold').text('AWS Certified DevOps Engineer – Professional', { continued: true });
 doc.font('Times-Roman').text(' (March 2025 – March 2027)');
@@ -126,9 +125,7 @@ bullet(); doc.font('Times-Bold').text('HashiCorp Certified: Terraform Associate 
 doc.font('Times-Roman').text(' (March 2025 – March 2027)');
 doc.moveDown(0.8);
 
-h2();
-doc.text('Education');
-doc.moveDown(0.5);
+sectionHeading('Education');
 body();
 doc.font('Times-Bold').text("Master's Degree", { continued: true });
 doc.font('Times-Roman').text(', Indiana Wesleyan University');
@@ -139,9 +136,7 @@ doc.font('Times-Roman').text(', Karunya Institute of Technology and Sciences');
 doc.text('Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS), participating in community outreach programs and social service initiatives.', { indent: 15 });
 doc.moveDown(0.8);
 
-h2();
-doc.text('Key Projects');
-doc.moveDown(0.5);
+sectionHeading('Key Projects');
 body();
 bullet(); doc.font('Times-Bold').text('Retirement Investment Management Platform', { continued: true });
 doc.font('Times-Roman').text(' — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management.');
