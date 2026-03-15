@@ -1,11 +1,31 @@
 'use client';
 
 import Head from 'next/head';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function ResumePage() {
   const resumeRef = useRef<HTMLDivElement>(null);
   const [downloading, setDownloading] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('download') === '1') {
+      const timer = setTimeout(() => {
+        const el = resumeRef.current;
+        if (el) {
+          import('html2pdf.js').then(({ default: html2pdf }) => {
+            html2pdf().set({
+              margin: [18, 18, 18, 18],
+              filename: 'Siva_Ganesh_Golla_Resume.pdf',
+              image: { type: 'jpeg', quality: 0.98 },
+              html2canvas: { scale: 1.5, useCORS: true, backgroundColor: '#ffffff', logging: false, width: el.scrollWidth, height: el.scrollHeight },
+              jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            }).from(el).save();
+          });
+        }
+      }, 800);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const handleDownloadPDF = async () => {
     const el = resumeRef.current;
