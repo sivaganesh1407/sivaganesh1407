@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const PDFDocument = require('pdfkit');
-const data = require('./resume-data');
+const data = require('../data/resume-data');
 
 const doc = new PDFDocument({ margin: 40, size: 'A4' });
 const outPath = path.join(__dirname, '..', 'public', 'resume.pdf');

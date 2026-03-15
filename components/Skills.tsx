@@ -1,62 +1,8 @@
-const skillGroups = [
-  {
-    title: 'Languages & Frameworks',
-    items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JavaScript', 'TypeScript'],
-    color: 'border-green-500/50 text-green-300',
-  },
-  {
-    title: 'Frontend',
-    items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'],
-    color: 'border-cyan-500/50 text-cyan-300',
-  },
-  {
-    title: 'Backend & APIs',
-    items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets'],
-    color: 'border-blue-500/50 text-blue-300',
-  },
-  {
-    title: 'CI/CD & DevOps',
-    items: ['Jenkins', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'],
-    color: 'border-amber-500/50 text-amber-300',
-  },
-  {
-    title: 'Databases',
-    items: ['SQL', 'PL/SQL', 'Oracle', 'MongoDB', 'MySQL', 'PostgreSQL'],
-    color: 'border-purple-500/50 text-purple-300',
-  },
-  {
-    title: 'Testing',
-    items: ['JUnit', 'Mockito', 'Selenium', 'Postman', 'Karma', 'Cypress', 'Jasmine'],
-    color: 'border-rose-500/50 text-rose-300',
-  },
-  {
-    title: 'Cloud & Monitoring',
-    items: ['AWS (EC2, S3, RDS)', 'AWS Lambda', 'ELK Stack', 'Prometheus', 'Grafana'],
-    color: 'border-orange-500/50 text-orange-300',
-  },
-  {
-    title: 'API & Data',
-    items: ['API Gateway (AWS)', 'Swagger', 'JSON', 'XML', 'YAML'],
-    color: 'border-emerald-500/50 text-emerald-300',
-  },
-  {
-    title: 'Project & Config',
-    items: ['JIRA', 'Ansible', 'Confluence'],
-    color: 'border-sky-500/50 text-sky-300',
-  },
-  {
-    title: 'Architecture',
-    items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic'],
-    color: 'border-violet-500/50 text-violet-300',
-  },
-  {
-    title: 'IDEs & Tools',
-    items: ['IntelliJ IDEA', 'VSCode', 'Eclipse'],
-    color: 'border-teal-500/50 text-teal-300',
-  },
-];
+import resumeData from '../data/resume-data';
 
 export default function Skills() {
+  const { skillGroups } = resumeData;
+
   return (
     <section id="skills" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">

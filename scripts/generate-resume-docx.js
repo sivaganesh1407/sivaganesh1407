@@ -9,7 +9,7 @@ const {
   BorderStyle,
   ExternalHyperlink,
 } = require('docx');
-const data = require('./resume-data');
+const data = require('../data/resume-data');
 
 // ATS-friendly: Times New Roman font
 const font = 'Times New Roman';

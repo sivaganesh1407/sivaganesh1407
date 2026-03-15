@@ -1,9 +1,9 @@
 /**
  * Single source of truth for resume content.
- * Used by both PDF and DOCX generators to ensure identical, ATS-friendly content.
+ * Used by PDF, DOCX, resume page, and Skills component.
  */
 
-module.exports = {
+const resumeData = {
   header: {
     name: 'Siva Ganesh Golla',
     title: 'Java Full Stack Developer',
@@ -16,6 +16,21 @@ module.exports = {
   summary: 'Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.',
 
   technicalSkills: 'Languages & Frameworks: Java, Spring Boot, Spring MVC, Hibernate, JavaScript, TypeScript | Frontend: React, Angular, HTML5, CSS3, Bootstrap | Backend: Node.js, RESTful APIs, Microservices, JAX-RS, JDBC, Servlets | CI/CD & DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Bitbucket | Databases: SQL, PL/SQL, Oracle, MongoDB, MySQL, PostgreSQL | Testing: JUnit, Mockito, Selenium, Postman, Karma, Cypress, Jasmine | Cloud: AWS (EC2, S3, RDS), AWS Lambda | Monitoring: ELK Stack, Prometheus, Grafana | API & Data: API Gateway, Swagger, JSON, XML, YAML | Project & Config: JIRA, Ansible, Confluence | Architecture: Microservices, MVC, RESTful, SOAP, Monolithic | IDEs: IntelliJ IDEA, VSCode, Eclipse',
+
+  skillGroups: [
+    { title: 'Languages & Frameworks', items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JavaScript', 'TypeScript'], color: 'border-green-500/50 text-green-300' },
+    { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'], color: 'border-cyan-500/50 text-cyan-300' },
+    { title: 'Backend', items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets'], color: 'border-blue-500/50 text-blue-300' },
+    { title: 'CI/CD & DevOps', items: ['Jenkins', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'], color: 'border-amber-500/50 text-amber-300' },
+    { title: 'Databases', items: ['SQL', 'PL/SQL', 'Oracle', 'MongoDB', 'MySQL', 'PostgreSQL'], color: 'border-purple-500/50 text-purple-300' },
+    { title: 'Testing', items: ['JUnit', 'Mockito', 'Selenium', 'Postman', 'Karma', 'Cypress', 'Jasmine'], color: 'border-rose-500/50 text-rose-300' },
+    { title: 'Cloud', items: ['AWS (EC2, S3, RDS)', 'AWS Lambda'], color: 'border-orange-500/50 text-orange-300' },
+    { title: 'Monitoring', items: ['ELK Stack', 'Prometheus', 'Grafana'], color: 'border-orange-500/50 text-orange-300' },
+    { title: 'API & Data', items: ['API Gateway', 'Swagger', 'JSON', 'XML', 'YAML'], color: 'border-emerald-500/50 text-emerald-300' },
+    { title: 'Project & Config', items: ['JIRA', 'Ansible', 'Confluence'], color: 'border-sky-500/50 text-sky-300' },
+    { title: 'Architecture', items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic'], color: 'border-violet-500/50 text-violet-300' },
+    { title: 'IDEs', items: ['IntelliJ IDEA', 'VSCode', 'Eclipse'], color: 'border-teal-500/50 text-teal-300' },
+  ],
 
   experience: [
     {
@@ -110,3 +125,5 @@ module.exports = {
     { name: 'User Management Service', desc: 'Spring Boot, JPA, H2. REST API for user management and authentication.' },
   ],
 };
+
+module.exports = resumeData;
