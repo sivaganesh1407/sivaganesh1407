@@ -48,6 +48,15 @@ export default function ResumePage() {
             <button type="button" onClick={handleDownloadPDF} disabled={downloading} className="resume-print">
               {downloading ? 'Generating…' : 'Download PDF'}
             </button>
+            <a
+              href={`https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin + '/resume.docx' : 'https://sivaganesh1407.vercel.app/resume.docx')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-print resume-print-secondary"
+              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+            >
+              View Word
+            </a>
             <a href="/resume.docx" download="Siva_Ganesh_Golla_Resume.docx" className="resume-print resume-print-secondary" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
               Download Word
             </a>
