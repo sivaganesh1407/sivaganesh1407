@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "generate:docx": "node scripts/generate-resume-docx.js",
+    "generate:pdf": "node scripts/generate-resume-pdf.js",
+    "prebuild": "npm run generate:docx && npm run generate:pdf",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,6 +15,7 @@
     "docx": "^9.6.1",
     "html2pdf.js": "^0.14.0",
     "next": "^14.2.0",
+    "pdfkit": "^0.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
