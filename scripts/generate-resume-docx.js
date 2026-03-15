@@ -54,22 +54,25 @@ const doc = new Document({
         sectionHeading('Professional Summary'),
         new Paragraph({
           children: [
-            new TextRun('Results-driven '),
-            new TextRun({ text: 'Java Full Stack Developer', bold: true }),
-            new TextRun(' with 5+ years of experience designing and delivering scalable enterprise applications. Expert in '),
+            new TextRun('Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. '),
+            new TextRun({ text: 'Proficient in ', italics: false }),
             new TextRun({ text: 'Java', bold: true }),
-            new TextRun(', '),
+            new TextRun({ text: ', ', italics: false }),
             new TextRun({ text: 'Spring Boot', bold: true }),
-            new TextRun(', '),
+            new TextRun({ text: ', ', italics: false }),
             new TextRun({ text: 'Microservices', bold: true }),
-            new TextRun(', '),
-            new TextRun({ text: 'REST APIs', bold: true }),
-            new TextRun(', '),
+            new TextRun({ text: ', ', italics: false }),
+            new TextRun({ text: ' REST APIs', bold: true }),
+            new TextRun({ text: ', ', italics: false }),
             new TextRun({ text: 'React', bold: true }),
-            new TextRun(', and '),
+            new TextRun({ text: ', ', italics: false }),
+            new TextRun({ text: 'Docker', bold: true }),
+            new TextRun({ text: ', ', italics: false }),
+            new TextRun({ text: 'Kubernetes', bold: true }),
+            new TextRun({ text: ', and ', italics: false }),
             new TextRun({ text: 'AWS', bold: true }),
             new TextRun(
-              ' cloud platforms. Proven track record building high-performance backend services, RESTful APIs, and modern React/Angular interfaces for financial services, fintech, and enterprise sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Passionate about clean code, system design, CI/CD automation, and infrastructure as code. Strong collaborator in Agile/Scrum teams.'
+              '. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.'
             ),
           ],
           spacing: { after: 200 },
@@ -79,17 +82,21 @@ const doc = new Document({
         new Paragraph({
           children: [
             new TextRun({ text: 'Backend:', bold: true }),
-            new TextRun(' Java, Java 11/17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | '),
+            new TextRun(
+              ' Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture | '
+            ),
+            new TextRun({ text: 'Messaging & Data:', bold: true }),
+            new TextRun(
+              ' Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization | '
+            ),
             new TextRun({ text: 'Frontend:', bold: true }),
-            new TextRun(' React, Angular 17, JavaScript, TypeScript, HTML5, CSS3 | '),
+            new TextRun(' React, Angular 17, JavaScript, HTML5, CSS3 | '),
             new TextRun({ text: 'Cloud & DevOps:', bold: true }),
-            new TextRun(' AWS (ECS, EC2, ECR, S3), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | '),
+            new TextRun(' AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins | '),
             new TextRun({ text: 'Databases:', bold: true }),
-            new TextRun(' Oracle, MySQL, PostgreSQL, MongoDB, SQL | '),
-            new TextRun({ text: 'Messaging:', bold: true }),
-            new TextRun(' Redis, RabbitMQ, Kafka, ETL Pipelines | '),
-            new TextRun({ text: 'Tools:', bold: true }),
-            new TextRun(' Git, Agile/Scrum, JIRA, GitHub Copilot'),
+            new TextRun(' Oracle, SQL, MySQL, PostgreSQL, MongoDB | '),
+            new TextRun({ text: 'Other:', bold: true }),
+            new TextRun(' Agile, Git, Data Workflows, GitHub Copilot'),
           ],
           spacing: { after: 200 },
         }),
@@ -442,48 +449,27 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Portfolio Projects'),
+        sectionHeading('Key Projects'),
         new Paragraph({
           children: [
             new TextRun({ text: 'Retirement Investment Management Platform', bold: true }),
-            new TextRun(' — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management. github.com/sivaganesh1407/retirement-investment-management-platform'),
-          ],
-          bullet: { level: 0 },
-        }),
-        new Paragraph({
-          children: [
-            new TextRun({ text: 'Investment Portfolio Manager', bold: true }),
-            new TextRun(' — Spring Boot, React. Full-stack investment portfolio management for tracking assets and analyzing financial data. github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager'),
+            new TextRun(' — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management.'),
           ],
           bullet: { level: 0 },
         }),
         new Paragraph({
           children: [
             new TextRun({ text: 'Smart Restaurant Platform', bold: true }),
-            new TextRun(' — Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics. github.com/sivaganesh1407/smart-restaurant-platform'),
+            new TextRun(' — Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics.'),
           ],
           bullet: { level: 0 },
         }),
         new Paragraph({
           children: [
             new TextRun({ text: 'User Management Service', bold: true }),
-            new TextRun(' — Spring Boot, JPA, H2. REST API for user management and authentication. github.com/sivaganesh1407/user-management-service'),
+            new TextRun(' — Spring Boot, JPA, H2. REST API for user management and authentication.'),
           ],
           bullet: { level: 0 },
-        }),
-        new Paragraph({
-          children: [
-            new TextRun({ text: 'Restaurant Order Service', bold: true }),
-            new TextRun(' — Spring Boot, Microservices. Microservice for restaurant order management and integration. github.com/sivaganesh1407/restaurant-order-service'),
-          ],
-          bullet: { level: 0 },
-        }),
-        new Paragraph({
-          children: [
-            new TextRun({ text: 'Portfolio:', bold: true }),
-            new TextRun(' sivaganesh1407.vercel.app'),
-          ],
-          spacing: { before: 120 },
         }),
       ],
     },

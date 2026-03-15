@@ -119,25 +119,25 @@ export default function ResumePage() {
           <section className="resume-section">
             <h2 className="resume-h2">Professional Summary</h2>
             <p className="resume-summary">
-              Results-driven <strong>Java Full Stack Developer</strong> with 5+ years of experience designing and delivering 
-              scalable enterprise applications. Expert in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong>, 
-              <strong> REST APIs</strong>, <strong>React</strong>, and <strong>AWS</strong> cloud platforms. Proven track record building 
-              high-performance backend services, RESTful APIs, and modern React/Angular interfaces for financial services, 
-              fintech, and enterprise sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, 
-              and HashiCorp Terraform Associate. Passionate about clean code, system design, CI/CD automation, and 
-              infrastructure as code. Strong collaborator in Agile/Scrum teams.
+              Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. 
+              Proficient in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong>, 
+              <strong> REST APIs</strong>, <strong>React</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, 
+              and <strong>AWS</strong>. Delivered backend services, cloud-native systems, and modern web interfaces for 
+              financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, 
+              Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, 
+              API development, CI/CD, and infrastructure as code.
             </p>
           </section>
 
           <section className="resume-section">
             <h2 className="resume-h2">Technical Skills</h2>
             <p className="resume-skills">
-              <strong>Backend:</strong> Java, Java 11/17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture &nbsp;|&nbsp;
-              <strong>Frontend:</strong> React, Angular 17, JavaScript, TypeScript, HTML5, CSS3 &nbsp;|&nbsp;
-              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR, S3), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
-              <strong>Databases:</strong> Oracle, MySQL, PostgreSQL, MongoDB, SQL &nbsp;|&nbsp;
-              <strong>Messaging:</strong> Redis, RabbitMQ, Kafka, ETL Pipelines &nbsp;|&nbsp;
-              <strong>Tools:</strong> Git, Agile/Scrum, JIRA, GitHub Copilot
+              <strong>Backend:</strong> Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture &nbsp;|&nbsp;
+              <strong>Messaging & Data:</strong> Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization &nbsp;|&nbsp;
+              <strong>Frontend:</strong> React, Angular 17, JavaScript, HTML5, CSS3 &nbsp;|&nbsp;
+              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
+              <strong>Databases:</strong> Oracle, SQL, MySQL, PostgreSQL, MongoDB &nbsp;|&nbsp;
+              <strong>Other:</strong> Agile, Git, Data Workflows, GitHub Copilot
             </p>
           </section>
 
@@ -246,43 +246,16 @@ export default function ResumePage() {
           </section>
 
           <section className="resume-section">
-            <h2 className="resume-h2">Portfolio Projects</h2>
+            <h2 className="resume-h2">Key Projects</h2>
             <div className="resume-job">
-              <div className="resume-job-head">
-                <strong>Retirement Investment Management Platform</strong>
-                <span className="resume-date">Spring Boot, JWT, React</span>
-              </div>
-              <p className="resume-edu">Secure financial services platform for retirement planning, investment portfolio management, and customer workflows. Built REST APIs with Spring Boot, JWT authentication, and React frontend. github.com/sivaganesh1407/retirement-investment-management-platform</p>
+              <strong>Retirement Investment Management Platform</strong> — Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management.
             </div>
             <div className="resume-job">
-              <div className="resume-job-head">
-                <strong>Investment Portfolio Manager</strong>
-                <span className="resume-date">Spring Boot, React</span>
-              </div>
-              <p className="resume-edu">Full-stack investment portfolio management system for tracking assets, monitoring performance, and analyzing financial data. github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager</p>
+              <strong>Smart Restaurant Platform</strong> — Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics.
             </div>
             <div className="resume-job">
-              <div className="resume-job-head">
-                <strong>Smart Restaurant Platform</strong>
-                <span className="resume-date">Spring Boot, React, MySQL</span>
-              </div>
-              <p className="resume-edu">Full-stack web application for restaurant operations: menu management, order processing, inventory tracking, and sales analytics. github.com/sivaganesh1407/smart-restaurant-platform</p>
+              <strong>User Management Service</strong> — Spring Boot, JPA, H2. REST API for user management and authentication.
             </div>
-            <div className="resume-job">
-              <div className="resume-job-head">
-                <strong>User Management Service</strong>
-                <span className="resume-date">Spring Boot, JPA, H2</span>
-              </div>
-              <p className="resume-edu">REST API for user management with authentication and role-based access control. github.com/sivaganesh1407/user-management-service</p>
-            </div>
-            <div className="resume-job">
-              <div className="resume-job-head">
-                <strong>Restaurant Order Service</strong>
-                <span className="resume-date">Spring Boot, Microservices</span>
-              </div>
-              <p className="resume-edu">Microservice for restaurant order management. Handles order lifecycle and integration with other services. github.com/sivaganesh1407/restaurant-order-service</p>
-            </div>
-            <p className="resume-edu" style={{ marginTop: '8px' }}><strong>Portfolio:</strong> sivaganesh1407.vercel.app</p>
           </section>
         </article>
         </div>
