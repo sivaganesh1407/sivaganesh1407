@@ -10,10 +10,11 @@ const {
   BorderStyle,
 } = require('docx');
 
-const sectionHeading = (text) =>
+const sectionHeading = (text, pageBreakBefore = false) =>
   new Paragraph({
     text,
     heading: HeadingLevel.HEADING_2,
+    pageBreakBefore,
     border: {
       bottom: {
         color: '333333',
@@ -101,7 +102,7 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Professional Experience'),
+        sectionHeading('Professional Experience', true),
 
         new Paragraph({
           children: [
@@ -110,6 +111,7 @@ const doc = new Document({
             new TextRun({ text: '\tNov 2025 – Present', italics: true }),
           ],
           spacing: { after: 80 },
+          keepLines: true,
         }),
         new Paragraph({
           children: [
@@ -168,6 +170,7 @@ const doc = new Document({
             new TextRun({ text: '\tFeb 2025 – Oct 2025', italics: true }),
           ],
           spacing: { after: 80 },
+          keepLines: true,
         }),
         new Paragraph({
           children: [
@@ -218,6 +221,7 @@ const doc = new Document({
             new TextRun({ text: '\tFeb 2024 – Dec 2024', italics: true }),
           ],
           spacing: { after: 80 },
+          keepLines: true,
         }),
         new Paragraph({
           children: [
@@ -252,6 +256,7 @@ const doc = new Document({
             new TextRun({ text: '\tJun 2021 – Jun 2022', italics: true }),
           ],
           spacing: { after: 80 },
+          keepLines: true,
         }),
         new Paragraph({
           children: [
@@ -326,6 +331,7 @@ const doc = new Document({
             new TextRun({ text: '\tJun 2019 – May 2021', italics: true }),
           ],
           spacing: { after: 80 },
+          keepLines: true,
         }),
         new Paragraph({
           children: [
@@ -393,7 +399,7 @@ const doc = new Document({
           spacing: { after: 120 },
         }),
 
-        sectionHeading('Certifications'),
+        sectionHeading('Certifications', true),
         new Paragraph({
           children: [
             new TextRun({ text: 'AWS Certified DevOps Engineer – Professional', bold: true }),
@@ -417,7 +423,7 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Education'),
+        sectionHeading('Education', true),
         new Paragraph({
           children: [
             new TextRun({ text: "Master's Degree", bold: true }),
@@ -449,7 +455,7 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Key Projects'),
+        sectionHeading('Key Projects', true),
         new Paragraph({
           children: [
             new TextRun({ text: 'Retirement Investment Management Platform', bold: true }),
