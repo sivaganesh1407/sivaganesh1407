@@ -9,6 +9,11 @@ const certifications = [
     issuer: 'AWS',
     period: 'February 2025 – February 2028',
   },
+  {
+    name: 'HashiCorp Certified: Terraform Associate (003)',
+    issuer: 'HashiCorp',
+    period: 'March 2025 – March 2027',
+  },
 ];
 
 export default function Certifications() {

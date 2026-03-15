@@ -1,6 +1,40 @@
+'use client';
+
 import Head from 'next/head';
+import { useRef, useState } from 'react';
 
 export default function ResumePage() {
+  const resumeRef = useRef<HTMLDivElement>(null);
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownloadPDF = async () => {
+    const el = resumeRef.current;
+    if (!el) return;
+    setDownloading(true);
+    try {
+      const html2pdf = (await import('html2pdf.js')).default;
+      await html2pdf().set({
+        margin: [18, 18, 18, 18],
+        filename: 'Siva_Ganesh_Golla_Resume.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: {
+          scale: 1.5,
+          useCORS: true,
+          backgroundColor: '#ffffff',
+          logging: false,
+          width: el.scrollWidth,
+          height: el.scrollHeight,
+        },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      }).from(el).save();
+    } catch (err) {
+      console.error(err);
+      window.print();
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -10,12 +44,36 @@ export default function ResumePage() {
       <div className="resume-root">
         <div className="resume-actions no-print">
           <a href="/#resume" className="resume-back">← Back to Portfolio</a>
-          <button type="button" onClick={() => window.print()} className="resume-print">
-            Save as PDF / Print
-          </button>
+          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+            <button type="button" onClick={handleDownloadPDF} disabled={downloading} className="resume-print">
+              {downloading ? 'Generating…' : 'Download PDF'}
+            </button>
+            <button type="button" onClick={() => window.print()} className="resume-print resume-print-secondary">
+              Print
+            </button>
+          </div>
         </div>
 
-        <article className="resume-page">
+        <div
+          ref={resumeRef}
+          style={{
+            background: '#ffffff',
+            color: '#111111',
+            padding: '28px 32px',
+            maxWidth: '800px',
+            margin: '0 auto',
+            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontSize: '11pt',
+            lineHeight: 1.4,
+            boxSizing: 'border-box',
+          }}
+        >
+        <style>{`
+          .resume-pdf-wrap .resume-job,
+          .resume-pdf-wrap .resume-section { page-break-inside: avoid; }
+          .resume-pdf-wrap .resume-job-head { overflow: visible; }
+        `}</style>
+        <article className="resume-page resume-pdf-wrap">
           <header className="resume-header">
             <h1 className="resume-name">Siva Ganesh Golla</h1>
             <p className="resume-title">Java Full Stack Developer</p>
@@ -32,20 +90,22 @@ export default function ResumePage() {
               Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. 
               Proficient in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong>, 
               <strong> REST APIs</strong>, <strong>React</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, 
-              and <strong>AWS</strong>. Delivered backend services, cloud-native systems, and modern web interfaces for 
-              financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional 
-              and Solutions Architect – Associate. Strong focus on system design, API development, and CI/CD.
+              and <strong>AWS</strong>.               Delivered backend services, cloud-native systems, and modern web interfaces for 
+              financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, 
+              Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, 
+              API development, CI/CD, and infrastructure as code.
             </p>
           </section>
 
           <section className="resume-section">
             <h2 className="resume-h2">Technical Skills</h2>
             <p className="resume-skills">
-              <strong>Backend:</strong> Java, Spring Boot, Spring MVC, Hibernate, Microservices, REST API Development &nbsp;|&nbsp;
-              <strong>Frontend:</strong> React, JavaScript, HTML5, CSS3, Angular &nbsp;|&nbsp;
-              <strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Jenkins, CI/CD Pipelines &nbsp;|&nbsp;
-              <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Oracle &nbsp;|&nbsp;
-              <strong>Other:</strong> ETL Pipelines, Data Integration, SQL Optimization, Git
+              <strong>Backend:</strong> Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture &nbsp;|&nbsp;
+              <strong>Messaging & Data:</strong> Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization &nbsp;|&nbsp;
+              <strong>Frontend:</strong> React, Angular 17, JavaScript, HTML5, CSS3 &nbsp;|&nbsp;
+              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR), Docker, Kubernetes, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
+              <strong>Databases:</strong> Oracle, SQL, MySQL, PostgreSQL, MongoDB &nbsp;|&nbsp;
+              <strong>Other:</strong> Agile, Git, Data Workflows, GitHub Copilot
             </p>
           </section>
 
@@ -58,9 +118,12 @@ export default function ResumePage() {
                 <span className="resume-date">Nov 2025 – Present</span>
               </div>
               <ul>
-                <li>Develop and maintain enterprise restaurant management systems and backend services.</li>
-                <li>Build REST APIs using Spring Boot and frontend components using React.</li>
-                <li>Work with cloud infrastructure and microservices architecture.</li>
+                <li>Modernized legacy Spring MVC systems by designing and developing scalable <strong>Java 17 / Spring Boot microservices</strong> to improve performance, reliability, and deployment flexibility.</li>
+                <li>Built <strong>event-driven architectures</strong> using <strong>Redis, RabbitMQ, and Kafka</strong> for asynchronous processing, real-time communication, and distributed system scalability.</li>
+                <li>Developed end-to-end <strong>RESTful APIs</strong>, secured services with <strong>Spring Security</strong>, and optimized data workflows with <strong>Oracle, SQL, and MongoDB</strong> for high-volume applications.</li>
+                <li>Deployed and managed <strong>cloud-native applications</strong> on <strong>AWS ECS, EC2, and ECR</strong> using <strong>Docker and Kubernetes</strong> for containerization, orchestration, and production resilience.</li>
+                <li>Implemented <strong>CI/CD pipelines</strong> using <strong>Bitbucket Pipelines</strong> to automate builds, tests, deployments, and versioning across dev, QA, staging, and production.</li>
+                <li>Delivered full-stack features using <strong>Angular 17 / React</strong> and used AI-powered tools (e.g., <strong>GitHub Copilot, OpenAI APIs</strong>) to improve engineering productivity.</li>
               </ul>
             </div>
 
@@ -70,18 +133,23 @@ export default function ResumePage() {
                 <span className="resume-date">Feb 2025 – Oct 2025</span>
               </div>
               <ul>
-                <li>Full stack development for financial services applications using Java and Spring Boot.</li>
-                <li>Contributed to retirement and investment platform features and integrations.</li>
+                <li>Developed and maintained <strong>Java / Spring Boot applications</strong> for retirement, life insurance, and asset management workflows, supporting secure data processing and business logic.</li>
+                <li>Built <strong>RESTful APIs</strong> for customer portals, agent dashboards, and internal admin systems, enabling reliable data exchange between front-end and back-end services.</li>
+                <li>Created user-friendly interfaces for customer portals, agent dashboards, and internal administrative systems using <strong>HTML, CSS, and JavaScript frameworks (e.g., Angular / React)</strong>.</li>
+                <li>Implemented input validation and data checks on forms and user interactions to ensure data accuracy and consistency across financial workflows.</li>
+                <li>Collaborated with cross-functional teams in an <strong>Agile environment</strong> to deliver features across development, QA, and production for financial services applications.</li>
               </ul>
             </div>
 
             <div className="resume-job">
               <div className="resume-job-head">
-                <strong>Java Full Stack Developer</strong>, ConocoPhillips (CPT Internship)
+                <strong>Java Full Stack Developer</strong>, ConocoPhillips
                 <span className="resume-date">Feb 2024 – Dec 2024</span>
               </div>
               <ul>
-                <li>Backend and frontend development in enterprise environment; collaborated with cross-functional teams.</li>
+                <li>Implemented server-side logic using <strong>Java</strong> and frameworks like <strong>Spring Boot</strong> to handle complex company calculations, data processing, and transactions.</li>
+                <li>Designed and developed <strong>RESTful APIs</strong> for data exchange between front-end and back-end components.</li>
+                <li>Delivered full-stack features; built backend REST API with <strong>Java 11, Spring Boot, and Spring Data JPA</strong> for portfolio and asset tracking.</li>
               </ul>
             </div>
 
@@ -91,7 +159,14 @@ export default function ResumePage() {
                 <span className="resume-date">Jun 2021 – Jun 2022</span>
               </div>
               <ul>
-                <li>System development and integration projects; Java and enterprise software delivery.</li>
+                <li>Developed <strong>backend data services</strong> to support vehicle manufacturing and supply chain analytics systems used by Mercedes-Benz engineering teams.</li>
+                <li>Built <strong>ETL pipelines</strong> integrating vehicle production data, dealer management systems, and enterprise operational databases.</li>
+                <li>Designed data workflows to process automotive manufacturing metrics, vehicle configuration data, and production line performance reports.</li>
+                <li>Optimized <strong>SQL queries</strong> used in automotive analytics dashboards that monitor vehicle production efficiency and logistics performance.</li>
+                <li>Implemented data validation and transformation processes to ensure accurate integration of vehicle inventory and distribution data.</li>
+                <li>Supported enterprise systems that process dealer network sales data and vehicle delivery tracking across regional markets.</li>
+                <li>Participated in <strong>Agile</strong> development cycles delivering data integration features for automotive operations and engineering teams.</li>
+                <li>Assisted in troubleshooting production data pipelines supporting vehicle manufacturing and supply chain reporting systems.</li>
               </ul>
             </div>
 
@@ -101,7 +176,14 @@ export default function ResumePage() {
                 <span className="resume-date">Jun 2019 – May 2021</span>
               </div>
               <ul>
-                <li>Software development and maintenance; backend and database work.</li>
+                <li>Developed <strong>data integration processes</strong> to manage drug manufacturing, batch production, and pharmaceutical inventory data used in internal reporting systems.</li>
+                <li>Built <strong>ETL workflows</strong> to consolidate laboratory testing data and quality control results from multiple pharmaceutical systems into centralized databases.</li>
+                <li>Supported data pipelines used for pharmaceutical product lifecycle management, ensuring accurate tracking of medicine batches and manufacturing records.</li>
+                <li>Implemented <strong>data validation logic</strong> to maintain accuracy of clinical and drug safety datasets used for regulatory and compliance reporting.</li>
+                <li>Assisted in integrating sales and distribution data for pharmaceutical products, helping track medicine supply across distributors and healthcare providers.</li>
+                <li>Created <strong>SQL-based reports</strong> supporting drug production monitoring, inventory tracking, and product performance analytics.</li>
+                <li>Supported data systems used for pharmacovigilance and adverse event reporting, helping maintain reliable pharmaceutical safety data.</li>
+                <li>Collaborated with quality assurance teams to ensure data consistency for pharmaceutical manufacturing and compliance audits.</li>
               </ul>
             </div>
           </section>
@@ -111,6 +193,7 @@ export default function ResumePage() {
             <ul className="resume-list-simple">
               <li><strong>AWS Certified DevOps Engineer – Professional</strong> (March 2025 – March 2027)</li>
               <li><strong>AWS Certified Solutions Architect – Associate</strong> (February 2025 – February 2028)</li>
+              <li><strong>HashiCorp Certified: Terraform Associate (003)</strong> (March 2025 – March 2027)</li>
             </ul>
           </section>
 
@@ -143,6 +226,7 @@ export default function ResumePage() {
             </div>
           </section>
         </article>
+        </div>
       </div>
 
       <style jsx>{`
@@ -150,7 +234,10 @@ export default function ResumePage() {
         .resume-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #ddd; }
         .resume-back { color: #16a34a; text-decoration: none; font-size: 14px; }
         .resume-print { background: #16a34a; color: #fff; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; }
-        .resume-print:hover { background: #15803d; }
+        .resume-print:hover:not(:disabled) { background: #15803d; }
+        .resume-print:disabled { opacity: 0.7; cursor: not-allowed; }
+        .resume-print-secondary { background: #374151; }
+        .resume-print-secondary:hover { background: #4b5563; }
         .resume-page { font-size: 11pt; line-height: 1.4; }
         .resume-header { text-align: center; margin-bottom: 20px; }
         .resume-name { font-size: 22pt; font-weight: 700; margin: 0 0 4px 0; }
@@ -161,9 +248,10 @@ export default function ResumePage() {
         .resume-h2 { font-size: 12pt; font-weight: 700; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #333; text-transform: uppercase; letter-spacing: 0.5px; }
         .resume-summary { margin: 0; text-align: justify; }
         .resume-skills { margin: 0; font-size: 10pt; }
-        .resume-job { margin-bottom: 14px; }
-        .resume-job-head { margin-bottom: 4px; }
-        .resume-date { float: right; font-weight: normal; color: #555; }
+        .resume-job { margin-bottom: 14px; page-break-inside: avoid; }
+        .resume-job-head { margin-bottom: 4px; overflow: visible; clear: both; }
+        .resume-job-head::after { content: ''; display: table; clear: both; }
+        .resume-date { float: right; font-weight: normal; color: #555; margin-left: 12px; }
         .resume-job ul { margin: 0 0 0 18px; padding: 0; }
         .resume-job li { margin-bottom: 3px; }
         .resume-list-simple { margin: 0; padding-left: 18px; }
