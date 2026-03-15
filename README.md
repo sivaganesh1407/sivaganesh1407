@@ -2,30 +2,25 @@
 
 ## Portfolio site
 
-This repo includes a **Next.js + React + TailwindCSS** portfolio. Run it locally:
+**Live portfolio (after you deploy):** [https://sivaganesh1407.vercel.app](https://sivaganesh1407.vercel.app)
+
+Next.js + React + TailwindCSS portfolio. Run locally:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Build for production: `npm run build` then `npm start`.
+Open [http://localhost:3000](http://localhost:3000).
 
-**Profile photo:** Add your photo to `public/profile.jpg` (e.g. save from LinkedIn) to show it in the About section. Or set `NEXT_PUBLIC_PROFILE_IMAGE_URL` in `.env.local`.
+**Optional:** Add `public/profile.jpg` for your photo in About; set `NEXT_PUBLIC_PROFILE_IMAGE_URL` in Vercel env for an image URL. Add your phone in `components/Contact.tsx` if desired.
 
-**Resume:** Your resume is at `/resume`. Click &quot;View / Download Resume&quot; on the site, then use your browser’s Print → Save as PDF to get a PDF.
+### Deploy to Vercel (one-time)
 
-**Education:** Edit `components/Education.tsx` to add your degree(s), school(s), dates, GPA, and coursework.
-
-### Deploy to Vercel
-
-1. Push this repo to GitHub (if not already).
-2. Go to [vercel.com](https://vercel.com) and sign in with **GitHub**.
-3. Click **Add New…** → **Project** and **import** the `sivaganesh1407` (or your repo) repository.
-4. Leave the default settings (Framework: Next.js, Build Command: `npm run build`, Output: auto).
-5. Click **Deploy**. Your portfolio will be live at `https://your-project.vercel.app`.
-
-For a custom domain or env vars (e.g. `NEXT_PUBLIC_PROFILE_IMAGE_URL`), use **Project Settings** in the Vercel dashboard.
+1. Go to [vercel.com/new](https://vercel.com/new) and sign in with **GitHub**.
+2. Click **Import** and select the repo **sivaganesh1407/sivaganesh1407**.
+3. Click **Deploy** (keep defaults: Next.js, `npm run build`).
+4. When ready, open the URL Vercel shows (e.g. **https://sivaganesh1407.vercel.app**). Future pushes to `main` auto-deploy.
 
 ---
 

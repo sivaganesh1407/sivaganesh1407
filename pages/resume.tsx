@@ -119,16 +119,14 @@ export default function ResumePage() {
             <div className="resume-job">
               <div className="resume-job-head">
                 <strong>Master&apos;s Degree</strong>, Indiana Wesleyan University
-                <span className="resume-date">2022 – 2024</span>
               </div>
-              <p className="resume-edu">Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Technology-focused collaboration in information systems and emerging technologies.</p>
+              <p className="resume-edu">Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Participated in technology-focused academic collaboration and peer learning activities related to information systems and emerging technologies.</p>
             </div>
             <div className="resume-job">
               <div className="resume-job-head">
                 <strong>Bachelor&apos;s, Electrical, Electronics and Communications Engineering</strong>, Karunya Institute of Technology and Sciences
-                <span className="resume-date">2015 – 2019</span>
               </div>
-              <p className="resume-edu">Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer, National Service Scheme (NSS).</p>
+              <p className="resume-edu">Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS), participating in community outreach programs and social service initiatives.</p>
             </div>
           </section>
 
