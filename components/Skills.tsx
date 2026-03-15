@@ -1,23 +1,58 @@
 const skillGroups = [
   {
-    title: 'Backend',
-    items: ['Java', 'Spring Boot', 'Microservices', 'REST APIs', 'Hibernate'],
+    title: 'Languages & Frameworks',
+    items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JavaScript', 'TypeScript'],
     color: 'border-green-500/50 text-green-300',
   },
   {
     title: 'Frontend',
-    items: ['React', 'JavaScript', 'HTML', 'CSS', 'Angular'],
+    items: ['React', 'Angular', 'Vue.js', 'HTML5', 'CSS3', 'Bootstrap'],
     color: 'border-cyan-500/50 text-cyan-300',
   },
   {
-    title: 'DevOps / Cloud',
-    items: ['Docker', 'Kubernetes', 'AWS', 'Terraform', 'Git', 'Jenkins', 'CI/CD'],
+    title: 'Backend & APIs',
+    items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets', 'JNDI', 'JMS'],
+    color: 'border-blue-500/50 text-blue-300',
+  },
+  {
+    title: 'CI/CD & DevOps',
+    items: ['Jenkins', 'GitLab', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'],
     color: 'border-amber-500/50 text-amber-300',
   },
   {
     title: 'Databases',
-    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Oracle'],
+    items: ['SQL', 'PL/SQL', 'Oracle', 'MongoDB', 'MySQL', 'PostgreSQL'],
     color: 'border-purple-500/50 text-purple-300',
+  },
+  {
+    title: 'Testing',
+    items: ['JUnit', 'Mockito', 'Selenium', 'Postman', 'Karma', 'Cypress', 'Jasmine'],
+    color: 'border-rose-500/50 text-rose-300',
+  },
+  {
+    title: 'Cloud & Monitoring',
+    items: ['AWS (EC2, S3, RDS)', 'Azure', 'Google Cloud', 'AWS Lambda', 'ELK Stack', 'Prometheus', 'Grafana'],
+    color: 'border-orange-500/50 text-orange-300',
+  },
+  {
+    title: 'API & Data',
+    items: ['API Gateway (AWS)', 'Apigee', 'Swagger', 'JSON', 'XML', 'YAML'],
+    color: 'border-emerald-500/50 text-emerald-300',
+  },
+  {
+    title: 'Project & Config',
+    items: ['JIRA', 'Asana', 'Trello', 'Chef', 'Ansible', 'Confluence'],
+    color: 'border-sky-500/50 text-sky-300',
+  },
+  {
+    title: 'Architecture & Java',
+    items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic', 'EJB', 'J2EE', 'JSP', 'JSTL', 'JAXB'],
+    color: 'border-violet-500/50 text-violet-300',
+  },
+  {
+    title: 'IDEs & Tools',
+    items: ['IntelliJ IDEA', 'VSCode', 'Eclipse'],
+    color: 'border-teal-500/50 text-teal-300',
   },
 ];
 
@@ -32,7 +67,7 @@ export default function Skills() {
           Where code meets curiosity: my tools for building scalable systems.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {skillGroups.map((group) => (
             <div
               key={group.title}
