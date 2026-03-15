@@ -99,7 +99,7 @@ Nov 2025 – Present
 **Java Full Stack Developer – Corebridge Financial**  
 Feb 2025 – Oct 2025  
 
-**Java Full Stack Developer – ConocoPhillips (CPT Internship)**  
+**Java Full Stack Developer – ConocoPhillips**  
 Feb 2024 – Dec 2024  
 
 **System Engineer – Infosys**  
