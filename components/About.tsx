@@ -24,7 +24,7 @@ export default function About() {
                   width={224}
                   height={224}
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center 22%' }}
+                  style={{ objectPosition: 'center 35%' }}
                   onError={() => setProfileImageError(true)}
                   unoptimized={useExternal}
                 />
