@@ -44,10 +44,13 @@ export default function ResumePage() {
       <div className="resume-root">
         <div className="resume-actions no-print">
           <a href="/#resume" className="resume-back">← Back to Portfolio</a>
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
             <button type="button" onClick={handleDownloadPDF} disabled={downloading} className="resume-print">
               {downloading ? 'Generating…' : 'Download PDF'}
             </button>
+            <a href="/resume.docx" download="Siva_Ganesh_Golla_Resume.docx" className="resume-print resume-print-secondary" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
+              Download Word
+            </a>
             <button type="button" onClick={() => window.print()} className="resume-print resume-print-secondary">
               Print
             </button>
