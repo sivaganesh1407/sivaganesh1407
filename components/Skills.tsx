@@ -6,17 +6,17 @@ const skillGroups = [
   },
   {
     title: 'Frontend',
-    items: ['React', 'Angular', 'Vue.js', 'HTML5', 'CSS3', 'Bootstrap'],
+    items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'],
     color: 'border-cyan-500/50 text-cyan-300',
   },
   {
     title: 'Backend & APIs',
-    items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets', 'JNDI', 'JMS'],
+    items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets'],
     color: 'border-blue-500/50 text-blue-300',
   },
   {
     title: 'CI/CD & DevOps',
-    items: ['Jenkins', 'GitLab', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'],
+    items: ['Jenkins', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'],
     color: 'border-amber-500/50 text-amber-300',
   },
   {
@@ -31,22 +31,22 @@ const skillGroups = [
   },
   {
     title: 'Cloud & Monitoring',
-    items: ['AWS (EC2, S3, RDS)', 'Azure', 'Google Cloud', 'AWS Lambda', 'ELK Stack', 'Prometheus', 'Grafana'],
+    items: ['AWS (EC2, S3, RDS)', 'AWS Lambda', 'ELK Stack', 'Prometheus', 'Grafana'],
     color: 'border-orange-500/50 text-orange-300',
   },
   {
     title: 'API & Data',
-    items: ['API Gateway (AWS)', 'Apigee', 'Swagger', 'JSON', 'XML', 'YAML'],
+    items: ['API Gateway (AWS)', 'Swagger', 'JSON', 'XML', 'YAML'],
     color: 'border-emerald-500/50 text-emerald-300',
   },
   {
     title: 'Project & Config',
-    items: ['JIRA', 'Asana', 'Trello', 'Chef', 'Ansible', 'Confluence'],
+    items: ['JIRA', 'Ansible', 'Confluence'],
     color: 'border-sky-500/50 text-sky-300',
   },
   {
-    title: 'Architecture & Java',
-    items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic', 'EJB', 'J2EE', 'JSP', 'JSTL', 'JAXB'],
+    title: 'Architecture',
+    items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic'],
     color: 'border-violet-500/50 text-violet-300',
   },
   {

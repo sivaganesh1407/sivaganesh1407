@@ -99,17 +99,16 @@ export default function ResumePage() {
             <h2 className="resume-h2">Technical Skills</h2>
             <p className="resume-skills">
               <strong>Languages & Frameworks:</strong> Java, Spring Boot, Spring MVC, Hibernate, JavaScript, TypeScript &nbsp;|&nbsp;
-              <strong>Frontend:</strong> React, Angular, Vue.js, HTML5, CSS3, Bootstrap &nbsp;|&nbsp;
+              <strong>Frontend:</strong> React, Angular, HTML5, CSS3, Bootstrap &nbsp;|&nbsp;
               <strong>Backend:</strong> Node.js, RESTful APIs, Microservices, JAX-RS, JDBC, Servlets &nbsp;|&nbsp;
-              <strong>CI/CD & DevOps:</strong> Jenkins, GitLab, Docker, Kubernetes, Maven, Git, Bitbucket &nbsp;|&nbsp;
+              <strong>CI/CD & DevOps:</strong> Jenkins, Docker, Kubernetes, Maven, Git, Bitbucket &nbsp;|&nbsp;
               <strong>Databases:</strong> SQL, PL/SQL, Oracle, MongoDB, MySQL, PostgreSQL &nbsp;|&nbsp;
               <strong>Testing:</strong> JUnit, Mockito, Selenium, Postman, Karma, Cypress, Jasmine &nbsp;|&nbsp;
-              <strong>Cloud:</strong> AWS (EC2, S3, RDS), Azure, Google Cloud, AWS Lambda &nbsp;|&nbsp;
+              <strong>Cloud:</strong> AWS (EC2, S3, RDS), AWS Lambda &nbsp;|&nbsp;
               <strong>Monitoring:</strong> ELK Stack, Prometheus, Grafana &nbsp;|&nbsp;
-              <strong>API & Data:</strong> API Gateway, Apigee, Swagger, JSON, XML, YAML &nbsp;|&nbsp;
-              <strong>Project & Config:</strong> JIRA, Asana, Trello, Chef, Ansible, Confluence &nbsp;|&nbsp;
+              <strong>API & Data:</strong> API Gateway, Swagger, JSON, XML, YAML &nbsp;|&nbsp;
+              <strong>Project & Config:</strong> JIRA, Ansible, Confluence &nbsp;|&nbsp;
               <strong>Architecture:</strong> Microservices, MVC, RESTful, SOAP, Monolithic &nbsp;|&nbsp;
-              <strong>Java:</strong> EJB, J2EE, JSP, JSTL, JNDI, JMS, JAXB &nbsp;|&nbsp;
               <strong>IDEs:</strong> IntelliJ IDEA, VSCode, Eclipse
             </p>
           </section>
