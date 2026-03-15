@@ -15,13 +15,29 @@ const bullet = () => { doc.text('• ', { continued: true }); };
 
 doc.fontSize(22).font('Helvetica-Bold').text('Siva Ganesh Golla', { align: 'center' });
 doc.fontSize(12).font('Helvetica').text('Java Full Stack Developer', { align: 'center' });
-doc.fontSize(9);
-doc.text('Tampa, FL, USA  •  ', { align: 'center', continued: true });
-doc.text('gsg1499@gmail.com', { link: 'mailto:gsg1499@gmail.com', continued: true });
-doc.text('  •  ', { continued: true });
-doc.text('linkedin.com/in/ganeshg7', { link: 'https://www.linkedin.com/in/ganeshg7/', continued: true });
-doc.text('  •  ', { continued: true });
-doc.text('github.com/sivaganesh1407', { link: 'https://github.com/sivaganesh1407' });
+// Contact line with clickable links (positioned explicitly to avoid overlap)
+doc.fontSize(9).font('Helvetica');
+const contactSegs = [
+  { text: 'Tampa, FL, USA  •  ', link: null },
+  { text: 'gsg1499@gmail.com', link: 'mailto:gsg1499@gmail.com' },
+  { text: '  •  ', link: null },
+  { text: 'linkedin.com/in/ganeshg7', link: 'https://www.linkedin.com/in/ganeshg7/' },
+  { text: '  •  ', link: null },
+  { text: 'github.com/sivaganesh1407', link: 'https://github.com/sivaganesh1407' },
+];
+const totalWidth = contactSegs.reduce((s, seg) => s + doc.widthOfString(seg.text), 0);
+const pageWidth = 595.28 - 80;
+const startX = 40 + (pageWidth - totalWidth) / 2;
+const contactY = doc.y;
+const lineH = 14;
+let curX = startX;
+for (const seg of contactSegs) {
+  const w = doc.widthOfString(seg.text);
+  doc.text(seg.text, curX, contactY, { width: w, lineBreak: false });
+  if (seg.link) doc.link(curX, contactY, w, lineH, seg.link);
+  curX += w;
+}
+doc.y = contactY + lineH;
 doc.moveDown(0.8);
 
 h2();
