@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const profileImageSrc = process.env.NEXT_PUBLIC_PROFILE_IMAGE_URL || '/profile.jpg';
+const profileImageSrc = process.env.NEXT_PUBLIC_PROFILE_IMAGE_URL || '/profile.png';
 
 export default function About() {
   const [profileImageError, setProfileImageError] = useState(false);
