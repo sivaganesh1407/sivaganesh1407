@@ -1,59 +1,10 @@
 'use client';
 
 import Head from 'next/head';
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 
 export default function ResumePage() {
   const resumeRef = useRef<HTMLDivElement>(null);
-  const [downloading, setDownloading] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('download') === '1') {
-      const timer = setTimeout(() => {
-        const el = resumeRef.current;
-        if (el) {
-          import('html2pdf.js').then(({ default: html2pdf }) => {
-            html2pdf().set({
-              margin: [18, 18, 18, 18],
-              filename: 'Siva_Ganesh_Golla_Resume.pdf',
-              image: { type: 'jpeg', quality: 0.98 },
-              html2canvas: { scale: 1.5, useCORS: true, backgroundColor: '#ffffff', logging: false, width: el.scrollWidth, height: el.scrollHeight },
-              jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            }).from(el).save();
-          });
-        }
-      }, 800);
-      return () => clearTimeout(timer);
-    }
-  }, []);
-
-  const handleDownloadPDF = async () => {
-    const el = resumeRef.current;
-    if (!el) return;
-    setDownloading(true);
-    try {
-      const html2pdf = (await import('html2pdf.js')).default;
-      await html2pdf().set({
-        margin: [18, 18, 18, 18],
-        filename: 'Siva_Ganesh_Golla_Resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: {
-          scale: 1.5,
-          useCORS: true,
-          backgroundColor: '#ffffff',
-          logging: false,
-          width: el.scrollWidth,
-          height: el.scrollHeight,
-        },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-      }).from(el).save();
-    } catch (err) {
-      console.error(err);
-      window.print();
-    } finally {
-      setDownloading(false);
-    }
-  };
 
   return (
     <>
@@ -65,9 +16,23 @@ export default function ResumePage() {
         <div className="resume-actions no-print">
           <a href="/#resume" className="resume-back">← Back to Portfolio</a>
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <button type="button" onClick={handleDownloadPDF} disabled={downloading} className="resume-print">
-              {downloading ? 'Generating…' : 'Download PDF'}
-            </button>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-print"
+              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+            >
+              View PDF
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Siva_Ganesh_Golla_Resume.pdf"
+              className="resume-print resume-print-secondary"
+              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+            >
+              Download PDF
+            </a>
             <a
               href={`https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin + '/resume.docx' : 'https://sivaganesh1407.vercel.app/resume.docx')}`}
               target="_blank"
