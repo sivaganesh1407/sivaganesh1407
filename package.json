@@ -6,7 +6,6 @@
     "dev": "next dev",
     "generate:docx": "node scripts/generate-resume-docx.js",
     "generate:pdf": "node scripts/generate-resume-pdf.js",
-    "prebuild": "npm run generate:docx && npm run generate:pdf",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
