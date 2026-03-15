@@ -16,7 +16,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',
     thumbnail: 'retirement',
     stack: 'Spring Boot · JWT · React',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1748439435495-722cc1728b7e?w=400&h=200&fit=crop',
   },
   {
     name: 'Investment Portfolio Manager',
@@ -32,7 +32,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/smart-restaurant-platform',
     thumbnail: 'restaurant',
     stack: 'Spring Boot · React · MySQL',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1728044849280-10a1a75cff83?w=400&h=200&fit=crop',
   },
   {
     name: 'User Management Service',
@@ -40,7 +40,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/user-management-service',
     thumbnail: 'auth',
     stack: 'Spring Boot · JPA · H2',
-    image: 'https://images.unsplash.com/photo-1633265486064-086b6854588b?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1768839722988-91767bb82b10?w=400&h=200&fit=crop',
   },
   {
     name: 'Restaurant Order Service',
@@ -48,7 +48,7 @@ const projects: Project[] = [
     href: 'https://github.com/sivaganesh1407/restaurant-order-service',
     thumbnail: 'microservice',
     stack: 'Spring Boot · Microservices',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=200&fit=crop',
+    image: 'https://images.unsplash.com/photo-1763568258388-25a20ddd8a95?w=400&h=200&fit=crop',
   },
 ];
 
