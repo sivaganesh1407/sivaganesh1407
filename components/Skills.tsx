@@ -11,7 +11,7 @@ const skillGroups = [
   },
   {
     title: 'DevOps / Cloud',
-    items: ['Docker', 'Kubernetes', 'AWS', 'Git', 'Jenkins', 'CI/CD'],
+    items: ['Docker', 'Kubernetes', 'AWS', 'Terraform', 'Git', 'Jenkins', 'CI/CD'],
     color: 'border-amber-500/50 text-amber-300',
   },
   {

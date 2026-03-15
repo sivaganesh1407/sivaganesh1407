@@ -1,6 +1,6 @@
 const links = [
   { label: 'Email', href: 'mailto:gsg1499@gmail.com', value: 'gsg1499@gmail.com' },
-  { label: 'Phone', href: '#', value: '(Add your phone in Contact.tsx)' },
+  { label: 'Phone', href: '#', value: 'Available on request' },
   { label: 'Location', href: '#', value: 'Tampa, FL, USA' },
   { label: 'GitHub', href: 'https://github.com/sivaganesh1407', value: 'github.com/sivaganesh1407' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },

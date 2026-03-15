@@ -103,7 +103,7 @@ export default function ResumePage() {
               <strong>Backend:</strong> Java, Java 17, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Microservices, RESTful APIs, Event-Driven Architecture &nbsp;|&nbsp;
               <strong>Messaging & Data:</strong> Redis, RabbitMQ, Kafka, ETL Pipelines, Data Integration, Data Validation, SQL Optimization &nbsp;|&nbsp;
               <strong>Frontend:</strong> React, Angular 17, JavaScript, HTML5, CSS3 &nbsp;|&nbsp;
-              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR), Docker, Kubernetes, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
+              <strong>Cloud & DevOps:</strong> AWS (ECS, EC2, ECR), Docker, Kubernetes, Terraform, CI/CD, Bitbucket Pipelines, Jenkins &nbsp;|&nbsp;
               <strong>Databases:</strong> Oracle, SQL, MySQL, PostgreSQL, MongoDB &nbsp;|&nbsp;
               <strong>Other:</strong> Agile, Git, Data Workflows, GitHub Copilot
             </p>
