@@ -7,7 +7,7 @@ const navLinks = [
   { href: '#projects', label: 'Projects' },
   { href: '#education', label: 'Education' },
   { href: '#certifications', label: 'Certifications' },
-  { href: '#resume', label: 'Resume' },
+  { href: '/resume', label: 'Resume', isPage: true },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.href.replace('#', '');
+              const isActive = !link.isPage && activeSection === link.href.replace('#', '');
               return (
                 <a
                   key={link.href}

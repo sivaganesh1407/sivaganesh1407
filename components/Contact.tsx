@@ -170,7 +170,7 @@ export default function Contact() {
             <p className="text-zinc-500 text-xs mt-2">
               {FORMSPREE_ID
                 ? 'Submissions are sent directly to your email inbox.'
-                : 'Opens your email client with the message pre-filled. For direct delivery to your inbox, add Formspree (see README).'}
+                : 'Opens your email client with the message pre-filled.'}
             </p>
           </div>
         </div>

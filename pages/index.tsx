@@ -14,8 +14,15 @@ export default function Home() {
     <>
       <Head>
         <title>Siva Ganesh Golla | Java Full Stack Developer</title>
-        <meta name="description" content="Java Full Stack Developer building scalable backend systems and modern web applications. Spring Boot, React, Microservices, AWS." />
+        <meta name="description" content="Java Full Stack Developer with 5+ years building scalable backend systems and modern web applications. Spring Boot, React, Microservices, AWS Certified." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Siva Ganesh Golla | Java Full Stack Developer" />
+        <meta property="og:description" content="5+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
+        <meta property="og:url" content="https://sivaganesh1407.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Siva Ganesh Golla | Java Full Stack Developer" />
+        <meta name="twitter:description" content="5+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
