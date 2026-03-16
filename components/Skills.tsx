@@ -1,23 +1,5 @@
 import resumeData from '../data/resume-data';
 
-const skillButtonColors = [
-  'border-emerald-400/70 text-emerald-300 hover:border-emerald-400',
-  'border-cyan-400/70 text-cyan-300 hover:border-cyan-400',
-  'border-blue-400/70 text-blue-300 hover:border-blue-400',
-  'border-amber-400/70 text-amber-300 hover:border-amber-400',
-  'border-purple-400/70 text-purple-300 hover:border-purple-400',
-  'border-rose-400/70 text-rose-300 hover:border-rose-400',
-  'border-sky-400/70 text-sky-300 hover:border-sky-400',
-  'border-orange-400/70 text-orange-300 hover:border-orange-400',
-  'border-indigo-400/70 text-indigo-300 hover:border-indigo-400',
-  'border-lime-400/70 text-lime-300 hover:border-lime-400',
-  'border-violet-400/70 text-violet-300 hover:border-violet-400',
-  'border-teal-400/70 text-teal-300 hover:border-teal-400',
-  'border-pink-400/70 text-pink-300 hover:border-pink-400',
-  'border-fuchsia-400/70 text-fuchsia-300 hover:border-fuchsia-400',
-  'border-red-400/70 text-red-300 hover:border-red-400',
-];
-
 export default function Skills() {
   const { skillGroups } = resumeData;
 
@@ -35,14 +17,14 @@ export default function Skills() {
           {skillGroups.map((group) => (
             <div
               key={group.title}
-              className={`bg-dark-card border border-dark-border rounded-xl p-6 border-l-4 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${group.cardColor || ''}`}
+              className="bg-dark-card border border-dark-border rounded-xl p-6 border-l-4 border-l-accent-primary/60 transition-colors hover:border-dark-muted/50"
             >
               <h3 className="text-lg font-semibold text-white mb-4">{group.title}</h3>
               <div className="flex flex-wrap gap-2">
-                {group.items.map((skill, idx) => (
+                {group.items.map((skill) => (
                   <span
                     key={skill}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium bg-black/40 border-2 transition-all duration-200 hover:scale-105 hover:shadow-md ${skillButtonColors[idx % skillButtonColors.length]}`}
+                    className="px-3 py-1.5 rounded-md text-sm font-medium text-zinc-300 bg-zinc-800/60 border border-zinc-600/50 hover:border-accent-primary/40 hover:text-white transition-colors"
                   >
                     {skill}
                   </span>
