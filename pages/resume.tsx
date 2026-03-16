@@ -14,6 +14,7 @@ export default function ResumePage() {
       <Head>
         <title>Siva Ganesh Golla | Resume | Java Full Stack Developer</title>
         <meta name="description" content="Resume - Siva Ganesh Golla, Java Full Stack Developer, 5+ years, Spring Boot, React, AWS" />
+        <link rel="canonical" href="https://sivaganesh1407.vercel.app/resume" />
       </Head>
       <div className="resume-root">
         <div className="resume-actions no-print">

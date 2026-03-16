@@ -16,6 +16,9 @@ export default function Home() {
         <title>Siva Ganesh Golla | Java Full Stack Developer</title>
         <meta name="description" content="Java Full Stack Developer with 5+ years building scalable backend systems and modern web applications. Spring Boot, React, Microservices, AWS Certified." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="author" content="Siva Ganesh Golla" />
+        <link rel="canonical" href="https://sivaganesh1407.vercel.app" />
         <meta property="og:title" content="Siva Ganesh Golla | Java Full Stack Developer" />
         <meta property="og:description" content="5+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
         <meta property="og:url" content="https://sivaganesh1407.vercel.app" />

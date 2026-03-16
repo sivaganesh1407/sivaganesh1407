@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sivaganesh1407.vercel.app/sitemap.xml
