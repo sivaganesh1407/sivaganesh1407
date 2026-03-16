@@ -86,7 +86,7 @@ export default function Hero() {
           </div>
 
           {/* Tech keywords strip below */}
-          <div className="flex gap-2 mt-6 flex-wrap justify-center max-w-[320px] mx-auto">
+          <div className="flex gap-2 mt-2 flex-wrap justify-center max-w-[320px] mx-auto">
             {techKeywords.map(({ label, color }) => (
               <span
                 key={label}
