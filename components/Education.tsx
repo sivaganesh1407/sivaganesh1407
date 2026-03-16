@@ -1,6 +1,6 @@
 const education = [
   {
-    degree: "Master's Degree",
+    degree: "Master's Degree, Information Technology Management",
     school: 'Indiana Wesleyan University',
     period: null,
     gpa: 'Grade: 3.45/5',

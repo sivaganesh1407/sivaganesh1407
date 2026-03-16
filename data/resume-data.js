@@ -108,7 +108,7 @@ const resumeData = {
 
   education: [
     {
-      degree: "Master's Degree",
+      degree: "Master's Degree, Information Technology Management",
       school: 'Indiana Wesleyan University',
       details: 'Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Participated in technology-focused academic collaboration and peer learning activities related to information systems and emerging technologies.',
     },
