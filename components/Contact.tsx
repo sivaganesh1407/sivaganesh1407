@@ -10,18 +10,44 @@ const links = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },
 ];
 
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-    const body = encodeURIComponent(
-      `${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
-    );
-    window.location.href = `mailto:gsg1499@gmail.com?subject=${subject}&body=${body}`;
+    setStatus('sending');
+
+    if (FORMSPREE_ID) {
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message }),
+        });
+        if (res.ok) {
+          setStatus('success');
+          setName('');
+          setEmail('');
+          setMessage('');
+        } else {
+          setStatus('error');
+        }
+      } catch {
+        setStatus('error');
+      }
+    } else {
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const body = encodeURIComponent(
+        `${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
+      );
+      window.location.href = `mailto:gsg1499@gmail.com?subject=${subject}&body=${body}`;
+      setStatus('idle');
+    }
   };
 
   return (
@@ -88,6 +114,7 @@ export default function Contact() {
                 </label>
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   required
                   value={name}
@@ -102,6 +129,7 @@ export default function Contact() {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   required
                   value={email}
@@ -116,6 +144,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={4}
                   value={message}
@@ -124,15 +153,24 @@ export default function Contact() {
                   placeholder="Your message..."
                 />
               </div>
+              {status === 'success' && (
+                <p className="text-accent-primary text-sm">Message sent! You’ll receive it in your email.</p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-400 text-sm">Something went wrong. Try the email link above instead.</p>
+              )}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-hover transition-colors"
+                disabled={status === 'sending'}
+                className="w-full px-6 py-3 bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-hover transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
             </form>
             <p className="text-zinc-500 text-xs mt-3">
-              Opens your email client with the message pre-filled.
+              {FORMSPREE_ID
+                ? 'Submissions are sent directly to your email inbox.'
+                : 'Opens your email client with the message pre-filled. For direct delivery to your inbox, add Formspree (see README).'}
             </p>
           </div>
         </div>

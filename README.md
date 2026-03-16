@@ -15,6 +15,16 @@ Open [http://localhost:3000](http://localhost:3000).
 
 **Optional:** Add `public/profile.jpg` for your photo in About; set `NEXT_PUBLIC_PROFILE_IMAGE_URL` in Vercel env for an image URL. Add your phone in `components/Contact.tsx` if desired.
 
+### Contact form – receive submissions in your email
+
+To get form submissions directly in your inbox (gsg1499@gmail.com):
+
+1. Go to [formspree.io](https://formspree.io) and sign up (free).
+2. Create a new form and set your email as the recipient.
+3. Copy your form ID from the form URL (e.g. `https://formspree.io/f/xyzabc` → `xyzabc`).
+4. Add to Vercel: Project → Settings → Environment Variables → `NEXT_PUBLIC_FORMSPREE_ID` = your form ID.
+5. Redeploy. Submissions will now be sent to your email.
+
 ### Deploy to Vercel (one-time)
 
 1. Go to [vercel.com/new](https://vercel.com/new) and sign in with **GitHub**.
