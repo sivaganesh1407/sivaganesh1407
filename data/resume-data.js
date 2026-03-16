@@ -15,21 +15,16 @@ const resumeData = {
 
   summary: 'Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.',
 
-  technicalSkills: 'Languages & Frameworks: Java, Spring Boot, Spring MVC, Hibernate, JavaScript, TypeScript | Frontend: React, Angular, HTML5, CSS3, Bootstrap | Backend: Node.js, RESTful APIs, Microservices, JAX-RS, JDBC, Servlets | CI/CD & DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Bitbucket | Databases: SQL, PL/SQL, Oracle, MongoDB, MySQL, PostgreSQL | Testing: JUnit, Mockito, Selenium, Postman, Karma, Cypress, Jasmine | Cloud: AWS (EC2, S3, RDS), AWS Lambda | Monitoring: ELK Stack, Prometheus, Grafana | API & Data: API Gateway, Swagger, JSON, XML, YAML | Project & Config: JIRA, Ansible, Confluence | Architecture: Microservices, MVC, RESTful, SOAP, Monolithic | IDEs: IntelliJ IDEA, VSCode, Eclipse',
+  technicalSkills: 'Languages: Java, JavaScript, TypeScript, SQL | Frontend: React, Next.js, Angular, HTML5, CSS3, Tailwind CSS | Backend: Spring Boot, Node.js, REST APIs, Microservices | Databases: PostgreSQL, MySQL, MongoDB, Redis | DevOps: Git, Docker, Maven, Jenkins | Testing: JUnit, Postman | Cloud: AWS',
 
   skillGroups: [
-    { title: 'Languages & Frameworks', items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JavaScript', 'TypeScript'], color: 'border-emerald-400/60 text-emerald-300 hover:border-emerald-400', cardColor: 'border-l-emerald-500' },
-    { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'], color: 'border-cyan-400/60 text-cyan-300 hover:border-cyan-400', cardColor: 'border-l-cyan-500' },
-    { title: 'Backend', items: ['Node.js', 'RESTful APIs', 'Microservices', 'JAX-RS', 'JDBC', 'Servlets'], color: 'border-blue-400/60 text-blue-300 hover:border-blue-400', cardColor: 'border-l-blue-500' },
-    { title: 'CI/CD & DevOps', items: ['Jenkins', 'Docker', 'Kubernetes', 'Maven', 'Git', 'Bitbucket'], color: 'border-amber-400/60 text-amber-300 hover:border-amber-400', cardColor: 'border-l-amber-500' },
-    { title: 'Databases', items: ['SQL', 'PL/SQL', 'Oracle', 'MongoDB', 'MySQL', 'PostgreSQL'], color: 'border-purple-400/60 text-purple-300 hover:border-purple-400', cardColor: 'border-l-purple-500' },
-    { title: 'Testing', items: ['JUnit', 'Mockito', 'Selenium', 'Postman', 'Karma', 'Cypress', 'Jasmine'], color: 'border-rose-400/60 text-rose-300 hover:border-rose-400', cardColor: 'border-l-rose-500' },
-    { title: 'Cloud', items: ['AWS (EC2, S3, RDS)', 'AWS Lambda'], color: 'border-sky-400/60 text-sky-300 hover:border-sky-400', cardColor: 'border-l-sky-500' },
-    { title: 'Monitoring', items: ['ELK Stack', 'Prometheus', 'Grafana'], color: 'border-orange-400/60 text-orange-300 hover:border-orange-400', cardColor: 'border-l-orange-500' },
-    { title: 'API & Data', items: ['API Gateway', 'Swagger', 'JSON', 'XML', 'YAML'], color: 'border-indigo-400/60 text-indigo-300 hover:border-indigo-400', cardColor: 'border-l-indigo-500' },
-    { title: 'Project & Config', items: ['JIRA', 'Ansible', 'Confluence'], color: 'border-lime-400/60 text-lime-300 hover:border-lime-400', cardColor: 'border-l-lime-500' },
-    { title: 'Architecture', items: ['Microservices', 'MVC', 'RESTful', 'SOAP', 'Monolithic'], color: 'border-violet-400/60 text-violet-300 hover:border-violet-400', cardColor: 'border-l-violet-500' },
-    { title: 'IDEs', items: ['IntelliJ IDEA', 'VSCode', 'Eclipse'], color: 'border-teal-400/60 text-teal-300 hover:border-teal-400', cardColor: 'border-l-teal-500' },
+    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript', 'SQL'], color: 'border-emerald-400/60 text-emerald-300 hover:border-emerald-400', cardColor: 'border-l-emerald-500' },
+    { title: 'Frontend', items: ['React', 'Next.js', 'Angular', 'HTML5', 'CSS3', 'Tailwind CSS'], color: 'border-cyan-400/60 text-cyan-300 hover:border-cyan-400', cardColor: 'border-l-cyan-500' },
+    { title: 'Backend', items: ['Spring Boot', 'Node.js', 'REST APIs', 'Microservices'], color: 'border-blue-400/60 text-blue-300 hover:border-blue-400', cardColor: 'border-l-blue-500' },
+    { title: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'], color: 'border-purple-400/60 text-purple-300 hover:border-purple-400', cardColor: 'border-l-purple-500' },
+    { title: 'DevOps & Build', items: ['Git', 'Docker', 'Maven', 'Jenkins'], color: 'border-amber-400/60 text-amber-300 hover:border-amber-400', cardColor: 'border-l-amber-500' },
+    { title: 'Testing', items: ['JUnit', 'Postman'], color: 'border-rose-400/60 text-rose-300 hover:border-rose-400', cardColor: 'border-l-rose-500' },
+    { title: 'Cloud', items: ['AWS'], color: 'border-sky-400/60 text-sky-300 hover:border-sky-400', cardColor: 'border-l-sky-500' },
   ],
 
   experience: [
