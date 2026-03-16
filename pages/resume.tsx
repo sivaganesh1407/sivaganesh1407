@@ -21,19 +21,20 @@ export default function ResumePage() {
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a
               href="/resume.pdf"
-              download="Siva_Ganesh_Golla_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="resume-print"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
             >
-              PDF
+              View PDF
             </a>
             <a
-              href="/resume.docx"
-              download="Siva_Ganesh_Golla_Resume.docx"
+              href="/resume.pdf"
+              download="Siva_Ganesh_Golla_Resume.pdf"
               className="resume-print resume-print-secondary"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
             >
-              Word
+              Download PDF
             </a>
             <button type="button" onClick={() => window.print()} className="resume-print resume-print-secondary">
               Print
