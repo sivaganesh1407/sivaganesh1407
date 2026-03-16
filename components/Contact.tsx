@@ -105,11 +105,11 @@ export default function Contact() {
             </a>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Send a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="max-w-md">
+            <h3 className="text-lg font-semibold text-white mb-3">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-3">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-1">
                   Name
                 </label>
                 <input
@@ -119,12 +119,12 @@ export default function Contact() {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors"
+                  className="w-full px-3 py-2 text-sm rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors"
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-1">
                   Email
                 </label>
                 <input
@@ -134,22 +134,22 @@ export default function Contact() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors"
+                  className="w-full px-3 py-2 text-sm rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-zinc-400 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-zinc-400 mb-1">
                   Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  rows={4}
+                  rows={2}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors resize-none"
+                  className="w-full px-3 py-2 text-sm rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors resize-none"
                   placeholder="Your message..."
                 />
               </div>
@@ -162,12 +162,12 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="w-full px-6 py-3 bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-hover transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full px-4 py-2 text-sm bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-hover transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
             </form>
-            <p className="text-zinc-500 text-xs mt-3">
+            <p className="text-zinc-500 text-xs mt-2">
               {FORMSPREE_ID
                 ? 'Submissions are sent directly to your email inbox.'
                 : 'Opens your email client with the message pre-filled. For direct delivery to your inbox, add Formspree (see README).'}
