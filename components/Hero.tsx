@@ -65,8 +65,8 @@ export default function Hero() {
                 <span className="text-purple-300 text-xs font-mono">DB</span>
               </div>
             </div>
-            <div className="w-56 h-20 rounded-lg bg-dark-card border-2 border-accent-primary/50 flex items-center justify-center shadow-xl">
-              <pre className="text-sm text-accent-primary font-mono">
+            <div className="w-72 h-28 rounded-xl bg-dark-card border-2 border-accent-primary flex items-center justify-center shadow-xl shadow-accent-primary/20 ring-2 ring-accent-primary/20">
+              <pre className="text-lg sm:text-xl font-semibold text-accent-primary font-mono tracking-wide">
                 <code>{'<FullStack />'}</code>
               </pre>
             </div>
