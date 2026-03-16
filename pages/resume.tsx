@@ -21,32 +21,19 @@ export default function ResumePage() {
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a
               href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Siva_Ganesh_Golla_Resume.pdf"
               className="resume-print"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
             >
-              View PDF
+              PDF
             </a>
             <a
-              href="/resume.pdf"
-              download="Siva_Ganesh_Golla_Resume.pdf"
+              href="/resume.docx"
+              download="Siva_Ganesh_Golla_Resume.docx"
               className="resume-print resume-print-secondary"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
             >
-              Download PDF
-            </a>
-            <a
-              href={`https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(typeof window !== 'undefined' ? window.location.origin + '/resume.docx' : 'https://sivaganesh1407.vercel.app/resume.docx')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume-print resume-print-secondary"
-              style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
-            >
-              View Word
-            </a>
-            <a href="/resume.docx" download="Siva_Ganesh_Golla_Resume.docx" className="resume-print resume-print-secondary" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
-              Download Word
+              Word
             </a>
             <button type="button" onClick={() => window.print()} className="resume-print resume-print-secondary">
               Print
