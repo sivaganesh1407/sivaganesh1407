@@ -2,6 +2,10 @@ export default function Hero() {
   const techKeywords = [
     { label: 'Java', color: 'text-amber-400' },
     { label: 'Spring Boot', color: 'text-green-400' },
+    { label: 'Spring Security', color: 'text-green-500' },
+    { label: 'Hibernate', color: 'text-emerald-400' },
+    { label: 'JPA', color: 'text-emerald-500' },
+    { label: 'Lombok', color: 'text-amber-500' },
     { label: 'React', color: 'text-cyan-400' },
     { label: 'AWS', color: 'text-amber-500' },
     { label: 'Docker', color: 'text-blue-400' },
