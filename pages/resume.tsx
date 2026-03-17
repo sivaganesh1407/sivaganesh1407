@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-const PDF_URL = '/resume.pdf?v=4';
+const PDF_URL = '/resume.pdf?v=5';
 
 export default function ResumePage() {
   return (
