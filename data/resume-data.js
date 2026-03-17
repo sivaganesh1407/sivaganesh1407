@@ -132,7 +132,7 @@ const resumeData = {
       href: 'https://github.com/sivaganesh1407/event-driven-service',
       thumbnail: 'event',
       stack: 'NestJS · MongoDB · Docker',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop',
+      image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400&h=200&fit=crop',
     },
     {
       name: 'Retirement Investment Management Platform',
