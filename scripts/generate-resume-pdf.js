@@ -35,7 +35,11 @@ doc.moveDown(0.8);
 
 sectionHeading('Technical Skills');
 body();
-doc.text(data.technicalSkills, { align: 'justify' });
+const skillsParts = data.technicalSkills.split(' | ');
+const skillsLine1 = skillsParts.slice(0, 5).join(' | ');
+const skillsLine2 = skillsParts.slice(5).join(' | ');
+doc.text(skillsLine1, { align: 'left' });
+doc.text(skillsLine2 || '', { align: 'left' });
 doc.moveDown(0.8);
 
 sectionHeading('Professional Experience');
@@ -46,7 +50,7 @@ data.experience.forEach((job) => {
   doc.font('Times-Roman').text(', ' + job.company);
   doc.font('Times-Italic').text(job.dates, { align: 'right' });
   doc.font('Times-Roman');
-  job.bullets.forEach((item) => { bullet(); doc.text(item); });
+  job.bullets.forEach((item) => { bullet(); doc.text(item, { align: 'justify' }); });
   doc.moveDown(0.5);
 });
 doc.moveDown(0.3);

@@ -161,17 +161,17 @@ export default function ResumePage() {
         .resume-contact { font-size: 10pt; margin: 0; color: #444; line-height: 1.6; white-space: normal; word-break: break-word; }
         .resume-contact a { color: #16a34a; text-decoration: none; }
         .resume-contact a:hover { text-decoration: underline; }
-        .resume-section { margin-bottom: 18px; }
+        .resume-section { margin-bottom: 16px; }
         .resume-h2 { font-size: 12pt; font-weight: 700; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #333; letter-spacing: 0.5px; }
-        .resume-summary { margin: 0; text-align: justify; }
+        .resume-summary { margin: 0; text-align: justify; white-space: normal; }
         .resume-skills { margin: 0; font-size: 10pt; }
         .resume-job { margin-bottom: 14px; page-break-inside: avoid; }
         .resume-job-head { margin-bottom: 4px; overflow: visible; clear: both; }
         .resume-job-head::after { content: ''; display: table; clear: both; }
         .resume-date { float: right; font-weight: normal; color: #555; margin-left: 12px; }
-        .resume-job ul { margin: 0 0 0 18px; padding: 0; }
+        .resume-job ul { margin: 0 0 0 18px; padding: 0; list-style-type: disc; }
         .resume-job li { margin-bottom: 3px; }
-        .resume-list-simple { margin: 0; padding-left: 18px; }
+        .resume-list-simple { margin: 0; padding-left: 18px; list-style-type: disc; }
         .resume-list-simple li { margin-bottom: 4px; }
         .resume-edu { margin: 4px 0 0 0; font-size: 10pt; color: #555; }
         @media print {

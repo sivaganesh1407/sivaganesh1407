@@ -27,11 +27,14 @@ const sectionHeading = (text) =>
     spacing: { before: 120, after: 80 },
   });
 
-function buildSkillsParagraph() {
-  return new Paragraph({
-    children: [trN(data.technicalSkills)],
-    spacing: { after: 120 },
-  });
+function buildSkillsParagraphs() {
+  const parts = data.technicalSkills.split(' | ');
+  const line1 = parts.slice(0, 5).join(' | ');
+  const line2 = parts.slice(5).join(' | ');
+  return [
+    new Paragraph({ children: [trN(line1)], spacing: { after: 40 } }),
+    new Paragraph({ children: [trN(line2)], spacing: { after: 120 } }),
+  ];
 }
 
 function buildExperienceParagraphs() {
@@ -52,8 +55,7 @@ function buildExperienceParagraphs() {
       paras.push(
         new Paragraph({
           children: [trN('• ' + bullet)],
-          bullet: { level: 0 },
-          spacing: i === job.bullets.length - 1 ? { after: 80 } : {},
+          spacing: { after: i === job.bullets.length - 1 ? 80 : 40 },
         })
       );
     });
@@ -105,7 +107,7 @@ const doc = new Document({
         }),
 
         sectionHeading('Technical Skills'),
-        buildSkillsParagraph(),
+        ...buildSkillsParagraphs(),
 
         sectionHeading('Professional Experience'),
         ...buildExperienceParagraphs(),
@@ -113,8 +115,7 @@ const doc = new Document({
         sectionHeading('Certifications'),
         ...data.certifications.map((c, i) =>
           new Paragraph({
-            children: [trB(c.name), trN(' (' + c.dates + ')')],
-            bullet: { level: 0 },
+            children: [trN('• '), trB(c.name), trN(' (' + c.dates + ')')],
             spacing: { after: i < data.certifications.length - 1 ? 60 : 120 },
           })
         ),
@@ -140,8 +141,7 @@ const doc = new Document({
         sectionHeading('Key Projects'),
         ...data.projects.map((p) =>
           new Paragraph({
-            children: [trB(p.name), trN(' — ' + p.desc)],
-            bullet: { level: 0 },
+            children: [trN('• '), trB(p.name), trN(' — ' + p.desc)],
             spacing: { after: 60 },
           })
         ),

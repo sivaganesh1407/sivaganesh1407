@@ -13,7 +13,7 @@ const resumeData = {
     github: 'https://github.com/sivaganesh1407',
   },
 
-  summary: 'Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.',
+  summary: 'Java Full Stack Developer with 5+ years building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, Terraform Associate.',
 
   technicalSkills: 'Languages: Java, JavaScript, TypeScript | Frameworks: Spring Boot, Hibernate, Spring MVC | Frontend: React, Angular, HTML5, CSS3 | Backend: Node.js, REST APIs, Microservices | DevOps: Jenkins, Docker, Kubernetes, Maven, Git | Databases: PostgreSQL, MySQL, Oracle, MongoDB | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Postman | Tools: JIRA, Swagger, ELK, Prometheus',
 
@@ -33,10 +33,10 @@ const resumeData = {
       company: 'Mad Mobile',
       dates: 'Nov 2025 – Present',
       bullets: [
-        'Designed and developed 5+ Java 17 / Spring Boot microservices, modernizing legacy Spring MVC systems and improving deployment flexibility by 40%.',
-        'Built event-driven architecture with Redis, RabbitMQ, and Kafka to handle high-volume real-time transactions across multiple services.',
+        'Designed and developed 5+ Java 17 / Spring Boot microservices, modernizing legacy systems and improving deployment flexibility by 40%.',
+        'Designed event-driven architecture with Redis, RabbitMQ, and Kafka handling 50K+ daily real-time transactions across multiple services.',
         'Developed 15+ RESTful APIs with Spring Security; optimized data workflows across Oracle, SQL, and MongoDB for high-throughput applications.',
-        'Deployed and managed cloud-native apps on AWS ECS, EC2, and ECR using Docker and Kubernetes, supporting 4-stage CI/CD pipelines.',
+        'Implemented cloud-native deployment on AWS ECS, EC2, and ECR using Docker and Kubernetes, supporting 4-stage CI/CD pipelines.',
         'Implemented Bitbucket Pipelines CI/CD to automate builds, tests, and deployments across dev, QA, staging, and production environments.',
         'Delivered full-stack features with Angular 17 / React; leveraged GitHub Copilot and OpenAI APIs to accelerate development velocity.',
       ],
@@ -47,8 +47,8 @@ const resumeData = {
       dates: 'Feb 2025 – Oct 2025',
       bullets: [
         'Developed and maintained Java / Spring Boot applications for retirement, life insurance, and asset management workflows serving secure financial data processing.',
-        'Built 10+ RESTful APIs for customer portals, agent dashboards, and admin systems, enabling reliable data exchange for financial workflows.',
-        'Created user-friendly UIs for 3+ portals using Angular / React, improving agent efficiency and customer self-service adoption.',
+        'Developed 10+ RESTful APIs for customer portals, agent dashboards, and admin systems, enabling reliable data exchange for financial workflows.',
+        'Developed user-friendly UIs for 3+ portals using Angular / React, improving agent efficiency and customer self-service adoption.',
         'Implemented comprehensive input validation and data checks across forms, reducing data inconsistencies in financial workflows.',
         'Collaborated with cross-functional Agile teams to deliver features across dev, QA, and production for financial services applications.',
       ],
@@ -60,7 +60,7 @@ const resumeData = {
       bullets: [
         'Implemented server-side logic using Java and Spring Boot to handle complex calculations, data processing, and transactions supporting 500+ internal users and 10K+ daily transactions.',
         'Designed and developed RESTful APIs for front-end and back-end data exchange, supporting portfolio and asset tracking workflows for energy sector applications.',
-        'Delivered full-stack features; built backend REST API with Java 11, Spring Boot, and Spring Data JPA for portfolio management system.',
+        'Developed full-stack features and backend REST API with Java 11, Spring Boot, and Spring Data JPA for portfolio management system.',
       ],
     },
     {
@@ -69,7 +69,7 @@ const resumeData = {
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
         'Developed backend data services for Mercedes-Benz vehicle manufacturing and supply chain analytics, supporting enterprise-scale operations.',
-        'Built ETL pipelines integrating 3+ data sources (production data, dealer systems, operational DBs) into centralized analytics dashboards.',
+        'Developed ETL pipelines integrating 3+ data sources (production data, dealer systems, operational DBs) into centralized analytics dashboards.',
         'Optimized SQL queries for automotive analytics dashboards, improving report generation performance for production and logistics metrics.',
         'Implemented data validation and transformation logic for vehicle inventory and distribution data, ensuring 99%+ integration accuracy.',
         'Collaborated in Agile sprints to deliver data integration features for automotive operations and engineering teams.',
@@ -81,9 +81,9 @@ const resumeData = {
       dates: 'Jun 2019 – May 2021',
       bullets: [
         'Developed data integration processes for drug manufacturing, batch production, and inventory data across multiple pharmaceutical systems.',
-        'Built ETL workflows consolidating laboratory testing and quality control data from 4+ systems into centralized reporting databases.',
+        'Developed ETL workflows consolidating laboratory testing and quality control data from 4+ systems into centralized reporting databases.',
         'Implemented data validation logic for clinical and drug safety datasets, supporting regulatory compliance and pharmacovigilance reporting.',
-        'Created SQL-based reports for drug production monitoring and inventory tracking, enabling data-driven decision-making for supply chain.',
+        'Developed SQL-based reports for drug production monitoring and inventory tracking, enabling data-driven decision-making for supply chain.',
         'Collaborated with QA teams to ensure data consistency for pharmaceutical manufacturing and compliance audits.',
       ],
     },
