@@ -57,8 +57,8 @@ const resumeData = {
       company: 'ConocoPhillips',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
-        'Implemented server-side logic with Java and Spring Boot to handle complex calculations, data processing, and transactions for energy sector applications.',
-        'Designed and developed RESTful APIs for front-end and back-end data exchange, supporting portfolio and asset tracking workflows.',
+        'Implemented server-side logic using Java and Spring Boot to handle complex calculations, data processing, and transactions supporting 500+ internal users and 10K+ daily transactions.',
+        'Designed and developed RESTful APIs for front-end and back-end data exchange, supporting portfolio and asset tracking workflows for energy sector applications.',
         'Delivered full-stack features; built backend REST API with Java 11, Spring Boot, and Spring Data JPA for portfolio management system.',
       ],
     },
@@ -108,9 +108,9 @@ const resumeData = {
   ],
 
   projects: [
-    { name: 'Retirement Investment Management Platform', desc: 'Spring Boot, JWT, React. Secure financial services for retirement planning and portfolio management.' },
-    { name: 'Smart Restaurant Platform', desc: 'Spring Boot, React, MySQL. Full-stack menu, orders, inventory, and sales analytics.' },
-    { name: 'User Management Service', desc: 'Spring Boot, JPA, H2. REST API for user management and authentication.' },
+    { name: 'Retirement Investment Management Platform', desc: 'Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React.' },
+    { name: 'Smart Restaurant Platform', desc: 'Built full-stack restaurant management platform handling menu, orders, inventory, and sales analytics using Spring Boot, React, and MySQL.' },
+    { name: 'User Management Service', desc: 'Built REST API for user management and authentication with Spring Boot, JPA, and H2.' },
   ],
 };
 
