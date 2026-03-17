@@ -127,6 +127,14 @@ const resumeData = {
 
   projects: [
     {
+      name: 'Event-Driven Service',
+      desc: 'Event Streaming & CDC (Change Data Capture) service using NestJS, MongoDB, and Docker for real-time data synchronization.',
+      href: 'https://github.com/sivaganesh1407/event-driven-service',
+      thumbnail: 'event',
+      stack: 'NestJS · MongoDB · Docker',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop',
+    },
+    {
       name: 'Retirement Investment Management Platform',
       desc: 'Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React.',
       href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',

@@ -38,6 +38,11 @@ const thumbnailStyles: Record<string, { gradient: string; icon: string; label: s
     label: 'API',
     icon: '⚡',
   },
+  event: {
+    gradient: 'from-rose-500 via-pink-600 to-indigo-700',
+    label: 'Event Streaming',
+    icon: '📡',
+  },
 };
 
 function ProjectThumbnail({ type, image }: { type: string; image?: string }) {
