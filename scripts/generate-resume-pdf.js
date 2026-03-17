@@ -9,12 +9,14 @@ fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const stream = fs.createWriteStream(outPath);
 doc.pipe(stream);
 
-// ATS-friendly: Times-Roman, clean layout, sentence case, section borders
+// Old resume format: Times-Roman, section headings
 const h1 = () => { doc.fontSize(22).font('Times-Bold'); };
 const h2 = () => { doc.fontSize(12).font('Times-Bold'); };
 const body = () => { doc.fontSize(10).font('Times-Roman'); };
 const bullet = () => { doc.text('• ', { continued: true }); };
+
 const sectionHeading = (text) => {
+  doc.moveDown(0.5);
   h2();
   doc.text(text);
   doc.moveDown(0.3);
@@ -22,40 +24,62 @@ const sectionHeading = (text) => {
   doc.moveDown(0.5);
 };
 
+// Header: Phone, Name, Title, Email
+body();
+doc.text(data.header.phone || '', { align: 'center' });
+doc.moveDown(0.3);
 h1();
 doc.text(data.header.name, { align: 'center' });
-doc.fontSize(12).font('Times-Roman').text(data.header.title, { align: 'center' });
+doc.fontSize(12).font('Times-Roman').text(data.header.title + '  ' + data.header.email, { align: 'center' });
 doc.fontSize(10).text(data.header.contact, { align: 'center' });
 doc.moveDown(1);
 
-sectionHeading('Professional Summary');
+// PROFILE SUMMARY
+sectionHeading('PROFILE SUMMARY');
 body();
 doc.text(data.summary, { align: 'justify' });
 doc.moveDown(0.8);
 
-sectionHeading('Technical Skills');
+// TECHNICAL SKILLS (old format - categorized grid)
+sectionHeading('TECHNICAL SKILLS');
 body();
-const skillsParts = data.technicalSkills.split(' | ');
-const skillsLine1 = skillsParts.slice(0, 5).join(' | ');
-const skillsLine2 = skillsParts.slice(5).join(' | ');
-doc.text(skillsLine1, { align: 'left' });
-doc.text(skillsLine2 || '', { align: 'left' });
+if (data.technicalSkillsGrid) {
+  data.technicalSkillsGrid.forEach((row) => {
+    doc.font('Times-Bold').text(row.category + ': ', { continued: true });
+    doc.font('Times-Roman').text(row.items);
+    doc.moveDown(0.2);
+  });
+} else {
+  doc.text(data.technicalSkills, { align: 'left' });
+}
 doc.moveDown(0.8);
 
-sectionHeading('Professional Experience');
+// WORK EXPERIENCE (old format: Company | Location, Role | Dates, Description, Responsibilities, Environment)
+sectionHeading('WORK EXPERIENCE');
 body();
 
 data.experience.forEach((job) => {
-  doc.font('Times-Bold').text(job.role, { continued: true });
-  doc.font('Times-Roman').text(', ' + job.company);
-  doc.font('Times-Italic').text(job.dates, { align: 'right' });
-  doc.font('Times-Roman');
+  doc.font('Times-Bold').text(job.company + (job.location ? ' | ' + job.location : ''));
+  doc.font('Times-Roman').text(job.role + ' | ' + job.dates);
+  doc.moveDown(0.3);
+  if (job.description) {
+    doc.font('Times-Italic').text('Description: ', { continued: true });
+    doc.font('Times-Roman').text(job.description);
+    doc.moveDown(0.3);
+  }
+  doc.font('Times-Bold').text('Responsibilities:');
   job.bullets.forEach((item) => { bullet(); doc.text(item, { align: 'justify' }); });
-  doc.moveDown(0.5);
+  doc.moveDown(0.2);
+  if (job.environment) {
+    doc.font('Times-Bold').text('Environment: ', { continued: true });
+    doc.font('Times-Roman').text(job.environment);
+  }
+  doc.moveDown(0.6);
 });
 doc.moveDown(0.3);
 
-sectionHeading('Certifications');
+// CERTIFICATIONS
+sectionHeading('CERTIFICATIONS');
 body();
 data.certifications.forEach((c) => {
   bullet();
@@ -64,7 +88,8 @@ data.certifications.forEach((c) => {
 });
 doc.moveDown(0.8);
 
-sectionHeading('Education');
+// EDUCATION (old format: Degree, School | Dates)
+sectionHeading('EDUCATION');
 body();
 data.education.forEach((edu) => {
   doc.font('Times-Bold').text(edu.degree, { continued: true });
@@ -74,7 +99,8 @@ data.education.forEach((edu) => {
 });
 doc.moveDown(0.3);
 
-sectionHeading('Key Projects');
+// KEY PROJECTS
+sectionHeading('KEY PROJECTS');
 body();
 data.projects.forEach((p) => {
   bullet();

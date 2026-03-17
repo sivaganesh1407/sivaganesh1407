@@ -11,13 +11,12 @@ const {
 } = require('docx');
 const data = require('../data/resume-data');
 
-// ATS-friendly: Times New Roman, 11-12pt, simple layout, no tables
+// ATS-friendly: Times New Roman, old resume format
 const font = 'Times New Roman';
-const tr = (opts) => new TextRun({ font, size: 22, ...opts }); // 11pt
+const tr = (opts) => new TextRun({ font, size: 22, ...opts });
 const trB = (text) => tr({ text, bold: true });
 const trN = (text) => tr({ text });
 
-// Standard ATS-recognized section headings
 const sectionHeading = (text) =>
   new Paragraph({
     children: [tr({ text, bold: true, size: 24 })],
@@ -28,12 +27,18 @@ const sectionHeading = (text) =>
   });
 
 function buildSkillsParagraphs() {
+  if (data.technicalSkillsGrid) {
+    return data.technicalSkillsGrid.map((row, i) =>
+      new Paragraph({
+        children: [trB(row.category + ': '), trN(row.items)],
+        spacing: { after: i < data.technicalSkillsGrid.length - 1 ? 40 : 120 },
+      })
+    );
+  }
   const parts = data.technicalSkills.split(' | ');
-  const line1 = parts.slice(0, 5).join(' | ');
-  const line2 = parts.slice(5).join(' | ');
   return [
-    new Paragraph({ children: [trN(line1)], spacing: { after: 40 } }),
-    new Paragraph({ children: [trN(line2)], spacing: { after: 120 } }),
+    new Paragraph({ children: [trN(parts.slice(0, 5).join(' | '))], spacing: { after: 40 } }),
+    new Paragraph({ children: [trN(parts.slice(5).join(' | '))], spacing: { after: 120 } }),
   ];
 }
 
@@ -42,23 +47,46 @@ function buildExperienceParagraphs() {
   data.experience.forEach((job) => {
     paras.push(
       new Paragraph({
-        children: [
-          trB(job.role),
-          trN(', ' + job.company),
-          tr({ text: '\t' + job.dates, italics: true }),
-        ],
-        spacing: { after: 60 },
-        keepLines: true,
+        children: [trB(job.company + (job.location ? ' | ' + job.location : ''))],
+        spacing: { after: 40 },
+      })
+    );
+    paras.push(
+      new Paragraph({
+        children: [trN(job.role + ' | ' + job.dates)],
+        spacing: { after: 40 },
+      })
+    );
+    if (job.description) {
+      paras.push(
+        new Paragraph({
+          children: [trB('Description: '), trN(job.description)],
+          spacing: { after: 40 },
+        })
+      );
+    }
+    paras.push(
+      new Paragraph({
+        children: [trB('Responsibilities:')],
+        spacing: { after: 20 },
       })
     );
     job.bullets.forEach((bullet, i) => {
       paras.push(
         new Paragraph({
           children: [trN('• ' + bullet)],
-          spacing: { after: i === job.bullets.length - 1 ? 80 : 40 },
+          spacing: { after: i === job.bullets.length - 1 && !job.environment ? 80 : 20 },
         })
       );
     });
+    if (job.environment) {
+      paras.push(
+        new Paragraph({
+          children: [trB('Environment: '), trN(job.environment)],
+          spacing: { after: 80 },
+        })
+      );
+    }
   });
   return paras;
 }
@@ -69,23 +97,23 @@ const doc = new Document({
       properties: { page: { margin: { top: 576, right: 576, bottom: 576, left: 576 } } },
       children: [
         new Paragraph({
+          children: [trN(data.header.phone || '')],
+          alignment: AlignmentType.CENTER,
+          spacing: { after: 40 },
+        }),
+        new Paragraph({
           children: [tr({ text: data.header.name, bold: true, size: 44 })],
           alignment: AlignmentType.CENTER,
           spacing: { after: 80 },
         }),
         new Paragraph({
-          children: [tr({ text: data.header.title, size: 24 })],
+          children: [tr({ text: data.header.title + '  ', size: 24 }), tr({ text: data.header.email, size: 24 })],
           alignment: AlignmentType.CENTER,
-          spacing: { after: 120 },
+          spacing: { after: 80 },
         }),
         new Paragraph({
           children: [
             trN('Tampa, FL, USA  |  '),
-            new ExternalHyperlink({
-              children: [tr({ text: 'gsg1499@gmail.com', style: 'Hyperlink' })],
-              link: 'mailto:' + data.header.email,
-            }),
-            trN('  |  '),
             new ExternalHyperlink({
               children: [tr({ text: 'linkedin.com/in/ganeshg7', style: 'Hyperlink' })],
               link: data.header.linkedin,
@@ -100,19 +128,20 @@ const doc = new Document({
           spacing: { after: 120 },
         }),
 
-        sectionHeading('Professional Summary'),
+        sectionHeading('PROFILE SUMMARY'),
         new Paragraph({
           children: [trN(data.summary)],
           spacing: { after: 120 },
         }),
 
-        sectionHeading('Technical Skills'),
+        sectionHeading('TECHNICAL SKILLS'),
         ...buildSkillsParagraphs(),
+        new Paragraph({ children: [trN('')], spacing: { after: 80 } }),
 
-        sectionHeading('Professional Experience'),
+        sectionHeading('WORK EXPERIENCE'),
         ...buildExperienceParagraphs(),
 
-        sectionHeading('Certifications'),
+        sectionHeading('CERTIFICATIONS'),
         ...data.certifications.map((c, i) =>
           new Paragraph({
             children: [trN('• '), trB(c.name), trN(' (' + c.dates + ')')],
@@ -120,7 +149,7 @@ const doc = new Document({
           })
         ),
 
-        sectionHeading('Education'),
+        sectionHeading('EDUCATION'),
         new Paragraph({
           children: [trB(data.education[0].degree), trN(', ' + data.education[0].school)],
           spacing: { after: 60 },
@@ -138,7 +167,7 @@ const doc = new Document({
           spacing: { after: 200 },
         }),
 
-        sectionHeading('Key Projects'),
+        sectionHeading('KEY PROJECTS'),
         ...data.projects.map((p) =>
           new Paragraph({
             children: [trN('• '), trB(p.name), trN(' — ' + p.desc)],
