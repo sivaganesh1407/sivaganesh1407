@@ -15,10 +15,11 @@ const resumeData = {
 
   summary: 'Java Full Stack Developer with 5+ years of experience building scalable enterprise applications. Proficient in Java, Spring Boot, Microservices, REST APIs, React, Docker, Kubernetes, and AWS. Delivered backend services, cloud-native systems, and modern web interfaces for financial services, restaurant tech, and energy sectors. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, and HashiCorp Terraform Associate. Strong focus on system design, API development, CI/CD, and infrastructure as code.',
 
-  technicalSkills: 'Languages: Java, Spring Boot, Hibernate, JavaScript, TypeScript | Frontend: React, Angular, HTML5, CSS3 | Backend: Node.js, REST APIs, Microservices | DevOps: Jenkins, Docker, Kubernetes, Maven, Git | Databases: PostgreSQL, MySQL, Oracle, MongoDB | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Postman | Tools: JIRA, Swagger, ELK, Prometheus',
+  technicalSkills: 'Languages: Java, JavaScript, TypeScript | Frameworks: Spring Boot, Hibernate, Spring MVC | Frontend: React, Angular, HTML5, CSS3 | Backend: Node.js, REST APIs, Microservices | DevOps: Jenkins, Docker, Kubernetes, Maven, Git | Databases: PostgreSQL, MySQL, Oracle, MongoDB | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Postman | Tools: JIRA, Swagger, ELK, Prometheus',
 
   skillGroups: [
-    { title: 'Languages & Frameworks', items: ['Java', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JavaScript', 'TypeScript'], color: 'border-emerald-400/60 text-emerald-300 hover:border-emerald-400', cardColor: 'border-l-emerald-500' },
+    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript'], color: 'border-emerald-400/60 text-emerald-300 hover:border-emerald-400', cardColor: 'border-l-emerald-500' },
+    { title: 'Frameworks', items: ['Spring Boot', 'Spring MVC', 'Hibernate'], color: 'border-emerald-500/60 text-emerald-400 hover:border-emerald-500', cardColor: 'border-l-emerald-500' },
     { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'], color: 'border-cyan-400/60 text-cyan-300 hover:border-cyan-400', cardColor: 'border-l-cyan-500' },
     { title: 'Backend', items: ['Node.js', 'REST APIs', 'Microservices', 'Spring Security'], color: 'border-blue-400/60 text-blue-300 hover:border-blue-400', cardColor: 'border-l-blue-500' },
     { title: 'DevOps & Cloud', items: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Maven', 'Git'], color: 'border-amber-400/60 text-amber-300 hover:border-amber-400', cardColor: 'border-l-amber-500' },
