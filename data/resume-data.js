@@ -43,26 +43,10 @@ const resumeData = {
 
   experience: [
     {
-      role: 'Full Stack Engineer',
-      company: 'Mad Mobile',
-      location: 'Tampa, FL, USA',
-      dates: 'Nov 2025 – Present',
-      description: 'Modernizing legacy Spring MVC systems with Java 17 / Spring Boot microservices. Building event-driven architecture and cloud-native applications.',
-      bullets: [
-        'Designed and developed 5+ Java 17 / Spring Boot microservices, modernizing legacy systems and improving deployment flexibility by 40%.',
-        'Designed event-driven architecture with Redis, RabbitMQ, and Kafka handling 50K+ daily real-time transactions across multiple services.',
-        'Developed 15+ RESTful APIs with Spring Security; optimized data workflows across Oracle, SQL, and MongoDB for high-throughput applications.',
-        'Implemented cloud-native deployment on AWS ECS, EC2, and ECR using Docker and Kubernetes, supporting 4-stage CI/CD pipelines.',
-        'Implemented Bitbucket Pipelines CI/CD to automate builds, tests, and deployments across dev, QA, staging, and production environments.',
-        'Delivered full-stack features with Angular 17 / React; leveraged GitHub Copilot and OpenAI APIs to accelerate development velocity.',
-      ],
-      environment: 'Java 17, Spring Boot, Redis, RabbitMQ, Kafka, Oracle, MongoDB, AWS ECS, Docker, Kubernetes, Bitbucket Pipelines, Angular 17, React',
-    },
-    {
       role: 'Java Full Stack Developer',
       company: 'Corebridge Financial',
-      location: 'Houston, TX, USA',
-      dates: 'Feb 2025 – Oct 2025',
+      location: 'Houston, Texas, USA',
+      dates: 'Feb 2025 – Present',
       description: 'Leading financial services company specializing in retirement solutions, life insurance, and asset management. Creating user-friendly interfaces for customer portals and agent dashboards.',
       bullets: [
         'Developed and maintained scalable Java / Spring Boot applications for retirement, life insurance, and asset management using Hibernate and RESTful APIs.',
@@ -77,7 +61,7 @@ const resumeData = {
     {
       role: 'Java Full Stack Developer',
       company: 'ConocoPhillips',
-      location: 'Houston, TX, USA',
+      location: 'Houston, Texas, USA',
       dates: 'Feb 2024 – Dec 2024',
       description: 'Leading energy company specializing in hydrocarbon exploration and production. Implementing server-side logic and RESTful APIs for portfolio and asset tracking.',
       bullets: [
@@ -90,7 +74,7 @@ const resumeData = {
     },
     {
       role: 'Java Developer',
-      company: 'Infosys (HDFC Life)',
+      company: 'HDFC Life Insurance (Infosys)',
       location: 'Mumbai, India',
       dates: 'Dec 2020 – Dec 2022',
       description: 'Leading life insurance provider. Developing RESTful services and MVC modules for insurance policy and claims processing.',
@@ -105,9 +89,9 @@ const resumeData = {
     },
     {
       role: 'Java Full Stack Developer',
-      company: 'Elder Pharmaceuticals',
+      company: 'Elder Pharmaceuticals Ltd.',
       location: 'Mumbai, India',
-      dates: 'Jun 2019 – Dec 2020',
+      dates: 'June 2019 – Dec 2020',
       description: 'Pharmaceutical company manufacturing and marketing pharmaceutical products. Developing APIs and web services for ERP integration and production monitoring.',
       bullets: [
         'Developed Spring Boot and Node.js microservices for production process monitoring; built RESTful APIs for ERP integration.',
@@ -128,14 +112,14 @@ const resumeData = {
 
   education: [
     {
-      degree: "Master's Degree, Information Technology Management",
-      school: 'Indiana Wesleyan University',
-      details: 'Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals. Participated in technology-focused academic collaboration and peer learning activities related to information systems and emerging technologies.',
+      degree: 'Master of Science, Information Technology Management',
+      school: 'Indiana Wesleyan University, IN',
+      details: '2022 – 2024. Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals.',
     },
     {
-      degree: "Bachelor's, Electrical, Electronics and Communications Engineering",
-      school: 'Karunya Institute of Technology and Sciences',
-      details: 'Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS), participating in community outreach programs and social service initiatives.',
+      degree: 'Bachelor of Engineering, Electronics and Communication Engineering',
+      school: 'Karunya Institute of Technology, Coimbatore, India',
+      details: '2017 – 2021. Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS).',
     },
   ],
 

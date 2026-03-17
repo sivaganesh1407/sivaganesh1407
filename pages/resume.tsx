@@ -76,56 +76,40 @@ export default function ResumePage() {
           </header>
 
           <section className="resume-section">
-            <h2 className="resume-h2">Profile Summary</h2>
+            <h2 className="resume-h2">Professional Summary</h2>
             <p className="resume-summary">{summary}</p>
           </section>
 
           <section className="resume-section">
             <h2 className="resume-h2">Technical Skills</h2>
-            {resumeData.technicalSkillsGrid ? (
-              <div className="resume-skills-grid">
-                {resumeData.technicalSkillsGrid.map((row, i) => (
-                  <p key={i} style={{ margin: '0 0 4px 0' }}><strong>{row.category}:</strong> {row.items}</p>
-                ))}
-              </div>
-            ) : (
-              <p className="resume-skills">
-                {technicalSkills.split(' | ').map((part, i) => {
-                  const [cat, ...rest] = part.split(': ');
-                  const items = rest.join(': ');
-                  return (
-                    <span key={i}>
-                      {i > 0 && <> &nbsp;|&nbsp; </>}
-                      <strong>{cat}:</strong> {items}
-                    </span>
-                  );
-                })}
-              </p>
-            )}
+            <p className="resume-skills">
+              {technicalSkills.split(' | ').map((part, i) => {
+                const [cat, ...rest] = part.split(': ');
+                const items = rest.join(': ');
+                return (
+                  <span key={i}>
+                    {i > 0 && <> &nbsp;|&nbsp; </>}
+                    <strong>{cat}:</strong> {items}
+                  </span>
+                );
+              })}
+            </p>
           </section>
 
           <section className="resume-section">
-            <h2 className="resume-h2">Work Experience</h2>
+            <h2 className="resume-h2">Professional Experience</h2>
             {experience.map((job) => (
               <div key={`${job.company}-${job.dates}`} className="resume-job">
                 <div className="resume-job-head">
                   <strong>{job.company}</strong>{job.location ? ` | ${job.location}` : ''}
+                  <span className="resume-date">{job.dates}</span>
                 </div>
-                <div className="resume-job-head">
-                  {job.role} | {job.dates}
-                </div>
-                {job.description && (
-                  <p className="resume-edu" style={{ marginTop: 4 }}><em>Description:</em> {job.description}</p>
-                )}
-                <p style={{ margin: '4px 0 2px 0', fontWeight: 600 }}>Responsibilities:</p>
+                <div style={{ marginBottom: 4, fontWeight: 500 }}>{job.role}</div>
                 <ul>
                   {job.bullets.map((bullet, bi) => (
                     <li key={bi}>{bullet}</li>
                   ))}
                 </ul>
-                {job.environment && (
-                  <p className="resume-edu" style={{ marginTop: 4 }}><strong>Environment:</strong> {job.environment}</p>
-                )}
               </div>
             ))}
           </section>

@@ -27,14 +27,6 @@ const sectionHeading = (text) =>
   });
 
 function buildSkillsParagraphs() {
-  if (data.technicalSkillsGrid) {
-    return data.technicalSkillsGrid.map((row, i) =>
-      new Paragraph({
-        children: [trB(row.category + ': '), trN(row.items)],
-        spacing: { after: i < data.technicalSkillsGrid.length - 1 ? 40 : 120 },
-      })
-    );
-  }
   const parts = data.technicalSkills.split(' | ');
   return [
     new Paragraph({ children: [trN(parts.slice(0, 5).join(' | '))], spacing: { after: 40 } }),
@@ -48,7 +40,7 @@ function buildExperienceParagraphs() {
     paras.push(
       new Paragraph({
         children: [trB(job.company + (job.location ? ' | ' + job.location : ''))],
-        spacing: { after: 40 },
+        spacing: { after: 20 },
       })
     );
     paras.push(
@@ -57,36 +49,14 @@ function buildExperienceParagraphs() {
         spacing: { after: 40 },
       })
     );
-    if (job.description) {
-      paras.push(
-        new Paragraph({
-          children: [trB('Description: '), trN(job.description)],
-          spacing: { after: 40 },
-        })
-      );
-    }
-    paras.push(
-      new Paragraph({
-        children: [trB('Responsibilities:')],
-        spacing: { after: 20 },
-      })
-    );
     job.bullets.forEach((bullet, i) => {
       paras.push(
         new Paragraph({
           children: [trN('• ' + bullet)],
-          spacing: { after: i === job.bullets.length - 1 && !job.environment ? 80 : 20 },
+          spacing: { after: i === job.bullets.length - 1 ? 80 : 20 },
         })
       );
     });
-    if (job.environment) {
-      paras.push(
-        new Paragraph({
-          children: [trB('Environment: '), trN(job.environment)],
-          spacing: { after: 80 },
-        })
-      );
-    }
   });
   return paras;
 }
@@ -128,7 +98,7 @@ const doc = new Document({
           spacing: { after: 120 },
         }),
 
-        sectionHeading('PROFILE SUMMARY'),
+        sectionHeading('PROFESSIONAL SUMMARY'),
         new Paragraph({
           children: [trN(data.summary)],
           spacing: { after: 120 },
@@ -138,7 +108,7 @@ const doc = new Document({
         ...buildSkillsParagraphs(),
         new Paragraph({ children: [trN('')], spacing: { after: 80 } }),
 
-        sectionHeading('WORK EXPERIENCE'),
+        sectionHeading('PROFESSIONAL EXPERIENCE'),
         ...buildExperienceParagraphs(),
 
         sectionHeading('CERTIFICATIONS'),
