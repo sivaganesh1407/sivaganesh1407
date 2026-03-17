@@ -21,7 +21,7 @@ export default function ResumePage() {
           <a href="/#resume" className="resume-back">← Back to Portfolio</a>
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a
-              href="/resume.pdf?v=2"
+              href="/resume.pdf?v=3"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-print"
@@ -30,7 +30,7 @@ export default function ResumePage() {
               View PDF
             </a>
             <a
-              href="/resume.pdf?v=2"
+              href="/resume.pdf?v=3"
               download="Siva_Ganesh_Golla_Resume.pdf"
               className="resume-print resume-print-secondary"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
