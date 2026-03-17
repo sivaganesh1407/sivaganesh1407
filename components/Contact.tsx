@@ -1,34 +1,61 @@
 'use client';
 
 import { useState } from 'react';
+import resumeData from '../data/resume-data';
 
-const links = [
-  { label: 'Email', href: 'mailto:gsg1499@gmail.com', value: 'gsg1499@gmail.com' },
-  { label: 'Phone', href: '#', value: 'Available on request' },
-  { label: 'Location', href: '#', value: 'Tampa, FL, USA' },
-  { label: 'GitHub', href: 'https://github.com/sivaganesh1407', value: 'github.com/sivaganesh1407' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },
-];
-
+const { contactLinks, header } = resumeData;
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const NAME_MIN = 2;
+const NAME_MAX = 100;
+const MESSAGE_MIN = 10;
+const MESSAGE_MAX = 2000;
 
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const validate = (): boolean => {
+    const n = name.trim();
+    const m = message.trim();
+    if (n.length < NAME_MIN || n.length > NAME_MAX) {
+      setErrorMessage(`Name must be ${NAME_MIN}–${NAME_MAX} characters`);
+      return false;
+    }
+    if (!EMAIL_REGEX.test(email.trim())) {
+      setErrorMessage('Please enter a valid email address');
+      return false;
+    }
+    if (m.length < MESSAGE_MIN || m.length > MESSAGE_MAX) {
+      setErrorMessage(`Message must be ${MESSAGE_MIN}–${MESSAGE_MAX} characters`);
+      return false;
+    }
+    setErrorMessage('');
+    return true;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validate()) return;
     setStatus('sending');
+    setErrorMessage('');
 
     if (FORMSPREE_ID) {
       try {
         const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, message }),
+          body: JSON.stringify({
+            name: name.trim(),
+            email: email.trim(),
+            message: message.trim(),
+          }),
         });
+        const data = await res.json().catch(() => ({}));
         if (res.ok) {
           setStatus('success');
           setName('');
@@ -36,16 +63,21 @@ export default function Contact() {
           setMessage('');
         } else {
           setStatus('error');
+          setErrorMessage(
+            (data as { errors?: Array<{ message?: string }> })?.errors?.[0]?.message ||
+              'Something went wrong. Try the email link above instead.'
+          );
         }
       } catch {
         setStatus('error');
+        setErrorMessage('Network error. Try the email link above instead.');
       }
     } else {
-      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const subject = encodeURIComponent(`Portfolio Contact from ${name.trim()}`);
       const body = encodeURIComponent(
-        `${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
+        `${message.trim()}\n\n---\nFrom: ${name.trim()}\nEmail: ${email.trim()}`
       );
-      window.location.href = `mailto:gsg1499@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${header.email}?subject=${subject}&body=${body}`;
       setStatus('idle');
     }
   };
@@ -64,7 +96,7 @@ export default function Contact() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Get in Touch</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-              {links.map((link) => {
+              {contactLinks.map((link) => {
                 const className = "flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-primary/50 transition-colors block";
                 const content = (
                   <>
@@ -93,7 +125,7 @@ export default function Contact() {
               })}
             </div>
             <a
-              href="https://www.linkedin.com/in/ganeshg7/"
+              href={header.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A66C2] text-white font-medium rounded-lg hover:bg-[#004182] transition-colors"
@@ -117,6 +149,8 @@ export default function Contact() {
                   name="name"
                   type="text"
                   required
+                  minLength={NAME_MIN}
+                  maxLength={NAME_MAX}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full px-3 py-2 text-sm rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors"
@@ -146,7 +180,9 @@ export default function Contact() {
                   id="message"
                   name="message"
                   required
-                  rows={2}
+                  rows={4}
+                  minLength={MESSAGE_MIN}
+                  maxLength={MESSAGE_MAX}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full px-3 py-2 text-sm rounded-lg bg-dark-card border border-dark-border text-white placeholder-zinc-500 focus:outline-none focus:border-accent-primary/50 transition-colors resize-none"
@@ -157,7 +193,7 @@ export default function Contact() {
                 <p className="text-accent-primary text-sm">Message sent! You’ll receive it in your email.</p>
               )}
               {status === 'error' && (
-                <p className="text-red-400 text-sm">Something went wrong. Try the email link above instead.</p>
+                <p className="text-red-400 text-sm">{errorMessage}</p>
               )}
               <button
                 type="submit"

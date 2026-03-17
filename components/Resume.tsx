@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Resume() {
   return (
     <section id="resume" className="py-20 px-4">
@@ -8,12 +10,12 @@ export default function Resume() {
         <p className="text-zinc-400 mb-8 max-w-2xl">
           View my full resume to learn more about my experience and qualifications.
         </p>
-        <a
+        <Link
           href="/resume"
           className="inline-flex items-center gap-2 px-6 py-3 bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-hover transition-colors"
         >
           View Full Resume
-        </a>
+        </Link>
       </div>
     </section>
   );

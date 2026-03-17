@@ -43,20 +43,22 @@ doc.moveDown(0.8);
 // TECHNICAL SKILLS (ATS: simple keyword-rich format)
 sectionHeading('TECHNICAL SKILLS');
 body();
-const skillsParts = data.technicalSkills.split(' | ');
-doc.text(skillsParts.slice(0, 5).join(' | '), { align: 'left' });
-doc.text(skillsParts.slice(5).join(' | ') || '', { align: 'left' });
+const skillsParts = (data.technicalSkills || '').split(' | ').filter(Boolean);
+if (skillsParts.length > 0) {
+  doc.text(skillsParts.slice(0, 5).join(' | '), { align: 'left' });
+  if (skillsParts.length > 5) doc.text(skillsParts.slice(5).join(' | '), { align: 'left' });
+}
 doc.moveDown(0.8);
 
 // WORK EXPERIENCE (ATS format: Company | Location, Role | Dates, bullets only)
 sectionHeading('PROFESSIONAL EXPERIENCE');
 body();
 
-data.experience.forEach((job) => {
+(data.experience || []).forEach((job) => {
   doc.font('Times-Bold').text(job.company + (job.location ? ' | ' + job.location : ''));
   doc.font('Times-Roman').text(job.role + ' | ' + job.dates);
   doc.moveDown(0.3);
-  job.bullets.forEach((item) => { bullet(); doc.text(item, { align: 'justify' }); });
+  (job.bullets || []).forEach((item) => { bullet(); doc.text(item, { align: 'justify' }); });
   doc.moveDown(0.5);
 });
 doc.moveDown(0.3);
@@ -64,7 +66,7 @@ doc.moveDown(0.3);
 // CERTIFICATIONS
 sectionHeading('CERTIFICATIONS');
 body();
-data.certifications.forEach((c) => {
+(data.certifications || []).forEach((c) => {
   bullet();
   doc.font('Times-Bold').text(c.name, { continued: true });
   doc.font('Times-Roman').text(' (' + c.dates + ')');
@@ -74,10 +76,10 @@ doc.moveDown(0.8);
 // EDUCATION (old format: Degree, School | Dates)
 sectionHeading('EDUCATION');
 body();
-data.education.forEach((edu) => {
+(data.education || []).forEach((edu) => {
   doc.font('Times-Bold').text(edu.degree, { continued: true });
   doc.font('Times-Roman').text(', ' + edu.school);
-  doc.text(edu.details, { indent: 15 });
+  doc.text(edu.details || '', { indent: 15 });
   doc.moveDown(0.5);
 });
 doc.moveDown(0.3);
@@ -85,7 +87,7 @@ doc.moveDown(0.3);
 // KEY PROJECTS
 sectionHeading('KEY PROJECTS');
 body();
-data.projects.forEach((p) => {
+(data.projects || []).forEach((p) => {
   bullet();
   doc.font('Times-Bold').text(p.name, { continued: true });
   doc.font('Times-Roman').text(' — ' + p.desc);

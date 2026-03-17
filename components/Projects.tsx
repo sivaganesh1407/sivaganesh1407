@@ -1,56 +1,16 @@
 import Image from 'next/image';
+import resumeData from '../data/resume-data';
 
 type Project = {
   name: string;
-  description: string;
+  desc: string;
   href: string;
   thumbnail: string;
   stack: string;
   image?: string;
 };
 
-const projects: Project[] = [
-  {
-    name: 'Retirement Investment Management Platform',
-    description: 'Secure financial services platform for retirement planning, investment portfolio management, and customer financial workflows built with Spring Boot, JWT authentication, and React.',
-    href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',
-    thumbnail: 'retirement',
-    stack: 'Spring Boot · JWT · React',
-    image: 'https://images.unsplash.com/photo-1748439435495-722cc1728b7e?w=400&h=200&fit=crop',
-  },
-  {
-    name: 'Investment Portfolio Manager',
-    description: 'Full stack investment portfolio management system for tracking assets, monitoring portfolio performance, and analyzing financial data using Spring Boot and React.',
-    href: 'https://github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager',
-    thumbnail: 'portfolio',
-    stack: 'Spring Boot · React',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
-  },
-  {
-    name: 'Smart Restaurant Platform',
-    description: 'Full-stack web application for managing restaurant operations: menu management, order processing, inventory tracking, and sales analytics. Built with Spring Boot, React, and MySQL.',
-    href: 'https://github.com/sivaganesh1407/smart-restaurant-platform',
-    thumbnail: 'restaurant',
-    stack: 'Spring Boot · React · MySQL',
-    image: 'https://images.unsplash.com/photo-1728044849280-10a1a75cff83?w=400&h=200&fit=crop',
-  },
-  {
-    name: 'User Management Service',
-    description: 'REST API for user management with authentication and role-based access. Built with Spring Boot, JPA, and H2.',
-    href: 'https://github.com/sivaganesh1407/user-management-service',
-    thumbnail: 'auth',
-    stack: 'Spring Boot · JPA · H2',
-    image: 'https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?w=400&h=200&fit=crop',
-  },
-  {
-    name: 'Restaurant Order Service',
-    description: 'Spring Boot microservice for restaurant order management. Handles order lifecycle and integration with other services.',
-    href: 'https://github.com/sivaganesh1407/restaurant-order-service',
-    thumbnail: 'microservice',
-    stack: 'Spring Boot · Microservices',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=200&fit=crop',
-  },
-];
+const projects: Project[] = resumeData.projects;
 
 const thumbnailStyles: Record<string, { gradient: string; icon: string; label: string }> = {
   retirement: {
@@ -143,7 +103,7 @@ export default function Projects() {
               <ProjectThumbnail type={project.thumbnail} image={project.image} />
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold text-white mb-2">{project.name}</h3>
-                <p className="text-zinc-400 text-sm flex-1 mb-4 line-clamp-3">{project.description}</p>
+                <p className="text-zinc-400 text-sm flex-1 mb-4 line-clamp-3">{project.desc}</p>
                 <p className="text-accent-primary/90 text-xs mb-4">{project.stack}</p>
                 <a
                   href={project.href}

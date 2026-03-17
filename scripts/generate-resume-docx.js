@@ -83,14 +83,14 @@ const doc = new Document({
         }),
         new Paragraph({
           children: [
-            trN('Tampa, FL, USA  |  '),
+            trN((data.header.location || 'Tampa, FL, USA') + '  |  '),
             new ExternalHyperlink({
-              children: [tr({ text: 'linkedin.com/in/ganeshg7', style: 'Hyperlink' })],
+              children: [tr({ text: (data.header.linkedin || '').replace(/^https?:\/\//, '').replace(/\/$/, '') || 'LinkedIn', style: 'Hyperlink' })],
               link: data.header.linkedin,
             }),
             trN('  |  '),
             new ExternalHyperlink({
-              children: [tr({ text: 'github.com/sivaganesh1407', style: 'Hyperlink' })],
+              children: [tr({ text: (data.header.github || '').replace(/^https?:\/\//, '').replace(/\/$/, ''), style: 'Hyperlink' })],
               link: data.header.github,
             }),
           ],
@@ -120,22 +120,16 @@ const doc = new Document({
         ),
 
         sectionHeading('EDUCATION'),
-        new Paragraph({
-          children: [trB(data.education[0].degree), trN(', ' + data.education[0].school)],
-          spacing: { after: 60 },
-        }),
-        new Paragraph({
-          children: [trN(data.education[0].details)],
-          spacing: { after: 120 },
-        }),
-        new Paragraph({
-          children: [trB(data.education[1].degree), trN(', ' + data.education[1].school)],
-          spacing: { after: 60 },
-        }),
-        new Paragraph({
-          children: [trN(data.education[1].details)],
-          spacing: { after: 200 },
-        }),
+        ...data.education.flatMap((edu, i) => [
+          new Paragraph({
+            children: [trB(edu.degree), trN(', ' + edu.school)],
+            spacing: { after: 60 },
+          }),
+          new Paragraph({
+            children: [trN(edu.details)],
+            spacing: { after: i < data.education.length - 1 ? 120 : 200 },
+          }),
+        ]),
 
         sectionHeading('KEY PROJECTS'),
         ...data.projects.map((p) =>

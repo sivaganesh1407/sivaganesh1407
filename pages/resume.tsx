@@ -1,6 +1,7 @@
 'use client';
 
 import Head from 'next/head';
+import Link from 'next/link';
 
 const PDF_URL = '/resume.pdf?v=4';
 
@@ -14,7 +15,7 @@ export default function ResumePage() {
       </Head>
       <div className="resume-root">
         <div className="resume-actions no-print">
-          <a href="/#resume" className="resume-back">← Back to Portfolio</a>
+          <Link href="/#resume" className="resume-back">← Back to Portfolio</Link>
           <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a
               href={PDF_URL}

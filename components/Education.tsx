@@ -1,35 +1,7 @@
-const education = [
-  {
-    degree: "Master's Degree, Information Technology Management",
-    school: 'Indiana Wesleyan University',
-    period: null,
-    gpa: 'Grade: 3.45/5',
-    coursework: [
-      'Information Systems Management',
-      'IT Infrastructure',
-      'Database Systems',
-      'Cloud Computing',
-      'Cybersecurity Fundamentals',
-    ],
-    activities: 'Technology-focused academic collaboration and peer learning in information systems and emerging technologies.',
-  },
-  {
-    degree: "Bachelor's Degree, Electrical, Electronics and Communications Engineering",
-    school: 'Karunya Institute of Technology and Sciences',
-    period: null,
-    gpa: 'Grade: 7.2/10',
-    coursework: [
-      'Communication Systems',
-      'Embedded Systems',
-      'Microprocessors',
-      'Digital Electronics',
-      'Computer Engineering',
-    ],
-    activities: 'Active volunteer in National Service Scheme (NSS), community outreach and social service initiatives.',
-  },
-];
+import resumeData from '../data/resume-data';
 
 export default function Education() {
+  const { education } = resumeData;
   return (
     <section id="education" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -51,7 +23,6 @@ export default function Education() {
                 <div>
                   <h3 className="text-xl font-semibold text-white">{edu.degree}</h3>
                   <p className="text-zinc-400 mt-0.5">{edu.school}</p>
-                  {edu.period && <p className="text-zinc-500 text-sm mt-1">{edu.period}</p>}
                   <p className="text-accent-primary text-sm font-medium mt-1">{edu.gpa}</p>
                 </div>
               </div>

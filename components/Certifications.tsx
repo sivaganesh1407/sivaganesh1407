@@ -1,22 +1,7 @@
-const certifications = [
-  {
-    name: 'AWS Certified DevOps Engineer – Professional',
-    issuer: 'AWS',
-    period: 'March 2025 – March 2027',
-  },
-  {
-    name: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'AWS',
-    period: 'February 2025 – February 2028',
-  },
-  {
-    name: 'HashiCorp Certified: Terraform Associate (003)',
-    issuer: 'HashiCorp',
-    period: 'March 2025 – March 2027',
-  },
-];
+import resumeData from '../data/resume-data';
 
 export default function Certifications() {
+  const { certifications } = resumeData;
   return (
     <section id="certifications" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -37,7 +22,7 @@ export default function Certifications() {
                 <h3 className="text-lg font-semibold text-white">{cert.name}</h3>
                 <p className="text-zinc-500 text-sm mt-0.5">{cert.issuer}</p>
               </div>
-              <span className="text-accent-primary text-sm font-medium">{cert.period}</span>
+              <span className="text-accent-primary text-sm font-medium">{cert.dates}</span>
             </div>
           ))}
         </div>

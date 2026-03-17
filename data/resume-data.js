@@ -1,6 +1,6 @@
 /**
- * Single source of truth for resume content.
- * Used by PDF, DOCX, resume page, and Skills component.
+ * Single source of truth for resume and portfolio content.
+ * Used by PDF, DOCX, Skills, Education, Certifications, Projects, Contact.
  */
 
 const resumeData = {
@@ -8,23 +8,19 @@ const resumeData = {
     name: 'Siva Ganesh Golla',
     title: 'Java Full Stack Developer',
     phone: '456-961-7695',
+    location: 'Tampa, FL, USA',
     contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
     email: 'gsg1499@gmail.com',
     linkedin: 'https://www.linkedin.com/in/ganeshg7/',
     github: 'https://github.com/sivaganesh1407',
   },
 
-  // Old resume format: technical skills grid
-  technicalSkillsGrid: [
-    { category: 'Web Technologies', items: 'HTML, CSS, JavaScript, Angular, React, Redux, AJAX, JSON, XML' },
-    { category: 'Programming Languages', items: 'Java, JavaScript, TypeScript' },
-    { category: 'Frameworks', items: 'Spring Boot, Spring MVC, Hibernate, Angular, React' },
-    { category: 'Backend & APIs', items: 'REST APIs, Microservices, JAX-RS, JDBC, OAuth2, JWT' },
-    { category: 'Databases', items: 'PostgreSQL, MySQL, Oracle, MongoDB, Redis, SQL, PL/SQL' },
-    { category: 'DevOps & Cloud', items: 'Jenkins, Docker, Kubernetes, Maven, Git, Terraform, AWS (EC2, S3, RDS, Lambda)' },
-    { category: 'Messaging', items: 'Kafka, RabbitMQ' },
-    { category: 'Testing', items: 'JUnit, Mockito, Selenium, Cypress, Postman' },
-    { category: 'Tools', items: 'JIRA, Swagger, Prometheus, Grafana, IntelliJ IDEA, VSCode, Eclipse' },
+  contactLinks: [
+    { label: 'Email', href: 'mailto:gsg1499@gmail.com', value: 'gsg1499@gmail.com' },
+    { label: 'Phone', href: '#', value: 'Available on request' },
+    { label: 'Location', href: '#', value: 'Tampa, FL, USA' },
+    { label: 'GitHub', href: 'https://github.com/sivaganesh1407', value: 'github.com/sivaganesh1407' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },
   ],
 
   summary: 'Java Full Stack Developer with 6 years of experience building scalable, secure web applications. Skilled in Java, Spring Boot, React, Angular, RESTful APIs, Microservices, Docker, Kubernetes, and AWS. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, Terraform Associate.',
@@ -32,13 +28,13 @@ const resumeData = {
   technicalSkills: 'Languages: Java, JavaScript, TypeScript | Frameworks: Spring Boot, Hibernate, Spring MVC, Angular, React | Backend: REST APIs, Microservices, JAX-RS, JDBC, OAuth2, JWT | DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Terraform | Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis | Messaging: Kafka, RabbitMQ | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Selenium, Cypress | Tools: JIRA, Swagger, Prometheus, Grafana',
 
   skillGroups: [
-    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript'], color: 'border-emerald-400/60 text-emerald-300 hover:border-emerald-400', cardColor: 'border-l-emerald-500' },
-    { title: 'Frameworks', items: ['Spring Boot', 'Spring MVC', 'Hibernate'], color: 'border-emerald-500/60 text-emerald-400 hover:border-emerald-500', cardColor: 'border-l-emerald-500' },
-    { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'], color: 'border-cyan-400/60 text-cyan-300 hover:border-cyan-400', cardColor: 'border-l-cyan-500' },
-    { title: 'Backend', items: ['Node.js', 'REST APIs', 'Microservices', 'Spring Security'], color: 'border-blue-400/60 text-blue-300 hover:border-blue-400', cardColor: 'border-l-blue-500' },
-    { title: 'DevOps & Cloud', items: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Maven', 'Git'], color: 'border-amber-400/60 text-amber-300 hover:border-amber-400', cardColor: 'border-l-amber-500' },
-    { title: 'Databases', items: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'SQL'], color: 'border-purple-400/60 text-purple-300 hover:border-purple-400', cardColor: 'border-l-purple-500' },
-    { title: 'Testing & Tools', items: ['JUnit', 'Mockito', 'Postman', 'JIRA', 'Swagger'], color: 'border-rose-400/60 text-rose-300 hover:border-rose-400', cardColor: 'border-l-rose-500' },
+    { title: 'Languages', items: ['Java', 'JavaScript', 'TypeScript'] },
+    { title: 'Frameworks', items: ['Spring Boot', 'Spring MVC', 'Hibernate'] },
+    { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'] },
+    { title: 'Backend', items: ['Node.js', 'REST APIs', 'Microservices', 'Spring Security'] },
+    { title: 'DevOps & Cloud', items: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Maven', 'Git'] },
+    { title: 'Databases', items: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'SQL'] },
+    { title: 'Testing & Tools', items: ['JUnit', 'Mockito', 'Postman', 'JIRA', 'Swagger'] },
   ],
 
   experience: [
@@ -105,28 +101,71 @@ const resumeData = {
   ],
 
   certifications: [
-    { name: 'AWS Certified DevOps Engineer – Professional', dates: 'March 2025 – March 2027' },
-    { name: 'AWS Certified Solutions Architect – Associate', dates: 'February 2025 – February 2028' },
-    { name: 'HashiCorp Certified: Terraform Associate (003)', dates: 'March 2025 – March 2027' },
+    { name: 'AWS Certified DevOps Engineer – Professional', issuer: 'AWS', dates: 'March 2025 – March 2027' },
+    { name: 'AWS Certified Solutions Architect – Associate', issuer: 'AWS', dates: 'February 2025 – February 2028' },
+    { name: 'HashiCorp Certified: Terraform Associate (003)', issuer: 'HashiCorp', dates: 'March 2025 – March 2027' },
   ],
 
   education: [
     {
-      degree: 'Master of Science, Information Technology Management',
-      school: 'Indiana Wesleyan University, IN',
+      degree: "Master's Degree, Information Technology Management",
+      school: 'Indiana Wesleyan University',
       details: '2022 – 2024. Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals.',
+      gpa: 'Grade: 3.45/5',
+      coursework: ['Information Systems Management', 'IT Infrastructure', 'Database Systems', 'Cloud Computing', 'Cybersecurity Fundamentals'],
+      activities: 'Technology-focused academic collaboration and peer learning in information systems and emerging technologies.',
     },
     {
-      degree: 'Bachelor of Engineering, Electronics and Communication Engineering',
-      school: 'Karunya Institute of Technology, Coimbatore, India',
+      degree: "Bachelor's Degree, Electrical, Electronics and Communications Engineering",
+      school: 'Karunya Institute of Technology and Sciences',
       details: '2017 – 2021. Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer in National Service Scheme (NSS).',
+      gpa: 'Grade: 7.2/10',
+      coursework: ['Communication Systems', 'Embedded Systems', 'Microprocessors', 'Digital Electronics', 'Computer Engineering'],
+      activities: 'Active volunteer in National Service Scheme (NSS), community outreach and social service initiatives.',
     },
   ],
 
   projects: [
-    { name: 'Retirement Investment Management Platform', desc: 'Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React.' },
-    { name: 'Smart Restaurant Platform', desc: 'Built full-stack restaurant management platform handling menu, orders, inventory, and sales analytics using Spring Boot, React, and MySQL.' },
-    { name: 'User Management Service', desc: 'Built REST API for user management and authentication with Spring Boot, JPA, and H2.' },
+    {
+      name: 'Retirement Investment Management Platform',
+      desc: 'Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React.',
+      href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',
+      thumbnail: 'retirement',
+      stack: 'Spring Boot · JWT · React',
+      image: 'https://images.unsplash.com/photo-1748439435495-722cc1728b7e?w=400&h=200&fit=crop',
+    },
+    {
+      name: 'Investment Portfolio Manager',
+      desc: 'Full stack investment portfolio management system for tracking assets, monitoring portfolio performance, and analyzing financial data using Spring Boot and React.',
+      href: 'https://github.com/sivaganesh1407/sivaganesh1407-investment-portfolio-manager',
+      thumbnail: 'portfolio',
+      stack: 'Spring Boot · React',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
+    },
+    {
+      name: 'Smart Restaurant Platform',
+      desc: 'Full-stack web application for managing restaurant operations: menu management, order processing, inventory tracking, and sales analytics. Built with Spring Boot, React, and MySQL.',
+      href: 'https://github.com/sivaganesh1407/smart-restaurant-platform',
+      thumbnail: 'restaurant',
+      stack: 'Spring Boot · React · MySQL',
+      image: 'https://images.unsplash.com/photo-1728044849280-10a1a75cff83?w=400&h=200&fit=crop',
+    },
+    {
+      name: 'User Management Service',
+      desc: 'REST API for user management with authentication and role-based access. Built with Spring Boot, JPA, and H2.',
+      href: 'https://github.com/sivaganesh1407/user-management-service',
+      thumbnail: 'auth',
+      stack: 'Spring Boot · JPA · H2',
+      image: 'https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?w=400&h=200&fit=crop',
+    },
+    {
+      name: 'Restaurant Order Service',
+      desc: 'Spring Boot microservice for restaurant order management. Handles order lifecycle and integration with other services.',
+      href: 'https://github.com/sivaganesh1407/restaurant-order-service',
+      thumbnail: 'microservice',
+      stack: 'Spring Boot · Microservices',
+      image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=200&fit=crop',
+    },
   ],
 };
 
