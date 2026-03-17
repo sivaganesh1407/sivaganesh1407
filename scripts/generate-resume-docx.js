@@ -11,17 +11,18 @@ const {
 } = require('docx');
 const data = require('../data/resume-data');
 
-// ATS-friendly: Times New Roman font
+// ATS-friendly: Times New Roman, 11-12pt, simple layout, no tables
 const font = 'Times New Roman';
-const tr = (opts) => new TextRun({ font, ...opts });
+const tr = (opts) => new TextRun({ font, size: 22, ...opts }); // 11pt
 const trB = (text) => tr({ text, bold: true });
 const trN = (text) => tr({ text });
 
+// Standard ATS-recognized section headings
 const sectionHeading = (text) =>
   new Paragraph({
-    children: [trB(text)],
+    children: [tr({ text, bold: true, size: 24 })],
     border: {
-      bottom: { color: '333333', space: 1, style: BorderStyle.SINGLE, size: 6 },
+      bottom: { color: '000000', space: 1, style: BorderStyle.SINGLE, size: 6 },
     },
     spacing: { before: 120, after: 80 },
   });
@@ -77,19 +78,19 @@ const doc = new Document({
         }),
         new Paragraph({
           children: [
-            tr({ text: 'Tampa, FL, USA  •  ', size: 20 }),
+            trN('Tampa, FL, USA  |  '),
             new ExternalHyperlink({
-              children: [tr({ text: 'gsg1499@gmail.com', style: 'Hyperlink', size: 20 })],
+              children: [tr({ text: 'gsg1499@gmail.com', style: 'Hyperlink' })],
               link: 'mailto:' + data.header.email,
             }),
-            tr({ text: '  •  ', size: 20 }),
+            trN('  |  '),
             new ExternalHyperlink({
-              children: [tr({ text: 'linkedin.com/in/ganeshg7', style: 'Hyperlink', size: 20 })],
+              children: [tr({ text: 'linkedin.com/in/ganeshg7', style: 'Hyperlink' })],
               link: data.header.linkedin,
             }),
-            tr({ text: '  •  ', size: 20 }),
+            trN('  |  '),
             new ExternalHyperlink({
-              children: [tr({ text: 'github.com/sivaganesh1407', style: 'Hyperlink', size: 20 })],
+              children: [tr({ text: 'github.com/sivaganesh1407', style: 'Hyperlink' })],
               link: data.header.github,
             }),
           ],
