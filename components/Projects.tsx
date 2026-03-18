@@ -43,6 +43,11 @@ const thumbnailStyles: Record<string, { gradient: string; icon: string; label: s
     label: 'Event Streaming',
     icon: '📡',
   },
+  automotive: {
+    gradient: 'from-slate-600 via-zinc-600 to-stone-700',
+    label: 'ETL & Analytics',
+    icon: '🚗',
+  },
 };
 
 function ProjectThumbnail({ type, image }: { type: string; image?: string }) {

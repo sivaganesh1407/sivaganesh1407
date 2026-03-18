@@ -135,6 +135,14 @@ const resumeData = {
       image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400&h=200&fit=crop',
     },
     {
+      name: 'Automotive Supply Chain Analytics Platform',
+      desc: 'Backend system simulating automotive manufacturing and supply chain data pipelines with ETL processing and analytics APIs using Spring Boot, JPA, and PostgreSQL.',
+      href: 'https://github.com/sivaganesh1407/automotive-supply-chain-analytics-platform',
+      thumbnail: 'automotive',
+      stack: 'Spring Boot · JPA · PostgreSQL',
+      image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=200&fit=crop',
+    },
+    {
       name: 'Retirement Investment Management Platform',
       desc: 'Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React.',
       href: 'https://github.com/sivaganesh1407/retirement-investment-management-platform',

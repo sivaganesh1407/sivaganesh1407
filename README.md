@@ -149,5 +149,3 @@ These projects will showcase **REST APIs, microservices architecture, cloud depl
 
 ⭐ Check my developer portfolio:  
 https://github.com/sivaganesh1407/portfolio
-
-<!-- redeploy -->
