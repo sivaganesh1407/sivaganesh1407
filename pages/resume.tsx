@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-const PDF_URL = '/resume.pdf?v=5';
+const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=1';
 
 export default function ResumePage() {
   return (
@@ -28,7 +28,7 @@ export default function ResumePage() {
             </a>
             <a
               href={PDF_URL}
-              download="Siva_Ganesh_Golla_Resume.pdf"
+              download="Java_FullStack_FullTime_Resume.pdf"
               className="resume-print resume-print-secondary"
               style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
             >
