@@ -22,3 +22,11 @@ yarn-error.log*
 # typescript
 next-env.d.ts
 .vercel
+
+# Local resume export copies (canonical files live in /public)
+/Siva-Ganesh-Golla-*.pdf
+/Siva-Ganesh-Golla-*.docx
+/public/resume-fulltime.pdf
+/public/resume-fulltime.docx
+/public/resume-w2.pdf
+/public/resume-w2.docx

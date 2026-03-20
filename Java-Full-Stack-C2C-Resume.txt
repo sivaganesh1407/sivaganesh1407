@@ -1,0 +1,121 @@
+================================================================================
+                    JAVA FULL STACK ENGINEER – C2C RESUME
+================================================================================
+
+SIVA GANESH GOLLA
+Email: gsg1499@gmail.com | Phone: 456-961-7695 | Location: Tampa, FL, USA
+LinkedIn: linkedin.com/in/ganeshg7 | GitHub: github.com/sivaganesh1407
+
+--------------------------------------------------------------------------------
+PROFESSIONAL SUMMARY
+--------------------------------------------------------------------------------
+
+Java Full Stack Engineer with 6 years of experience building scalable, secure web applications. Skilled in Java, Spring Boot, React, Angular, RESTful APIs, Microservices, Docker, Kubernetes, and AWS. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, Terraform Associate. Delivered full-stack solutions for financial services, energy, and insurance clients. Agile practitioner with strong focus on deliverables, CI/CD automation, and measurable impact.
+
+--------------------------------------------------------------------------------
+TECHNICAL SKILLS
+--------------------------------------------------------------------------------
+
+Programming: Java, JavaScript, TypeScript
+Backend: Spring Boot, Spring MVC, Hibernate, REST APIs, Microservices, Spring Security
+Frontend: React, Angular, HTML5, CSS3, Bootstrap
+Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis
+DevOps & Cloud: Jenkins, Docker, Kubernetes, AWS (EC2, S3, RDS, Lambda), Maven, Git, Terraform
+Messaging: Kafka, RabbitMQ
+Testing: JUnit, Mockito, Selenium, Cypress
+Tools: JIRA, Swagger, Prometheus, Grafana
+
+--------------------------------------------------------------------------------
+PROFESSIONAL EXPERIENCE
+--------------------------------------------------------------------------------
+
+Client: Confidential | Financial Services Client
+Role: Java Full Stack Engineer
+Duration: February 2025 – Present
+
+• Developed and maintained scalable Java/Spring Boot applications for retirement, life insurance, and asset management; built 10+ RESTful APIs with Hibernate, serving customer and policy data for 50K+ users.
+
+• Designed and implemented RESTful APIs integrated with MySQL and PostgreSQL; optimized query performance by 25% through indexing and connection pooling, reducing API response time to under 200ms.
+
+• Built dynamic UIs with Angular and React for customer portals and agent dashboards; improved user engagement by 30% through responsive design and real-time data updates.
+
+• Implemented OAuth2 and JWT for secure authentication; integrated Redis for session caching, reducing authentication latency by 40% and improving system responsiveness.
+
+• Automated deployments using Docker and Kubernetes; utilized AWS EC2, S3, RDS, and Lambda; reduced deployment time from 2 hours to 15 minutes via Jenkins CI/CD pipelines.
+
+• Implemented event-driven processing with Kafka and RabbitMQ; developed unit tests with JUnit and Mockito achieving 85%+ code coverage.
+
+--------------------------------------------------------------------------------
+
+Client: Confidential | Energy Client
+Role: Java Full Stack Engineer
+Duration: February 2024 – December 2024
+
+• Designed and developed scalable Java microservices using Spring Boot; implemented RESTful APIs supporting 500+ users and 10K+ daily transactions for portfolio and asset tracking systems.
+
+• Built responsive UIs with React, HTML5, and CSS3 for field operation dashboards and asset performance portals; reduced manual reporting time by 50% through self-service analytics.
+
+• Integrated Oracle and MySQL databases; developed CI/CD pipelines with Jenkins; implemented Terraform and Ansible for infrastructure-as-code, reducing provisioning time by 60%.
+
+• Implemented GraphQL APIs and WebSocket for real-time data flow; utilized Kubernetes for container orchestration supporting 20+ microservices.
+
+--------------------------------------------------------------------------------
+
+Client: Confidential | Insurance Client
+Role: Java Full Stack Developer
+Duration: December 2020 – December 2022
+
+• Developed RESTful services and MVC modules using Spring MVC, Hibernate, and Servlet/JSP for insurance policy and claims processing; reduced claims processing time by 35%.
+
+• Built dynamic SPAs with AngularJS, React, and Node.js for premium and claim dashboards; integrated ASP.NET Web API for data communication serving 200+ internal users.
+
+• Integrated Oracle with Hibernate and JDBC; implemented Redis and Memcached for caching, improving policy lookup performance by 45%.
+
+• Implemented OAuth2, JWT, and LDAP for authentication; automated CI/CD with Docker, Jenkins, and Kubernetes; delivered 12+ releases on schedule.
+
+--------------------------------------------------------------------------------
+
+Client: Confidential | Pharmaceutical Client
+Role: Java Full Stack Developer
+Duration: June 2019 – December 2020
+
+• Developed Spring Boot and Node.js microservices for production process monitoring; built RESTful APIs for ERP integration processing 100K+ transactions daily.
+
+• Built dashboards and reporting modules with AngularJS, React, and Bootstrap for inventory and lab results; reduced manual data entry by 70%.
+
+• Designed optimized Stored Procedures and PL/SQL for Oracle, PostgreSQL, and DB2; implemented OAuth2 and JWT for security compliance.
+
+• Integrated Apache Kafka for real-time messaging; automated CI/CD with Jenkins, Git, JUnit, Selenium, and Maven for pharmaceutical compliance systems.
+
+--------------------------------------------------------------------------------
+PROJECTS
+--------------------------------------------------------------------------------
+
+Retirement Investment Management Platform
+• Built secure financial services platform for retirement planning and portfolio management with Spring Boot, JWT authentication, and React; deployed on AWS with Docker.
+
+Automotive Supply Chain Analytics Platform
+• Developed backend system with ETL processing and analytics APIs using Spring Boot, JPA, and PostgreSQL; delivered REST APIs for inventory and logistics analytics.
+
+Smart Restaurant Platform
+• Full-stack web application for menu management, order processing, and sales analytics using Spring Boot, React, and MySQL; supports role-based access and real-time updates.
+
+--------------------------------------------------------------------------------
+CERTIFICATIONS
+--------------------------------------------------------------------------------
+
+AWS Certified DevOps Engineer – Professional (AWS) | March 2025 – March 2027
+AWS Certified Solutions Architect – Associate (AWS) | February 2025 – February 2028
+HashiCorp Certified: Terraform Associate (003) (HashiCorp) | March 2025 – March 2027
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+
+Master's Degree, Information Technology Management
+Indiana Wesleyan University | 2022 – 2024 | GPA: 3.45/5
+
+Bachelor's Degree, Electrical, Electronics and Communications Engineering
+Karunya Institute of Technology and Sciences | 2017 – 2021 | GPA: 7.2/10
+
+--------------------------------------------------------------------------------
