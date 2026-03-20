@@ -4,8 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "generate:docx": "node scripts/generate-resume-docx.js",
+    "generate:docx": "node --no-experimental-webstorage scripts/generate-resume-docx.js",
     "generate:pdf": "node scripts/generate-resume-pdf.js",
+    "generate:c2c-pdf": "node scripts/generate-resume-pdf-c2c.js",
+    "generate:c2c-docx": "node --no-experimental-webstorage scripts/generate-resume-docx-c2c.js",
+    "generate:fulltime-pdf": "node scripts/generate-resume-pdf-fulltime.js",
+    "generate:fulltime-docx": "node --no-experimental-webstorage scripts/generate-resume-docx-fulltime.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
