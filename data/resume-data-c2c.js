@@ -19,7 +19,7 @@ const resumeDataC2C = {
 
   experience: [
     {
-      client: 'Mad Mobile',
+      client: 'Restaurant technology platform',
       role: 'Java Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [

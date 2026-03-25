@@ -2,7 +2,8 @@
 
 ## Disclaimer
 
-This project is built independently using only public technologies and open-source libraries. No company-specific code, dependencies, or registries are used.
+This project is a personal portfolio project built independently.
+It uses only public technologies and does not include any company-specific code, dependencies, or systems.
 
 ---
 
@@ -111,7 +112,7 @@ Issued: Mar 2025 | Expires: Mar 2027
 
 # 💼 Professional Experience
 
-**Full Stack Engineer – Mad Mobile**  
+**Full Stack Engineer – Restaurant technology platform**  
 Nov 2025 – Present  
 
 **Java Full Stack Developer – Corebridge Financial**  
