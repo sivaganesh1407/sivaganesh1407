@@ -19,7 +19,7 @@ const resumeDataFulltime = {
 
   experience: [
     {
-      company: 'Restaurant technology platform',
+      company: 'Mad Mobile',
       role: 'Java Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [

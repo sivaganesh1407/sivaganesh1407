@@ -112,7 +112,7 @@ Issued: Mar 2025 | Expires: Mar 2027
 
 # 💼 Professional Experience
 
-**Full Stack Engineer – Restaurant technology platform**  
+**Full Stack Engineer – Mad Mobile**  
 Nov 2025 – Present  
 
 **Java Full Stack Developer – Corebridge Financial**  
