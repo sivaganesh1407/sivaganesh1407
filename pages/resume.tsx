@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Bump ?v= when regenerating the PDF so browsers/CDNs fetch the new file (not a stale cached copy).
-const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=6';
+const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=10';
 
 export default function ResumePage() {
   return (
@@ -36,10 +36,14 @@ export default function ResumePage() {
               Download PDF
             </a>
           </div>
+          <p className="resume-cache-hint">
+            If the preview still shows an older version, hard-refresh this page (Cmd+Shift+R / Ctrl+Shift+R) or open the PDF in a new tab.
+          </p>
         </div>
 
         <div className="resume-pdf-container">
           <iframe
+            key={PDF_URL}
             src={`${PDF_URL}#toolbar=1`}
             title="Siva Ganesh Golla Resume"
             className="resume-pdf-iframe"
@@ -56,6 +60,7 @@ export default function ResumePage() {
         .resume-print:disabled { opacity: 0.7; cursor: not-allowed; }
         .resume-print-secondary { background: #374151; }
         .resume-print-secondary:hover { background: #4b5563; }
+        .resume-cache-hint { margin: 12px 0 0 0; font-size: 12px; color: #6b7280; max-width: 42rem; line-height: 1.4; }
         .resume-pdf-container { width: 100%; min-height: 90vh; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #f5f5f5; }
         .resume-pdf-iframe { width: 100%; height: 90vh; min-height: 800px; border: none; }
         @media print {
