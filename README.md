@@ -1,5 +1,11 @@
 # Hi, I'm Siva Ganesh Golla 👋
 
+## Disclaimer
+
+This project is built independently using only public technologies and open-source libraries. No company-specific code, dependencies, or registries are used.
+
+---
+
 ## Portfolio site
 
 **Live portfolio (after you deploy):** [https://sivaganesh1407.vercel.app](https://sivaganesh1407.vercel.app)
