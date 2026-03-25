@@ -20,7 +20,7 @@ const resumeDataFulltime = {
   experience: [
     {
       company: 'Mad Mobile',
-      role: 'Java Full Stack Engineer',
+      role: 'Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
         'Engineered migration from legacy Spring MVC to Java 17 / Spring Boot microservices; reduced production incidents by 40% and deployment time from 2 hours to 15 minutes.',

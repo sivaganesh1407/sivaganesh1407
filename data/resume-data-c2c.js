@@ -20,7 +20,7 @@ const resumeDataC2C = {
   experience: [
     {
       client: 'Mad Mobile',
-      role: 'Java Full Stack Engineer',
+      role: 'Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
         'Engineered migration from legacy Spring MVC to Java 17 / Spring Boot microservices; designed modular architecture with clear service boundaries, improving deployment flexibility and reducing production incidents by 40%.',
