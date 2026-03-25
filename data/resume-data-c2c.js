@@ -7,7 +7,7 @@ const resumeDataC2C = {
   header: {
     name: 'Siva Ganesh Golla',
     title: 'Java Full Stack Engineer | Microservices | AWS | React',
-    phone: '456-961-7695',
+    phone: '',
     location: 'Tampa, FL, USA',
     contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
     email: 'gsg1499@gmail.com',
@@ -19,7 +19,7 @@ const resumeDataC2C = {
 
   experience: [
     {
-      client: 'Mad Mobile',
+      client: 'Retail Technology Company',
       role: 'Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
@@ -35,7 +35,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Corebridge Financial',
+      client: 'Financial Services Company',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2025 – Oct 2025',
       bullets: [
@@ -48,7 +48,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'ConocoPhillips',
+      client: 'Energy Company',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
@@ -60,7 +60,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Infosys',
+      client: 'Global IT Services Company',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
@@ -71,7 +71,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Elder Pharmaceuticals',
+      client: 'Pharmaceutical Manufacturing Company',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2019 – May 2021',
       bullets: [
