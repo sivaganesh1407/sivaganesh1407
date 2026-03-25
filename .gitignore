@@ -12,6 +12,9 @@ dist
 # misc
 .DS_Store
 *.pem
+.env
+.env.*
+!.env.example
 .env*.local
 
 # debug

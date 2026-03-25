@@ -3,7 +3,7 @@
 ## Disclaimer
 
 This project is a personal portfolio project built independently.
-It uses only public technologies and does not include any company-specific code, dependencies, or systems.
+It uses only public technologies and does not include any proprietary code or systems.
 
 ---
 
@@ -112,20 +112,17 @@ Issued: Mar 2025 | Expires: Mar 2027
 
 # 💼 Professional Experience
 
-**Full Stack Engineer – Mad Mobile**  
-Nov 2025 – Present  
+**Java Full Stack Developer – Financial Services Company**  
+Feb 2025 – Present  
 
-**Java Full Stack Developer – Corebridge Financial**  
-Feb 2025 – Oct 2025  
-
-**Java Full Stack Developer – ConocoPhillips**  
+**Java Full Stack Developer – Energy Company**  
 Feb 2024 – Dec 2024  
 
-**System Engineer – Infosys**  
-Jun 2021 – Jun 2022  
+**Java Developer – Insurance Technology (Consulting Engagement)**  
+Dec 2020 – Dec 2022  
 
-**Associate System Engineer – Elder Pharmaceuticals**  
-Jun 2019 – May 2021  
+**Java Full Stack Developer – Pharmaceutical Manufacturing Company**  
+Jun 2019 – Dec 2020  
 
 ---
 
