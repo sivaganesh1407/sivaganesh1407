@@ -48,10 +48,22 @@ const thumbnailStyles: Record<string, { gradient: string; icon: string; label: s
     label: 'ETL & Analytics',
     icon: '🚗',
   },
+  kiosk: {
+    gradient: 'from-orange-500 via-amber-600 to-yellow-600',
+    label: 'React',
+    icon: '🖥️',
+  },
 };
+
+function stackPillsForThumbnail(type: string): string[] {
+  if (type === 'auth') return ['Spring Boot', 'JPA'];
+  if (type === 'kiosk') return ['React', 'Tailwind', 'Router'];
+  return ['Java', 'React', 'API'];
+}
 
 function ProjectThumbnail({ type, image }: { type: string; image?: string }) {
   const style = thumbnailStyles[type] || thumbnailStyles.auth;
+  const pills = stackPillsForThumbnail(type);
 
   if (image) {
     return (
@@ -67,7 +79,7 @@ function ProjectThumbnail({ type, image }: { type: string; image?: string }) {
         <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between">
           <span className="text-white/95 text-sm font-medium drop-shadow-md">{style.label}</span>
           <div className="flex gap-1.5">
-            {['Java', 'React', 'API'].slice(0, type === 'auth' ? 2 : 3).map((t) => (
+            {pills.map((t) => (
               <span key={t} className="px-2 py-0.5 rounded bg-white/20 text-white text-xs backdrop-blur-sm">
                 {t}
               </span>
@@ -83,7 +95,7 @@ function ProjectThumbnail({ type, image }: { type: string; image?: string }) {
       <span className="text-4xl" aria-hidden>{style.icon}</span>
       <span className="text-white/90 text-sm font-medium">{style.label}</span>
       <div className="flex gap-1.5 mt-1">
-        {['Java', 'React', 'API'].slice(0, type === 'auth' ? 2 : 3).map((t) => (
+        {pills.map((t) => (
           <span key={t} className="px-2 py-0.5 rounded bg-white/20 text-white text-xs">
             {t}
           </span>
@@ -105,7 +117,9 @@ export default function Projects() {
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.map((project) => {
+            const isExternal = /^https?:\/\//i.test(project.href);
+            return (
             <article
               key={project.href}
               className="bg-dark-card border border-dark-border rounded-xl overflow-hidden hover:border-accent-primary/50 transition-all flex flex-col"
@@ -117,18 +131,20 @@ export default function Projects() {
                 <p className="text-accent-primary/90 text-xs mb-4">{project.stack}</p>
                 <a
                   href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(isExternal
+                    ? { target: '_blank', rel: 'noopener noreferrer' }
+                    : {})}
                   className="inline-flex items-center justify-end gap-2 text-accent-primary font-medium text-sm hover:text-accent-hover group"
                 >
-                  View More
+                  {isExternal ? 'View More' : 'Open live demo'}
                   <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
               </div>
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

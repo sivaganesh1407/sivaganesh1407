@@ -167,6 +167,14 @@ const resumeData = {
       image: 'https://images.unsplash.com/photo-1728044849280-10a1a75cff83?w=400&h=200&fit=crop',
     },
     {
+      name: 'Restaurant Kiosk UI',
+      desc: 'Self-ordering touchscreen kiosk: category navigation, menu grid, cart with quantity controls, and checkout flow. Built with React, Tailwind CSS, and React Router — deployed on this portfolio.',
+      href: '/restaurant-kiosk/',
+      thumbnail: 'kiosk',
+      stack: 'React · Tailwind CSS · React Router',
+      image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=200&fit=crop',
+    },
+    {
       name: 'User Management Service',
       desc: 'REST API for user management with authentication and role-based access. Built with Spring Boot, JPA, and H2.',
       href: 'https://github.com/sivaganesh1407/user-management-service',
