@@ -19,7 +19,7 @@ const resumeDataC2C = {
 
   experience: [
     {
-      client: 'Retail Technology Company',
+      client: 'Mad Mobile',
       role: 'Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
@@ -35,7 +35,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Financial Services Company',
+      client: 'Corebridge Financial',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2025 – Oct 2025',
       bullets: [
@@ -48,7 +48,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Energy Company',
+      client: 'ConocoPhillips',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
@@ -60,7 +60,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Global IT Services Company',
+      client: 'Infosys',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
@@ -71,7 +71,7 @@ const resumeDataC2C = {
       ],
     },
     {
-      client: 'Pharmaceutical Manufacturing Company',
+      client: 'Elder Pharmaceuticals',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2019 – May 2021',
       bullets: [

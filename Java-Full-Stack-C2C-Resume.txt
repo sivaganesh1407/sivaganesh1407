@@ -29,7 +29,7 @@ Tools: JIRA, Swagger, Prometheus, Grafana
 PROFESSIONAL EXPERIENCE
 --------------------------------------------------------------------------------
 
-Client: Confidential | Financial Services Client
+Client: Corebridge Financial
 Role: Java Full Stack Engineer
 Duration: February 2025 – Present
 
@@ -47,7 +47,7 @@ Duration: February 2025 – Present
 
 --------------------------------------------------------------------------------
 
-Client: Confidential | Energy Client
+Client: ConocoPhillips
 Role: Java Full Stack Engineer
 Duration: February 2024 – December 2024
 
@@ -61,7 +61,7 @@ Duration: February 2024 – December 2024
 
 --------------------------------------------------------------------------------
 
-Client: Confidential | Insurance Client
+Client: HDFC Life Insurance (Infosys)
 Role: Java Full Stack Developer
 Duration: December 2020 – December 2022
 
@@ -75,7 +75,7 @@ Duration: December 2020 – December 2022
 
 --------------------------------------------------------------------------------
 
-Client: Confidential | Pharmaceutical Client
+Client: Elder Pharmaceuticals Ltd.
 Role: Java Full Stack Developer
 Duration: June 2019 – December 2020
 

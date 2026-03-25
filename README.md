@@ -112,17 +112,20 @@ Issued: Mar 2025 | Expires: Mar 2027
 
 # 💼 Professional Experience
 
-**Java Full Stack Developer – Financial Services Company**  
-Feb 2025 – Present  
+**Full Stack Engineer – Mad Mobile**  
+Nov 2025 – Present  
 
-**Java Full Stack Developer – Energy Company**  
+**Java Full Stack Developer – Corebridge Financial**  
+Feb 2025 – Oct 2025  
+
+**Java Full Stack Developer – ConocoPhillips**  
 Feb 2024 – Dec 2024  
 
-**Java Developer – Insurance Technology (Consulting Engagement)**  
-Dec 2020 – Dec 2022  
+**System Engineer – Infosys**  
+Jun 2021 – Jun 2022  
 
-**Java Full Stack Developer – Pharmaceutical Manufacturing Company**  
-Jun 2019 – Dec 2020  
+**Associate System Engineer – Elder Pharmaceuticals**  
+Jun 2019 – May 2021  
 
 ---
 

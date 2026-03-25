@@ -40,10 +40,10 @@ const resumeData = {
   experience: [
     {
       role: 'Java Full Stack Developer',
-      company: 'Financial Services Company',
+      company: 'Corebridge Financial',
       location: 'Houston, Texas, USA',
       dates: 'Feb 2025 – Present',
-      description: 'Large financial services organization specializing in retirement solutions, life insurance, and asset management. Creating user-friendly interfaces for customer portals and agent dashboards.',
+      description: 'Leading financial services company specializing in retirement solutions, life insurance, and asset management. Creating user-friendly interfaces for customer portals and agent dashboards.',
       bullets: [
         'Developed and maintained scalable Java / Spring Boot applications for retirement, life insurance, and asset management using Hibernate and RESTful APIs.',
         'Designed and implemented 10+ RESTful APIs; integrated MySQL and PostgreSQL for customer and policy data, optimizing query performance.',
@@ -56,10 +56,10 @@ const resumeData = {
     },
     {
       role: 'Java Full Stack Developer',
-      company: 'Energy Company',
+      company: 'ConocoPhillips',
       location: 'Houston, Texas, USA',
       dates: 'Feb 2024 – Dec 2024',
-      description: 'Large energy company specializing in exploration and production. Implementing server-side logic and RESTful APIs for portfolio and asset tracking.',
+      description: 'Leading energy company specializing in hydrocarbon exploration and production. Implementing server-side logic and RESTful APIs for portfolio and asset tracking.',
       bullets: [
         'Designed and developed scalable Java applications for energy exploration; implemented microservices and RESTful APIs using Spring Boot supporting 500+ users and 10K+ daily transactions.',
         'Developed responsive UIs with React, HTML5, and CSS3 for field operation dashboards and asset performance portals.',
@@ -70,10 +70,10 @@ const resumeData = {
     },
     {
       role: 'Java Developer',
-      company: 'Insurance Technology (Consulting Engagement)',
+      company: 'HDFC Life Insurance (Infosys)',
       location: 'Mumbai, India',
       dates: 'Dec 2020 – Dec 2022',
-      description: 'Life insurance domain. Developing RESTful services and MVC modules for insurance policy and claims processing.',
+      description: 'Leading life insurance provider. Developing RESTful services and MVC modules for insurance policy and claims processing.',
       bullets: [
         'Developed RESTful services and MVC modules using Spring MVC, Servlet/JSP, and Hibernate for insurance policy and claims processing.',
         'Developed dynamic SPAs with AngularJS, React, and Node.js for premium and claim dashboards; used ASP.NET Web API for data communication.',
@@ -85,10 +85,10 @@ const resumeData = {
     },
     {
       role: 'Java Full Stack Developer',
-      company: 'Pharmaceutical Manufacturing Company',
+      company: 'Elder Pharmaceuticals Ltd.',
       location: 'Mumbai, India',
       dates: 'June 2019 – Dec 2020',
-      description: 'Pharmaceutical manufacturing and marketing. Developing APIs and web services for ERP integration and production monitoring.',
+      description: 'Pharmaceutical company manufacturing and marketing pharmaceutical products. Developing APIs and web services for ERP integration and production monitoring.',
       bullets: [
         'Developed Spring Boot and Node.js microservices for production process monitoring; built RESTful APIs for ERP integration.',
         'Developed dashboards and reporting modules with AngularJS, React, Node.js, HTML5, CSS3, and Bootstrap for inventory and lab results.',

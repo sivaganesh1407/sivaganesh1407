@@ -19,7 +19,7 @@ const resumeDataFulltime = {
 
   experience: [
     {
-      company: 'Retail Technology Company',
+      company: 'Mad Mobile',
       role: 'Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
@@ -30,7 +30,7 @@ const resumeDataFulltime = {
       ],
     },
     {
-      company: 'Financial Services Company',
+      company: 'Corebridge Financial',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2025 – Oct 2025',
       bullets: [
@@ -41,7 +41,7 @@ const resumeDataFulltime = {
       ],
     },
     {
-      company: 'Energy Company',
+      company: 'ConocoPhillips',
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
@@ -51,7 +51,7 @@ const resumeDataFulltime = {
       ],
     },
     {
-      company: 'Global IT Services Company',
+      company: 'Infosys',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
@@ -61,7 +61,7 @@ const resumeDataFulltime = {
       ],
     },
     {
-      company: 'Pharmaceutical Manufacturing Company',
+      company: 'Elder Pharmaceuticals',
       role: 'Java Full Stack Engineer',
       dates: 'Jun 2019 – May 2021',
       bullets: [
