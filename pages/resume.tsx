@@ -4,14 +4,14 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Bump ?v= when regenerating the PDF so browsers/CDNs fetch the new file (not a stale cached copy).
-const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=23';
+const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=24';
 
 export default function ResumePage() {
   return (
     <>
       <Head>
         <title>Siva Ganesh Golla | Resume | Java Full Stack Engineer</title>
-        <meta name="description" content="Resume - Siva Ganesh Golla, Java Full Stack Engineer, 4+ years, Spring Boot, React, AWS" />
+        <meta name="description" content="Resume - Siva Ganesh Golla, Java Full Stack Engineer, 4+ to 5+ years, Spring Boot, React, AWS" />
         <link rel="canonical" href="https://sivaganesh1407.vercel.app/resume" />
       </Head>
       <div className="resume-root">
