@@ -1,12 +1,12 @@
 /**
- * Full-time resume data (final polish)
- * 2 pages, ATS-optimized — financial / full-stack alignment
+ * Full-time resume — ATS-optimized (plain text structure; no tables)
+ * Balanced keywords: frontend, backend, cloud, quality
  */
 
 const resumeDataFulltime = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Java Full Stack Engineer | Spring Boot | Microservices | AWS',
+    title: 'Java Full Stack Engineer | React & Angular | Spring Boot | AWS Cloud',
     phone: '456-961-7695',
     location: 'Tampa, FL, USA',
     contact: 'gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
@@ -14,10 +14,10 @@ const resumeDataFulltime = {
   },
 
   summary:
-    'Java Full Stack Engineer with 5+ years delivering scalable enterprise applications across the full software development lifecycle—from technical design and specifications through secure implementation, automated testing, CI/CD, and production support. Proficient in Java, Spring Boot, microservices, REST APIs with OAuth2, JWT, and RBAC (Spring Security), React, Angular, and AWS. Applies DevSecOps-minded practices in build and release workflows and emphasizes code quality with JUnit and Mockito. Delivered cloud-native systems and modern web interfaces for financial and investment-adjacent services (retirement, insurance, asset management), energy, and automotive sectors. AWS Certified. Strong collaborator with cross-functional Agile teams (product, QA, DevOps/platform).',
+    'Java Full Stack Engineer with 5+ years owning the full SDLC across frontend, backend, and cloud. Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA, and event-driven integration (Kafka, RabbitMQ). Frontend: responsive web UIs with React and Angular. Cloud & DevOps: AWS, Docker, Kubernetes, Terraform, CI/CD (Jenkins, Bitbucket), and DevSecOps-minded release practices. Quality: JUnit, Mockito, and measurable KPIs (uptime, latency, defect reduction). Delivered systems for financial services (retirement, insurance, asset management), energy, automotive, and regulated industries. AWS Certified (DevOps Professional, Solutions Architect Associate), Terraform Associate. Agile collaboration with product, QA, and platform teams.',
 
   technicalSkills:
-    'Java, Spring Boot, Microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC) | React, Angular | AWS, Docker, Kubernetes | CI/CD & DevSecOps practices (Jenkins, Bitbucket) | MySQL, PostgreSQL, MongoDB, Oracle | Kafka, RabbitMQ | JUnit, Mockito, Prometheus, Grafana',
+    'Frontend: React, Angular, responsive UI, REST integration | Backend: Java (11, 17), Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA, Node.js | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, CI/CD (Jenkins, Bitbucket), infrastructure as code | Data & messaging: MySQL, PostgreSQL, MongoDB, Oracle, Redis, Kafka, RabbitMQ | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
 
   experience: [
     {
@@ -28,9 +28,9 @@ const resumeDataFulltime = {
         'Engineered migration from legacy Spring MVC to Java 17 / Spring Boot microservices; owned technical design through deployment; reduced production incidents by 40% and deployment time from 2 hours to 15 minutes.',
         'Designed scalable, modular microservices architecture ensuring high availability, maintainability, and performance for enterprise applications.',
         'Built event-driven architecture with Redis, RabbitMQ, and Kafka; processed 10K+ transactions daily with 99.9% uptime; implemented retry and circuit breaker patterns for resiliency.',
-        'Supported 500+ concurrent users with sub-200ms REST APIs using Spring Security and OAuth2; delivered responsive Angular and React UIs with Prometheus and Grafana monitoring.',
+        'Full stack delivery: sub-200ms REST APIs with Spring Security and OAuth2 for 500+ concurrent users; responsive Angular and React front ends; Prometheus and Grafana for SLO-style monitoring.',
         'Automated regression and service-level testing with JUnit and Mockito; aligned test coverage with release criteria and defect KPIs.',
-        'Partnered with DevOps on CI/CD automation (Jenkins, Bitbucket) to standardize build, scan, and deploy stages for repeatable, frequent releases.',
+        'Partnered with DevOps on CI/CD automation (Jenkins, Bitbucket) to standardize build, scan, and deploy stages for repeatable, frequent releases to cloud environments.',
       ],
     },
     {
@@ -39,12 +39,12 @@ const resumeDataFulltime = {
       dates: 'Feb 2025 – Oct 2025',
       bullets: [
         'Developed Java / Spring Boot applications for retirement, life insurance, and asset management; engineered REST APIs with Hibernate for customer-facing and agent-facing portals and dashboards.',
-        'Developed responsive user interfaces with Angular and React; implemented OAuth2, JWT, and Redis for secure authentication and session management; reduced data errors by 90%; improved API response time by 25%.',
-        'Collaborated with DevOps on Docker and Kubernetes deployments; utilized AWS EC2, S3, RDS, and Lambda.',
-        'Partnered with QA and Product teams in Agile ceremonies for requirement refinement; delivered 8+ features on schedule including policy management and claims processing.',
-        'Contributed to technical specifications and API contracts for financial workflows; supported reviews with architecture and compliance stakeholders.',
-        'Strengthened secure coding practices (input validation, least-privilege access patterns) within Spring Security; extended automated tests using JUnit and Mockito for critical policy and claims paths.',
-        'Improved CI/CD pipelines for predictable deployments to cloud environments, reducing manual steps and supporting faster feedback from test to production.',
+        'Frontend and backend: responsive Angular and React UIs; OAuth2, JWT, and Redis for secure authentication and session management; reduced data errors by 90%; improved API response time by 25%.',
+        'Cloud delivery: collaborated with DevOps on Docker and Kubernetes deployments; AWS EC2, S3, RDS, and Lambda for financial services workloads.',
+        'Agile delivery with QA and Product: requirement refinement, acceptance criteria, and 8+ on-schedule features including policy management and claims processing.',
+        'Technical design: specifications and API contracts for financial workflows; reviews with architecture and compliance stakeholders.',
+        'Secure coding with Spring Security (validation, least-privilege patterns); JUnit and Mockito for critical policy and claims paths.',
+        'CI/CD pipeline improvements for predictable cloud deployments, fewer manual steps, and faster test-to-production feedback.',
       ],
     },
     {
@@ -52,33 +52,33 @@ const resumeDataFulltime = {
       role: 'Java Full Stack Engineer',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
-        'Implemented server-side logic with Java 11 and Spring Boot for portfolio and asset tracking; supported 500+ users and 10K+ daily transactions.',
-        'Developed REST APIs with Spring Data JPA and Hibernate; built responsive UIs with React; reduced manual reporting time by 50%.',
-        'Integrated Oracle and MySQL; developed CI/CD with Jenkins and Terraform; automated build-test-deploy stages; deployed on Kubernetes with health checks and auto-scaling.',
-        'Documented service behavior and integration points to support operations and cross-team onboarding.',
-        'Added and maintained automated tests (JUnit, Mockito) for core services to protect refactors and production stability.',
+        'Backend: Java 11, Spring Boot, and Spring Data JPA/Hibernate for portfolio and asset tracking; supported 500+ users and 10K+ daily transactions.',
+        'Full stack: REST APIs integrated with responsive React UIs; reduced manual reporting time by 50%.',
+        'Cloud & platform: Oracle and MySQL; Jenkins and Terraform for CI/CD; automated build-test-deploy; Kubernetes deployment with health checks and auto-scaling.',
+        'Documentation for service behavior and integration points; supported operations and cross-team onboarding.',
+        'JUnit and Mockito for core services to protect refactors and production stability.',
       ],
     },
     {
       company: 'Infosys',
-      role: 'Software Engineer',
+      role: 'System Engineer',
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
-        'Developed backend services with Java, Spring Boot, and REST APIs for vehicle manufacturing and supply chain analytics; integrated Oracle and PostgreSQL.',
-        'Designed ETL workflows integrating vehicle production, dealer management, and logistics data; built backend processing for analytics and reporting.',
-        'Optimized SQL queries for dashboards; improved query performance by 30%; reduced load times for 100+ users.',
-        'Worked in Agile squads with analysts and QA to clarify acceptance criteria and ship incremental enhancements.',
+        'Backend systems: Java, Spring Boot, and REST APIs for vehicle manufacturing and supply chain analytics; Oracle and PostgreSQL integration.',
+        'Designed ETL workflows for vehicle production, dealer management, and logistics data; backend processing for analytics and reporting pipelines.',
+        'Performance: optimized SQL for analytics and reporting workloads; improved query performance by 30%; reduced load times for 100+ users.',
+        'Agile squads with analysts and QA: acceptance criteria, incremental delivery, and reliable APIs supporting operational and reporting consumers.',
       ],
     },
     {
       company: 'Elder Pharmaceuticals',
-      role: 'Associate Software Engineer',
+      role: 'Associate System Engineer',
       dates: 'Jun 2019 – May 2021',
       bullets: [
-        'Developed Spring Boot and Node.js backend services for production monitoring; built REST APIs for ERP integration with Oracle and PostgreSQL.',
-        'Designed ETL workflows consolidating laboratory, quality control, and inventory data; built dashboards with AngularJS and React; reduced manual entry by 70%.',
-        'Implemented data validation and SQL-based compliance reports; automated CI/CD with Jenkins and Maven.',
-        'Applied validation and audit-friendly reporting patterns suitable for regulated operational data.',
+        'Backend: Spring Boot and Node.js services for production monitoring; REST APIs for ERP integration with Oracle and PostgreSQL.',
+        'Frontend: AngularJS and React dashboards for laboratory, quality control, and inventory visibility; reduced manual entry by 70%.',
+        'ETL workflows consolidating lab, QC, and inventory data; validation and SQL-based compliance reporting.',
+        'CI/CD automation with Jenkins and Maven; audit-friendly reporting patterns for regulated operational data.',
       ],
     },
   ],
@@ -106,22 +106,22 @@ const resumeDataFulltime = {
     {
       name: 'Retirement Investment Management Platform',
       bullets: [
-        'Designed and developed full-stack application using Spring Boot, JWT and role-based access, and React; deployed on AWS with Docker for retirement planning and portfolio management.',
-        'Implemented REST APIs for authentication and portfolio tracking; integrated PostgreSQL and Redis for persistent storage and session management.',
+        'Full stack: Spring Boot backend, JWT and role-based access, React UI; AWS and Docker for retirement planning and portfolio management.',
+        'REST APIs for authentication and portfolio tracking; PostgreSQL and Redis for persistence and session management.',
       ],
     },
     {
       name: 'Smart Restaurant Platform',
       bullets: [
-        'Designed and developed full-stack platform with Spring Boot, React, and MySQL for menu management, order processing, inventory, and sales analytics.',
-        'Built REST APIs for orders and inventory synchronization; delivered admin dashboard with React that reduced manual operations by 60%.',
+        'Full stack: Spring Boot, React, and MySQL for menu management, orders, inventory, and sales analytics.',
+        'REST APIs for orders and inventory sync; React admin dashboard; reduced manual operations by 60%.',
       ],
     },
     {
       name: 'User Management Service',
       bullets: [
-        'Designed and developed REST API with Spring Boot, JPA, and H2; implemented JWT-based authentication and role-based access control with Spring Security.',
-        'Implemented endpoints for registration, login, profile management, and audit logging.',
+        'Spring Boot, JPA, H2; JWT authentication and RBAC with Spring Security.',
+        'Endpoints for registration, login, profile management, and audit logging.',
       ],
     },
   ],
