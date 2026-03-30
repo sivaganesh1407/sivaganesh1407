@@ -47,7 +47,7 @@ const resumeDataFulltime = {
     },
     {
       company: 'ConocoPhillips',
-      role: 'Java Full Stack Engineer',
+      role: 'Java Developer',
       dates: 'Feb 2024 – Dec 2024',
       bullets: [
         'Architected Java 11, Spring Boot, and Spring Data JPA services for oil and gas portfolio and asset tracking—500+ users, 10K+ daily transactions across distributed energy operations.',

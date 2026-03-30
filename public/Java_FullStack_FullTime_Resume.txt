@@ -29,7 +29,7 @@ Feb 2025 – Oct 2025
 • Delivered those features through Agile Product/QA partnership and Jenkins/Bitbucket CI/CD, shortening test-to-production feedback on each financial release.
 • Engineered fault tolerance on monetary paths with JUnit and Mockito; used Prometheus and Grafana for production observability of latency and error budgets on critical services.
 
-Java Full Stack Engineer – ConocoPhillips
+Java Developer – ConocoPhillips
 Feb 2024 – Dec 2024
 • Architected Java 11, Spring Boot, and Spring Data JPA services for oil and gas portfolio and asset tracking—500+ users, 10K+ daily transactions across distributed energy operations.
 • Delivered React dashboards (HTML5, CSS3, JavaScript) on Spring Boot REST APIs, cutting manual reporting time 50% for field and office production and asset decisions.

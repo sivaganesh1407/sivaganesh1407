@@ -55,7 +55,7 @@ const resumeData = {
       environment: 'Java, Spring Boot, Hibernate, Angular, React, RESTful APIs, MySQL, PostgreSQL, Docker, Kubernetes, AWS EC2, S3, RDS, Lambda, Jenkins, OAuth2, JWT, Redis, Kafka, RabbitMQ, JUnit, Mockito',
     },
     {
-      role: 'Java Full Stack Developer',
+      role: 'Java Developer',
       company: 'ConocoPhillips',
       location: 'Houston, Texas, USA',
       dates: 'Feb 2024 – Dec 2024',
