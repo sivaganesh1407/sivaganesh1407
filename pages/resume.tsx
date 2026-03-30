@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Bump ?v= when regenerating the PDF so browsers/CDNs fetch the new file (not a stale cached copy).
-const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=17';
+const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=18';
 
 export default function ResumePage() {
   return (
