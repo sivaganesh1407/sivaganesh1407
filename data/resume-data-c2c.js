@@ -61,7 +61,7 @@ const resumeDataC2C = {
     },
     {
       client: 'Infosys',
-      role: 'Java Full Stack Engineer',
+      role: 'Software Engineer',
       dates: 'Jun 2021 – Jun 2022',
       bullets: [
         'Developed backend services with Java, Spring Boot, and REST APIs for vehicle manufacturing and supply chain analytics; integrated with Oracle and PostgreSQL for enterprise operational systems.',
@@ -72,7 +72,7 @@ const resumeDataC2C = {
     },
     {
       client: 'Elder Pharmaceuticals',
-      role: 'Java Full Stack Engineer',
+      role: 'Associate Software Engineer',
       dates: 'Jun 2019 – May 2021',
       bullets: [
         'Developed Spring Boot and Node.js backend services for production process monitoring; built REST APIs for ERP integration and data exchange with Oracle and PostgreSQL.',

@@ -38,14 +38,14 @@ Feb 2024 – Dec 2024
 • Documented service behavior and integration points to support operations and cross-team onboarding.
 • Added and maintained automated tests (JUnit, Mockito) for core services to protect refactors and production stability.
 
-Java Full Stack Engineer – Infosys
+Software Engineer – Infosys
 Jun 2021 – Jun 2022
 • Developed backend services with Java, Spring Boot, and REST APIs for vehicle manufacturing and supply chain analytics; integrated Oracle and PostgreSQL.
 • Designed ETL workflows integrating vehicle production, dealer management, and logistics data; built backend processing for analytics and reporting.
 • Optimized SQL queries for dashboards; improved query performance by 30%; reduced load times for 100+ users.
 • Worked in Agile squads with analysts and QA to clarify acceptance criteria and ship incremental enhancements.
 
-Java Full Stack Engineer – Elder Pharmaceuticals
+Associate Software Engineer – Elder Pharmaceuticals
 Jun 2019 – May 2021
 • Developed Spring Boot and Node.js backend services for production monitoring; built REST APIs for ERP integration with Oracle and PostgreSQL.
 • Designed ETL workflows consolidating laboratory, quality control, and inventory data; built dashboards with AngularJS and React; reduced manual entry by 70%.
