@@ -7,9 +7,9 @@ const resumeDataC2C = {
   header: {
     name: 'Siva Ganesh Golla',
     title: 'Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
-    phone: '',
+    phone: '456-961-7695',
     location: 'Tampa, FL, USA',
-    contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
+    contact: 'gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
     email: 'gsg1499@gmail.com',
   },
 
@@ -17,7 +17,7 @@ const resumeDataC2C = {
     'Java Full Stack Engineer with 4+ to 5+ years of professional experience: cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. AWS Certified DevOps Engineer – Professional; Solutions Architect – Associate; HashiCorp Terraform Associate. Available for C2C, contract, and W2 engagements.',
 
   technicalSkills:
-    'Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript, Bootstrap | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS, ECR), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, Ansible, Maven, Git | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Selenium, Postman, Prometheus, Grafana, JIRA, Swagger',
+    'Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, infrastructure as code | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
 
   experience: [
     {
@@ -90,19 +90,19 @@ const resumeDataC2C = {
   certifications: [
     { name: 'AWS Certified DevOps Engineer – Professional', dates: 'March 2025 – March 2027' },
     { name: 'AWS Certified Solutions Architect – Associate', dates: 'February 2025 – February 2028' },
-    { name: 'HashiCorp Certified: Terraform Associate (003)', dates: 'March 2025 – March 2027' },
+    { name: 'HashiCorp Certified: Terraform Associate', dates: 'March 2025 – March 2027' },
   ],
 
   education: [
     {
       degree: "Master's Degree, Information Technology Management",
       school: 'Indiana Wesleyan University',
-      details: 'Grade: 3.45/5. Coursework: Information Systems Management, IT Infrastructure, Database Systems, Cloud Computing, Cybersecurity Fundamentals.',
+      details: 'Grade: 3.45/5. Coursework: Information Systems Management, Database Systems, Cloud Computing.',
     },
     {
       degree: "Bachelor's, Electrical, Electronics and Communications Engineering",
       school: 'Karunya Institute of Technology and Sciences',
-      details: 'Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Microprocessors, Digital Electronics, Computer Engineering. Active volunteer, National Service Scheme (NSS).',
+      details: 'Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Computer Engineering.',
     },
   ],
 
