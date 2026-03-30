@@ -88,10 +88,23 @@ const doc = new Document({
         }),
 
         sectionHeading('PROFESSIONAL SUMMARY'),
-        new Paragraph({
-          children: [trN(data.summary)],
-          spacing: { after: 120 },
-        }),
+        ...(data.summaryLead && data.summaryBody
+          ? [
+              new Paragraph({
+                children: [trN(data.summaryLead)],
+                spacing: { after: 60 },
+              }),
+              new Paragraph({
+                children: [trN(data.summaryBody)],
+                spacing: { after: 120 },
+              }),
+            ]
+          : [
+              new Paragraph({
+                children: [trN(data.summary)],
+                spacing: { after: 120 },
+              }),
+            ]),
 
         sectionHeading('TECHNICAL SKILLS'),
         ...buildSkillsParagraphs(),

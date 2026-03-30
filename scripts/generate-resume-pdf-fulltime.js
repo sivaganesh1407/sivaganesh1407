@@ -33,10 +33,16 @@ doc.fontSize(11).font('Times-Roman').text(data.header.title, { align: 'center' }
 doc.fontSize(10).text(data.header.contact, { align: 'center' });
 doc.moveDown(1);
 
-// PROFESSIONAL SUMMARY
+// PROFESSIONAL SUMMARY (lead line + body paragraph, ATS-style)
 sectionHeading('PROFESSIONAL SUMMARY');
 body();
-doc.text(data.summary, { align: 'justify' });
+if (data.summaryLead && data.summaryBody) {
+  doc.text(data.summaryLead, { align: 'justify' });
+  doc.moveDown(0.35);
+  doc.text(data.summaryBody, { align: 'justify' });
+} else {
+  doc.text(data.summary, { align: 'justify' });
+}
 doc.moveDown(0.8);
 
 // TECHNICAL SKILLS
