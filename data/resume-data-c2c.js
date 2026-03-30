@@ -14,7 +14,7 @@ const resumeDataC2C = {
   },
 
   summary:
-    'Java Full Stack Engineer with 5+ years across the full SDLC: frontend (React, Angular, responsive UIs), backend (Java, Spring Boot, microservices, REST APIs, Spring Security, Hibernate/JPA), and cloud (AWS, Docker, Kubernetes, Terraform, CI/CD with Jenkins and Bitbucket). Delivered financial services, energy, automotive, and enterprise platforms with strong testing (JUnit, Mockito) and observability (Prometheus, Grafana). AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, HashiCorp Terraform Associate. Available for C2C, contract, and W2 engagements.',
+    'Java Full Stack Engineer with 5+ years across the full SDLC: frontend (React, Angular, responsive UIs), backend (Java, Spring Boot, microservices, REST APIs, Spring Security, Hibernate/JPA), and cloud (AWS, Docker, Kubernetes, Terraform, CI/CD with Jenkins and Bitbucket). Current work includes restaurant technology and POS-related platforms; also delivered financial services, energy, automotive, and enterprise systems with strong testing (JUnit, Mockito) and observability (Prometheus, Grafana). AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, HashiCorp Terraform Associate. Available for C2C, contract, and W2 engagements.',
 
   technicalSkills:
     'Frontend: React, Angular, HTML5, CSS3, Bootstrap, responsive UI, REST client integration | Backend: Java, JavaScript, Spring Boot, Spring MVC, Hibernate, REST APIs, microservices, Spring Security (OAuth2, JWT), JDBC | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS, ECR), Docker, Kubernetes, Terraform, Ansible, Jenkins, Git, Bitbucket, Maven, CI/CD | Data & messaging: Oracle, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ | Quality & tools: JUnit, Mockito, Selenium, Postman, JIRA, Swagger, Prometheus, Grafana',
@@ -25,15 +25,15 @@ const resumeDataC2C = {
       role: 'Java Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
-        'Migrated legacy Spring MVC to Java 17 / Spring Boot microservices; owned technical design through deployment; modular boundaries for scalability; reduced production incidents by 40%.',
-        'Designed microservices for high availability, maintainability, and performance across enterprise applications.',
-        'Event-driven stack: Redis, RabbitMQ, Kafka; 10K+ transactions daily, 99.9% uptime; retry and circuit breaker patterns for resilient integrations.',
-        'Backend: Spring Data JPA with Oracle and MongoDB; REST APIs with sub-200ms latency for 500+ concurrent users.',
-        'Frontend: Angular and React integrated with Spring Security and OAuth2-secured APIs (JSON/HTTP); responsive enterprise UIs.',
-        'Cloud: AWS ECS and EC2, Docker, Kubernetes; Bitbucket-driven CI/CD; deployment time from 2 hours to 15 minutes.',
-        'CI/CD with Jenkins and Bitbucket: standardized build, scan, and deploy stages for repeatable releases to cloud environments.',
-        'Observability: Prometheus and Grafana for API latency, errors, and capacity signals aligned to operational KPIs.',
-        'Quality: JUnit and Mockito for regression and service-level tests; release gates tied to coverage and defect trends.',
+        'Migrated legacy Spring MVC to Java 17 / Spring Boot microservices for restaurant and POS platform features; owned technical design through deployment; reduced production incidents by 40%.',
+        'Designed microservices for hospitality workloads—menus, orders, store or location data, and POS-related flows—with high availability, maintainability, and performance.',
+        'Event-driven stack: Redis, RabbitMQ, Kafka; 10K+ transactions daily, 99.9% uptime; retry and circuit breaker patterns for order, payment, and partner integration events.',
+        'Backend: Spring Data JPA with Oracle and MongoDB; sub-200ms REST APIs for 500+ concurrent users on restaurant staff and guest-facing experiences.',
+        'Frontend: Angular and React with Spring Security and OAuth2-secured APIs (JSON/HTTP); responsive UIs for restaurant operations and digital ordering touchpoints.',
+        'Cloud: AWS ECS and EC2, Docker, Kubernetes; Bitbucket-driven CI/CD; deployment time from 2 hours to 15 minutes for restaurant platform releases.',
+        'CI/CD with Jenkins and Bitbucket: standardized build, scan, and deploy stages for repeatable delivery of hospitality services.',
+        'Observability: Prometheus and Grafana for API latency, errors, and capacity tied to restaurant peak traffic and operational KPIs.',
+        'Quality: JUnit and Mockito for regression and service-level tests on POS and restaurant-domain APIs; release gates tied to coverage and defect trends.',
       ],
     },
     {

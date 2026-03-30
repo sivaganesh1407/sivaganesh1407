@@ -13,7 +13,7 @@ const resumeDataFulltime = {
   },
 
   summary:
-    'Java Full Stack Engineer with 5+ years delivering production systems across the SDLC: Java and Spring Boot microservices, REST APIs, React and Angular, and cloud delivery on AWS, Docker, and Kubernetes. Domains include financial services (retirement, insurance, asset management), energy, automotive, and regulated enterprise environments. Deep experience with OAuth2, JWT, RBAC (Spring Security), Kafka and RabbitMQ, CI/CD (Jenkins, Bitbucket), automated testing (JUnit, Mockito), and observability (Prometheus, Grafana). AWS Certified DevOps Engineer – Professional, AWS Solutions Architect – Associate; HashiCorp Terraform Associate. Collaborates in Agile teams with product, QA, and platform engineering.',
+    'Java Full Stack Engineer with 5+ years delivering production systems across the SDLC: Java and Spring Boot microservices, REST APIs, React and Angular, and cloud delivery on AWS, Docker, and Kubernetes. Current focus includes restaurant technology and POS-related platforms; prior domains include financial services (retirement, insurance, asset management), energy, automotive, and regulated enterprise environments. Deep experience with OAuth2, JWT, RBAC (Spring Security), Kafka and RabbitMQ, CI/CD (Jenkins, Bitbucket), automated testing (JUnit, Mockito), and observability (Prometheus, Grafana). AWS Certified DevOps Engineer – Professional, AWS Solutions Architect – Associate; HashiCorp Terraform Associate. Collaborates in Agile teams with product, QA, and platform engineering.',
 
   technicalSkills:
     'Frontend: React, Angular, responsive UI, REST clients | Backend: Java 11/17, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA, Node.js | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, Jenkins, Bitbucket, CI/CD, infrastructure as code | Data & messaging: Oracle, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ | Quality: JUnit, Mockito, Prometheus, Grafana',
@@ -24,12 +24,12 @@ const resumeDataFulltime = {
       role: 'Java Full Stack Engineer',
       dates: 'Nov 2025 – Present',
       bullets: [
-        'Cut production incidents 40% and deployment time from 2 hours to 15 minutes by leading migration from legacy Spring MVC to Java 17 and Spring Boot microservices end to end.',
-        'Designed modular microservices for enterprise scale with strong availability, maintainability, and performance.',
-        'Processed 10K+ transactions daily at 99.9% uptime on an event-driven stack (Redis, RabbitMQ, Kafka) with retry and circuit breaker patterns.',
-        'Delivered sub-200ms REST APIs with Spring Security and OAuth2 for 500+ concurrent users, plus Angular and React front ends monitored through Prometheus and Grafana.',
-        'Automated regression and service-level testing with JUnit and Mockito, tying coverage to release gates and defect KPIs.',
-        'Partnered with DevOps to standardize Jenkins and Bitbucket CI/CD (build, scan, deploy) for repeatable releases to cloud environments.',
+        'Cut production incidents 40% and deployment time from 2 hours to 15 minutes by leading migration from legacy Spring MVC to Java 17 and Spring Boot microservices for restaurant and POS platform workloads.',
+        'Designed modular microservices for hospitality and restaurant operations—menus, orders, locations, and POS-adjacent flows—with strong availability, maintainability, and performance.',
+        'Processed 10K+ transactions daily at 99.9% uptime on an event-driven stack (Redis, RabbitMQ, Kafka) with retry and circuit breaker patterns for order, payment, and integration events.',
+        'Delivered sub-200ms REST APIs with Spring Security and OAuth2 for 500+ concurrent users across restaurant staff and customer experiences, with Angular and React UIs monitored through Prometheus and Grafana.',
+        'Automated regression and service-level testing with JUnit and Mockito for POS and restaurant-domain services, tying coverage to release gates and defect KPIs.',
+        'Partnered with DevOps to standardize Jenkins and Bitbucket CI/CD (build, scan, deploy) for repeatable releases of restaurant platform services to cloud environments.',
       ],
     },
     {
