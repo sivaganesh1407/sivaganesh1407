@@ -10,12 +10,6 @@ const nextConfig = {
         ],
       },
       {
-        source: '/resume.pdf',
-        headers: [
-          { key: 'Cache-Control', value: 'private, no-store, must-revalidate' },
-        ],
-      },
-      {
         source: '/resume-c2c.pdf',
         headers: [
           { key: 'Cache-Control', value: 'private, no-store, must-revalidate' },
