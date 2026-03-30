@@ -4,53 +4,57 @@ Java Full Stack Engineer | Spring Boot | React | Angular | AWS
 gsg1499@gmail.com • linkedin.com/in/ganeshg7 • github.com/sivaganesh1407
 
 PROFESSIONAL SUMMARY
-Java Full Stack Engineer with 5+ years delivering production systems across the SDLC: Java and Spring Boot microservices, REST APIs, React and Angular, and cloud delivery on AWS, Docker, and Kubernetes. Current focus includes restaurant technology and POS-related platforms; prior domains include financial services (retirement, insurance, asset management), energy, automotive, and regulated enterprise environments. Deep experience with OAuth2, JWT, RBAC (Spring Security), Kafka and RabbitMQ, CI/CD (Jenkins, Bitbucket), automated testing (JUnit, Mockito), and observability (Prometheus, Grafana). AWS Certified DevOps Engineer – Professional, AWS Solutions Architect – Associate; HashiCorp Terraform Associate. Collaborates in Agile teams with product, QA, and platform engineering.
+Java Full Stack Engineer with 5+ years architecting cloud-native, distributed systems for retail and restaurant technology, insurance and retirement platforms, energy operations, automotive supply chain, and regulated healthcare. Delivers Java 17/11 and Spring Boot microservices, secure REST APIs (OAuth2, JWT, RBAC), React and Angular UIs, and event-driven patterns on Kafka, RabbitMQ, and Redis. Owns CI/CD, DevSecOps-minded pipelines (Jenkins, Bitbucket), Docker, Kubernetes, and AWS (EC2, S3, RDS, Lambda, ECS); validates with JUnit and Mockito and observes with Prometheus and Grafana. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate; HashiCorp Terraform Associate.
 
 TECHNICAL SKILLS
-Frontend: React, Angular, responsive UI, REST clients | Backend: Java 11/17, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA, Node.js | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, Jenkins, Bitbucket, CI/CD, infrastructure as code | Data & messaging: Oracle, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ | Quality: JUnit, Mockito, Prometheus, Grafana
+Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform | Messaging & caching: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & monitoring: JUnit, Mockito, Prometheus, Grafana
 
 PROFESSIONAL EXPERIENCE
 
 Java Full Stack Engineer – Mad Mobile
 Nov 2025 – Present
-• Cut production incidents 40% and deployment time from 2 hours to 15 minutes by leading migration from legacy Spring MVC to Java 17 and Spring Boot microservices for restaurant and POS platform workloads.
-• Designed modular microservices for hospitality and restaurant operations—menus, orders, locations, and POS-adjacent flows—with strong availability, maintainability, and performance.
-• Processed 10K+ transactions daily at 99.9% uptime on an event-driven stack (Redis, RabbitMQ, Kafka) with retry and circuit breaker patterns for order, payment, and integration events.
-• Delivered sub-200ms REST APIs with Spring Security and OAuth2 for 500+ concurrent users across restaurant staff and customer experiences, with Angular and React UIs monitored through Prometheus and Grafana.
-• Automated regression and service-level testing with JUnit and Mockito for POS and restaurant-domain services, tying coverage to release gates and defect KPIs.
-• Partnered with DevOps to standardize Jenkins and Bitbucket CI/CD (build, scan, deploy) for repeatable releases of restaurant platform services to cloud environments.
+• Spearheaded migration from legacy Spring MVC to cloud-native Java 17 and Spring Boot microservices for retail and restaurant POS and digital ordering, cutting production incidents 40% and compressing deployment lead time from 2 hours to 15 minutes.
+• Architected an event-driven, distributed integration layer with Kafka, RabbitMQ, and Redis—processing 10K+ daily transactions at 99.9% uptime using retry and circuit breaker patterns for resilient order, payment, and partner events.
+• Engineered sub-200ms REST APIs secured with OAuth2, JWT, and RBAC via Spring Security, serving 500+ concurrent restaurant staff and guest sessions through Angular and React experiences monitored with Prometheus and Grafana.
+• Delivered full-stack enhancements with HTML5, CSS3, and JavaScript on scalable Spring Boot services (Spring Data JPA, Oracle, MongoDB) for menus, orders, and location workflows, deployed on AWS (EC2, ECS) with Docker and Kubernetes for high-availability retail traffic.
+• Implemented DevSecOps-aligned CI/CD on Jenkins and Bitbucket—automated build, scan, and deploy gates—for repeatable promotion of microservices across distributed cloud-native environments.
+• Optimized release quality with JUnit and Mockito automation tied to defect KPIs while standardizing observability dashboards that support SLO-grade visibility for scalable restaurant commerce platforms.
 
 Java Full Stack Engineer – Corebridge Financial
 Feb 2025 – Oct 2025
-• Built Java and Spring Boot services and Hibernate-backed REST APIs for retirement, life insurance, and asset management across customer and agent portals.
-• Reduced data errors 90% and improved API response time 25% by shipping Angular and React UIs with OAuth2, JWT, and Redis-backed session management.
-• Released Docker and Kubernetes workloads on AWS (EC2, S3, RDS, Lambda) with DevOps for secure financial services operations.
-• Shipped 8+ features on schedule—including policy management and claims processing—through Agile collaboration with QA and Product on requirements and acceptance criteria.
-• Produced technical specifications and API contracts for financial workflows and supported architecture and compliance reviews.
-• Applied secure coding with Spring Security (validation, least-privilege patterns) and JUnit and Mockito on critical policy and claims paths.
-• Tightened CI/CD for cloud deployments to cut manual steps and shorten feedback from test through production.
+• Architected Java and Spring Boot microservices and Hibernate/JPA data layers for insurance, retirement, and asset-management systems—distributed, cloud-native services powering customer and agent financial portals.
+• Engineered secure REST APIs with OAuth2, JWT, Redis-backed sessions, and RBAC through Spring Security for regulatory-sensitive workloads deployed on AWS (EC2, S3, RDS, Lambda) with Docker and Kubernetes.
+• Reduced enterprise data defects 90% and improved API response time 25% by shipping Angular and React UIs with HTML5, CSS3, and JavaScript paired to validated Spring Boot services for policy and claims journeys.
+• Led system design artifacts—API contracts, technical specifications, and scalable integration patterns—coordinated with architecture and compliance stakeholders across distributed financial systems.
+• Delivered 8+ on-schedule capabilities including policy management, claims processing, and reporting modules via Agile collaboration with Product and QA, backed by Jenkins and Bitbucket CI/CD for predictable production releases.
+• Hardened financial services paths with Spring Security best practices and DevSecOps checks; enforced quality with JUnit and Mockito on critical flows while tracking production health signals through Prometheus and Grafana.
 
 Java Full Stack Engineer – ConocoPhillips
 Feb 2024 – Dec 2024
-• Built Java 11, Spring Boot, and Spring Data JPA services for portfolio and asset tracking, supporting 500+ users and 10K+ daily transactions.
-• Cut manual reporting time 50% by integrating REST APIs with responsive React dashboards for field and asset operations.
-• Automated build-test-deploy with Jenkins and Terraform and ran containerized services on Kubernetes with health checks, readiness probes, and auto-scaling across Oracle and MySQL.
-• Authored integration and service documentation that accelerated operations handoffs and cross-team onboarding.
-• Stabilized production changes with JUnit and Mockito tests on core services.
+• Architected Java 11, Spring Boot, and Spring Data JPA microservices for oil and gas portfolio and asset tracking—distributed REST services supporting 500+ users and 10K+ daily transactions across enterprise energy operations.
+• Engineered responsive React dashboards with HTML5, CSS3, and JavaScript integrated to Spring Boot APIs, cutting manual reporting time 50% and accelerating field and office decision cycles for production and asset data.
+• Implemented Terraform and Jenkins CI/CD with infrastructure as code, reducing environment provisioning time 60% and enabling repeatable, cloud-native delivery pipelines for scalable energy platforms.
+• Deployed containerized workloads on Kubernetes with health checks, readiness probes, and auto-scaling across Oracle and MySQL on AWS-backed infrastructure for high-availability upstream and downstream data services.
+• Delivered secure REST integrations and observability-ready instrumentation (Prometheus and Grafana patterns) so distributed energy consumers could scale reads without compromising API contracts or resilience.
+• Stabilized change velocity with JUnit and Mockito coverage on core services; authored integration documentation that shortened operations handoffs and improved cross-team onboarding to distributed systems.
 
 System Engineer – Infosys
 Jun 2021 – Jun 2022
-• Developed Java and Spring Boot REST services for vehicle manufacturing and supply chain analytics with Oracle and PostgreSQL.
-• Built ETL pipelines for production, dealer, and logistics data powering analytics and reporting backends.
-• Improved SQL performance 30%, reducing dashboard load times for 100+ users on analytics workloads.
-• Delivered incrementally in Agile squads with analysts and QA, shipping APIs consumed by operational and reporting teams.
+• Architected Java and Spring Boot REST services on Oracle and PostgreSQL for automotive manufacturing and supply-chain analytics—distributed integrations spanning plants, dealers, and logistics in scalable enterprise environments.
+• Optimized SQL, indexing, and execution plans to improve query performance 30%, reducing dashboard load times for 100+ manufacturing, dealer, and logistics users on high-volume analytics workloads.
+• Engineered ETL and integration pipelines across three operational domains—vehicle production, dealer systems, and logistics—feeding cloud-ready analytics stores for resilient, batch and near-real-time reporting.
+• Implemented contract-first REST layers between operational systems and analytics consumers, partnering with visualization teams to stabilize JSON APIs powering JavaScript-based supply-chain and KPI dashboards.
+• Aligned validation logic across all three supply-chain domains—production, dealer, and logistics—tightening reconciliation and data quality for downstream distributed analytics pipelines.
+• Spearheaded Agile delivery with analysts and QA over a 12-month engagement—incremental releases, automated JUnit regression for integration services, and CI-style discipline for production analytics rollouts.
 
 Associate System Engineer – Elder Pharmaceuticals
 Jun 2019 – May 2021
-• Built Spring Boot and Node.js services and REST APIs for production monitoring and ERP integration on Oracle and PostgreSQL.
-• Reduced manual data entry 70% by shipping AngularJS and React dashboards for laboratory, quality control, and inventory workflows.
-• Consolidated lab, QC, and inventory data through ETL with validation and SQL-based compliance reporting.
-• Automated Jenkins and Maven CI/CD with audit-friendly reporting patterns for regulated operational data.
+• Architected Spring Boot and Node.js services with REST APIs for pharmaceutical production monitoring and ERP integration on Oracle and PostgreSQL—distributed, compliance-oriented backends for regulated healthcare operations.
+• Reduced manual laboratory, QC, and inventory data entry 70% by delivering AngularJS and React dashboards with HTML5, CSS3, and JavaScript backed by secure Spring Boot and Node APIs.
+• Engineered ETL consolidating laboratory, quality control, and inventory sources into validated reporting models, enabling scalable SQL-based compliance reports for GxP-style operational controls.
+• Implemented RBAC-aware data validation, audit trails, and SQL reporting pipelines so distributed quality and manufacturing teams could trace regulated data lineage across enterprise pharma systems.
+• Automated Jenkins and Maven CI/CD with JUnit gates for repeatable builds of compliance-critical services, embedding DevSecOps-style checks before promotion to controlled environments.
+• Delivered 24 months of continuous enhancements—partnering with operations and quality stakeholders—while maintaining audit-friendly release patterns for scalable healthcare and manufacturing data platforms.
 
 CERTIFICATIONS
 • AWS Certified DevOps Engineer – Professional (March 2025 – March 2027)
