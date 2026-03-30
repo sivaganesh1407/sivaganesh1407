@@ -13,19 +13,19 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Siva Ganesh Golla | Java Full Stack Developer</title>
-        <meta name="description" content="Java Full Stack Developer with 5+ years building scalable backend systems and modern web applications. Spring Boot, React, Microservices, AWS Certified." />
+        <title>Siva Ganesh Golla | Java Full Stack Engineer</title>
+        <meta name="description" content="Java Full Stack Engineer with 4+ years building scalable backend systems and modern web applications. Spring Boot, React, Microservices, AWS Certified." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="author" content="Siva Ganesh Golla" />
         <link rel="canonical" href="https://sivaganesh1407.vercel.app" />
-        <meta property="og:title" content="Siva Ganesh Golla | Java Full Stack Developer" />
-        <meta property="og:description" content="5+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
+        <meta property="og:title" content="Siva Ganesh Golla | Java Full Stack Engineer" />
+        <meta property="og:description" content="4+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
         <meta property="og:url" content="https://sivaganesh1407.vercel.app" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Siva Ganesh Golla | Java Full Stack Developer" />
-        <meta name="twitter:description" content="5+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
+        <meta name="twitter:title" content="Siva Ganesh Golla | Java Full Stack Engineer" />
+        <meta name="twitter:description" content="4+ years building scalable backend systems. Spring Boot, React, Microservices, AWS." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

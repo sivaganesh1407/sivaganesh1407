@@ -6,7 +6,7 @@
 const resumeDataC2C = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Senior Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
+    title: 'Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
     phone: '',
     location: 'Tampa, FL, USA',
     contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
@@ -14,7 +14,7 @@ const resumeDataC2C = {
   },
 
   summary:
-    'Senior Java Full Stack Engineer, 5+ years: cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. AWS Certified DevOps Engineer – Professional; Solutions Architect – Associate; HashiCorp Terraform Associate. Available for C2C, contract, and W2 engagements.',
+    'Java Full Stack Engineer with 4+ years of professional experience: cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. AWS Certified DevOps Engineer – Professional; Solutions Architect – Associate; HashiCorp Terraform Associate. Available for C2C, contract, and W2 engagements.',
 
   technicalSkills:
     'Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript, Bootstrap | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS, ECR), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, Ansible, Maven, Git | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Selenium, Postman, Prometheus, Grafana, JIRA, Swagger',

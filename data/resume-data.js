@@ -6,7 +6,7 @@
 const resumeData = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Java Full Stack Developer',
+    title: 'Java Full Stack Engineer',
     phone: '',
     location: 'Tampa, FL, USA',
     contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
@@ -23,7 +23,7 @@ const resumeData = {
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },
   ],
 
-  summary: 'Java Full Stack Developer with 6 years of experience building scalable, secure web applications. Skilled in Java, Spring Boot, React, Angular, RESTful APIs, Microservices, Docker, Kubernetes, and AWS. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, Terraform Associate.',
+  summary: 'Java Full Stack Engineer with 4+ years of professional experience building scalable, secure web applications. Skilled in Java, Spring Boot, React, Angular, RESTful APIs, Microservices, Docker, Kubernetes, and AWS. AWS Certified DevOps Engineer – Professional, Solutions Architect – Associate, Terraform Associate.',
 
   technicalSkills: 'Languages: Java, JavaScript, TypeScript | Frameworks: Spring Boot, Hibernate, Spring MVC, Angular, React | Backend: REST APIs, Microservices, JAX-RS, JDBC, OAuth2, JWT | DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Terraform | Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis | Messaging: Kafka, RabbitMQ | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Selenium, Cypress | Tools: JIRA, Swagger, Prometheus, Grafana',
 

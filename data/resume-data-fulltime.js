@@ -5,7 +5,7 @@
 const resumeDataFulltime = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Senior Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
+    title: 'Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
     phone: '456-961-7695',
     location: 'Tampa, FL, USA',
     contact: 'gsg1499@gmail.com  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
@@ -13,7 +13,7 @@ const resumeDataFulltime = {
   },
 
   summary:
-    'Senior Java Full Stack Engineer, 5+ years: cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. AWS Certified DevOps Engineer – Professional; Solutions Architect – Associate; HashiCorp Terraform Associate.',
+    'Java Full Stack Engineer with 4+ years of professional experience: cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. AWS Certified DevOps Engineer – Professional; Solutions Architect – Associate; HashiCorp Terraform Associate.',
 
   technicalSkills:
     'Backend: Java, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, infrastructure as code | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
