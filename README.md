@@ -41,7 +41,7 @@ To get form submissions directly in your inbox (gsg1499@gmail.com):
 
 ---
 
-🚀 **Java Full Stack Developer** with 5+ years of experience building scalable enterprise applications and backend systems using **Java, Spring Boot, Microservices, React, Docker, Kubernetes, and AWS**.
+🚀 **Java Full Stack Developer** with 6+ years of experience building scalable enterprise applications and backend systems using **Java, Java 17, Spring Boot, Microservices, React, Docker, Kubernetes, and AWS**.
 
 I specialize in developing **RESTful APIs, microservices architectures, and data integration pipelines** used in enterprise environments. I enjoy solving complex backend challenges and designing reliable systems that support large-scale business operations.
 

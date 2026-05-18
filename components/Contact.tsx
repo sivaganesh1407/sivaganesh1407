@@ -89,7 +89,7 @@ export default function Contact() {
           Contact <span className="text-accent-primary">Me</span>
         </h2>
         <p className="text-zinc-400 mb-12 max-w-2xl">
-          Have a question or want to work together? Send me a message or connect on LinkedIn.
+          Have a question or want to work together? Send a message or connect on GitHub or LinkedIn.
         </p>
 
         <div className="space-y-12">
