@@ -28,8 +28,43 @@ const sectionHeading = (text) =>
     spacing: { before: 120, after: 80 },
   });
 
-function buildSkillsParagraphs() {
-  const parts = data.technicalSkills.split(' | ');
+const SKILL_ROW_RULE = NAVY;
+
+function buildSummaryParagraphs() {
+  if (Array.isArray(data.summaryParagraphs) && data.summaryParagraphs.length > 0) {
+    return data.summaryParagraphs.map((text, idx) =>
+      new Paragraph({
+        children: [trN(text)],
+        spacing: { after: idx < data.summaryParagraphs.length - 1 ? 60 : 120 },
+      })
+    );
+  }
+  if (data.summaryLead && data.summaryBody) {
+    return [
+      new Paragraph({ children: [trN(data.summaryLead)], spacing: { after: 60 } }),
+      new Paragraph({ children: [trN(data.summaryBody)], spacing: { after: 120 } }),
+    ];
+  }
+  return [new Paragraph({ children: [trN(data.summary)], spacing: { after: 120 } })];
+}
+
+function buildTechnicalSkillParagraphs() {
+  if (Array.isArray(data.technicalSkillRows) && data.technicalSkillRows.length > 0) {
+    const rows = data.technicalSkillRows;
+    return rows.map((row, i) => {
+      const isLast = i === rows.length - 1;
+      return new Paragraph({
+        children: [trB(row.category + ': '), trN(row.detail)],
+        border: isLast
+          ? undefined
+          : {
+              bottom: { color: SKILL_ROW_RULE, space: 1, style: BorderStyle.SINGLE, size: 4 },
+            },
+        spacing: { after: isLast ? 120 : 50 },
+      });
+    });
+  }
+  const parts = (data.technicalSkills || '').split(' | ');
   return [
     new Paragraph({ children: [trN(parts.slice(0, 5).join(' | '))], spacing: { after: 40 } }),
     new Paragraph({ children: [trN(parts.slice(5).join(' | '))], spacing: { after: 120 } }),
@@ -41,7 +76,7 @@ function buildExperienceParagraphs() {
   data.experience.forEach((job) => {
     paras.push(
       new Paragraph({
-        children: [trB('Client: ' + job.client)],
+        children: [trB('Client: ' + job.client + '  |  ' + job.location)],
         spacing: { after: 20 },
       })
     );
@@ -94,27 +129,10 @@ const doc = new Document({
         }),
 
         sectionHeading('PROFESSIONAL SUMMARY'),
-        ...(data.summaryLead && data.summaryBody
-          ? [
-              new Paragraph({
-                children: [trN(data.summaryLead)],
-                spacing: { after: 60 },
-              }),
-              new Paragraph({
-                children: [trN(data.summaryBody)],
-                spacing: { after: 120 },
-              }),
-            ]
-          : [
-              new Paragraph({
-                children: [trN(data.summary)],
-                spacing: { after: 120 },
-              }),
-            ]),
+        ...buildSummaryParagraphs(),
 
         sectionHeading('TECHNICAL SKILLS'),
-        ...buildSkillsParagraphs(),
-        new Paragraph({ children: [trN('')], spacing: { after: 80 } }),
+        ...buildTechnicalSkillParagraphs(),
 
         sectionHeading('PROFESSIONAL EXPERIENCE'),
         ...buildExperienceParagraphs(),
@@ -122,7 +140,7 @@ const doc = new Document({
         sectionHeading('CERTIFICATIONS'),
         ...data.certifications.map((c, i) =>
           new Paragraph({
-            children: [trN('• '), trB(c.name), trN(' (' + c.dates + ')')],
+            children: [trN('• ' + c.name)],
             spacing: { after: i < data.certifications.length - 1 ? 60 : 120 },
           })
         ),

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import resumeData from '../data/resume-data';
 
 const profileImageSrc = process.env.NEXT_PUBLIC_PROFILE_IMAGE_URL || '/profile.png';
 
@@ -37,15 +38,14 @@ export default function About() {
           </div>
 
           <div className="flex-1">
-            <p className="text-zinc-300 text-lg leading-relaxed mb-4">
-              Senior Java Full Stack Developer with 6+ years of experience delivering enterprise web platforms using Java 17, Spring Boot, microservices, React, Angular, Docker, Kubernetes, and AWS.
-            </p>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-4">
-              I specialize in REST APIs, cloud-native systems, and modern web interfaces. I enjoy solving complex backend challenges and collaborating on reliable systems that support large-scale business operations.
-            </p>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-6">
-              Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.
-            </p>
+            {resumeData.summaryParagraphs.map((paragraph, index) => (
+              <p
+                key={index}
+                className={`text-lg leading-relaxed mb-4 ${index === 0 ? 'text-zinc-300' : 'text-zinc-400'} ${index === resumeData.summaryParagraphs.length - 1 ? 'mb-6' : ''}`}
+              >
+                {paragraph}
+              </p>
+            ))}
             <div className="flex flex-wrap gap-3">
               <a
                 href="https://github.com/sivaganesh1407"

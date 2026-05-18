@@ -6,7 +6,6 @@ const data = require('../data/resume-data-fulltime');
 /** Enterprise ATS: white page, black body, navy (#1F3A5F) name / section headers / rules. */
 const NAVY = '#1F3A5F';
 const BLACK = '#000000';
-
 const doc = new PDFDocument({ margin: 40, size: 'A4', lineGap: 2 });
 const outPath = path.join(__dirname, '..', 'public', 'Java_FullStack_FullTime_Resume.pdf');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
@@ -47,7 +46,12 @@ doc.moveDown(1);
 // PROFESSIONAL SUMMARY
 sectionHeading('PROFESSIONAL SUMMARY');
 body();
-if (data.summaryLead && data.summaryBody) {
+if (Array.isArray(data.summaryParagraphs) && data.summaryParagraphs.length > 0) {
+  data.summaryParagraphs.forEach((para, i) => {
+    doc.text(para, { align: 'justify' });
+    if (i < data.summaryParagraphs.length - 1) doc.moveDown(0.45);
+  });
+} else if (data.summaryLead && data.summaryBody) {
   doc.text(data.summaryLead, { align: 'justify' });
   doc.moveDown(0.35);
   doc.text(data.summaryBody, { align: 'justify' });
@@ -59,7 +63,23 @@ doc.moveDown(0.8);
 // TECHNICAL SKILLS
 sectionHeading('TECHNICAL SKILLS');
 body();
-doc.text(data.technicalSkills, { align: 'left' });
+if (Array.isArray(data.technicalSkillRows) && data.technicalSkillRows.length > 0) {
+  data.technicalSkillRows.forEach((row, i) => {
+    doc.fillColor(BLACK);
+    doc.font('Helvetica-Bold').text(row.category + ': ', { continued: true });
+    doc.font('Helvetica').fillColor(BLACK).text(row.detail, { align: 'justify' });
+    doc.moveDown(0.22);
+    if (i < data.technicalSkillRows.length - 1) {
+      const yLine = doc.y;
+      doc.strokeColor(NAVY).lineWidth(0.35);
+      doc.moveTo(40, yLine).lineTo(555, yLine).stroke();
+      doc.strokeColor(BLACK).fillColor(BLACK);
+      doc.moveDown(0.32);
+    }
+  });
+} else {
+  doc.text(data.technicalSkills, { align: 'left' });
+}
 doc.moveDown(0.8);
 
 // PROFESSIONAL EXPERIENCE
@@ -68,7 +88,8 @@ body();
 
 (data.experience || []).forEach((job) => {
   doc.fillColor(BLACK).font('Helvetica-Bold').text(job.role + ' – ' + job.company);
-  doc.font('Helvetica').text(job.dates);
+  const meta = [job.location, job.dates].filter(Boolean).join('  |  ');
+  doc.font('Helvetica').text(meta);
   doc.moveDown(0.3);
   (job.bullets || []).forEach((item) => {
     bullet();
@@ -78,13 +99,12 @@ body();
 });
 doc.moveDown(0.3);
 
-// CERTIFICATIONS
+// CERTIFICATIONS (before EDUCATION — plain bullets, ATS-friendly)
 sectionHeading('CERTIFICATIONS');
 body();
 (data.certifications || []).forEach((c) => {
   bullet();
-  doc.fillColor(BLACK).font('Helvetica-Bold').text(c.name, { continued: true });
-  doc.font('Helvetica').text(' (' + c.dates + ')');
+  doc.font('Helvetica').text(c.name, { align: 'left' });
 });
 doc.moveDown(0.8);
 

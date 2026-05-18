@@ -3,64 +3,75 @@ Senior Java Full Stack Developer | Spring Boot | React | Angular | AWS
 456-961-7695  •  gsg1499@gmail.com  •  Tampa, FL  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407
 
 PROFESSIONAL SUMMARY
-Senior Java Full Stack Developer with 6+ years of experience delivering enterprise web platforms:
-Hands-on enterprise production support for cloud-native microservices and full-stack systems using Java 17, Spring Boot, React, Angular, REST APIs, OAuth2/JWT, AWS, Docker, and Kubernetes. Builds on Kafka, PostgreSQL, MongoDB, Jenkins, GitHub Actions, and operational monitoring (Prometheus/Grafana) across retail/POS, financial services, energy, automotive supply chain, and pharma. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.
+Senior Java Full Stack Developer with 6+ years building enterprise web platforms on Java, Spring Boot, Spring Security, Hibernate, and JPA, paired with React.js and Angular (TypeScript, JavaScript, HTML5, CSS3). Delivers contract-first service integrations, microservices architectures, and secure OAuth2/JWT/OIDC patterns across distributed systems on AWS with Docker, Kubernetes, Kafka, PostgreSQL, MongoDB, Redis, Jenkins, GitHub Actions, and Agile/Scrum—including on-call production support, performance tuning, and reliability work.
+
+Domain experience spans retail point-of-sale, financial services, energy operations, manufacturing and logistics analytics, and regulated pharmaceutical programs, balancing backend depth, cloud-native delivery, operational monitoring, and maintainable frontends.
+
+Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.
 
 TECHNICAL SKILLS
-Languages: Java 17, TypeScript, JavaScript, SQL | Backend: Spring Boot, Spring Security, Hibernate/JPA, REST APIs, Microservices, OAuth2, JWT | Frontend: React, Angular, HTML5, CSS3 | Cloud & infrastructure: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, CI/CD | Messaging: Kafka, RabbitMQ | Datastores: PostgreSQL, MongoDB, Redis, Oracle, MySQL | Quality & observability: JUnit, Mockito, Prometheus, Grafana
+Languages: Java 17, TypeScript, JavaScript, SQL
+Frontend: React.js, Angular, HTML5, CSS3, Redux, RxJS, SPA routing, responsive UI, form validation, Bootstrap, Material UI
+Backend: Spring Boot, Spring MVC, Spring Security, Hibernate, JPA, REST APIs, Microservices, Swagger/OpenAPI, Maven, Gradle, OAuth2, JWT, RBAC, RESTful services, distributed systems
+Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, API Gateway, ECS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, Bitbucket, CI/CD, Git, GitHub, DevSecOps, Infrastructure as Code (IaC)
+Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis, DB2, SQL optimization, indexing, query tuning, stored procedures, transactions
+Messaging & Integration: Apache Kafka, RabbitMQ, event-driven architecture, asynchronous processing, batch pipelines, near-real-time processing, REST integrations, API integrations
+Testing & Monitoring: JUnit, Mockito, TestNG, Selenium, Cypress, Postman, Prometheus, Grafana, logging, monitoring, alerting, debugging, performance tuning
+Developer Tools: IntelliJ IDEA, VS Code, Eclipse, Jira, Confluence, GitHub Copilot, Cursor AI, Claude AI, OpenAI APIs
+Development Practices: Agile methodologies, Scrum, code reviews, CI/CD pipelines, production support, release coordination, defect triage, troubleshooting
 
 PROFESSIONAL EXPERIENCE
 
 Java Full Stack Engineer – Mad Mobile
-Nov 2025 – Present
-• Worked on Spring Boot microservices supporting high-volume checkout and kiosk flows across distributed retail environments.
-• Collaborated on migration from Spring MVC to Java 17 and Spring Boot microservices for retail and restaurant POS; helped reduce deployment effort by ~25% and improve release stability.
-• Participated in event-driven integration (Kafka, RabbitMQ, Redis) for 10K+ daily transactions with circuit breakers for resilient order and payment flows.
+Tampa, Florida, USA  |  Nov 2025 – Present
+• Built and maintained Spring Boot microservices for high-volume checkout and kiosk flows across distributed retail environments.
+• Migrated Spring MVC services toward Java 17 and Spring Boot microservices for retail and restaurant POS, reducing deployment effort by ~25% and improving release stability.
+• Implemented event-driven integration (Kafka, RabbitMQ, Redis) for 10K+ daily transactions with circuit breakers for resilient order and payment flows.
 • Built REST APIs with OAuth2, JWT, and RBAC (Spring Security) for 500+ concurrent users; enhanced Angular and React UIs for peak-hour restaurant throughput.
-• Supported Spring Data JPA, Oracle, and MongoDB with Docker and Kubernetes on AWS (EC2, ECS) for scalable POS services.
-• Coordinated Jenkins, Bitbucket, and GitHub Actions CI/CD checks with quality gates; extended observability with Prometheus, Grafana, and JUnit/Mockito.
+• Operated Spring Data JPA with Oracle and MongoDB on Docker and Kubernetes (AWS EC2, ECS) for scalable POS services.
+• Maintained CI/CD quality gates across Jenkins, Bitbucket, and GitHub Actions; extended observability with Prometheus, Grafana, and JUnit/Mockito.
 
 Java Full Stack Engineer – Corebridge Financial
-Feb 2025 – Oct 2025
-• Collaborated on Spring Boot microservices with Hibernate/JPA for insurance, retirement, and asset management behind customer and agent portals.
-• Supported Docker and Kubernetes releases on AWS (EC2, S3, RDS, Lambda) with OAuth2, JWT, Redis sessions, and RBAC for compliant financial workloads.
+Houston, Texas, USA  |  Feb 2025 – Oct 2025
+• Built Spring Boot microservices with Hibernate/JPA for insurance, retirement, and asset management behind customer and agent portals.
+• Released Docker and Kubernetes workloads on AWS (EC2, S3, RDS, Lambda) with OAuth2, JWT, Redis sessions, and RBAC for compliant financial environments.
 • Enhanced Angular and React (HTML5, CSS3, JavaScript) on Spring Boot APIs; improved API latency by ~20% and reduced data issues on policy and claims journeys.
-• Coordinated API specifications and integrations with architecture and compliance partners; participated in on-schedule policy, claims, and reporting deliveries.
-• Participated in Agile delivery with Product/QA and CI/CD (Jenkins, Bitbucket, GitHub Actions) improving feedback from test to production.
-• Extended fault-tolerance patterns with JUnit and Mockito; supported production observability with Prometheus and Grafana on critical services.
+• Partnered with architecture and compliance on API specifications and integrations; delivered on-schedule policy, claims, and reporting releases.
+• Contributed to Agile delivery with Product and QA and CI/CD (Jenkins, Bitbucket, GitHub Actions), tightening feedback from test to production.
+• Hardened services with fault-tolerance patterns, JUnit/Mockito tests, and Prometheus/Grafana observability on critical paths.
 
 Java Developer – ConocoPhillips
-Feb 2024 – Dec 2024
-• Collaborated on Java 11, Spring Boot, and Spring Data JPA services for oil and gas portfolio and asset tracking for 500+ users and high daily transaction volume.
+Houston, Texas, USA  |  Feb 2024 – Dec 2024
+• Built Java 11, Spring Boot, and Spring Data JPA services for oil and gas portfolio and asset tracking for 500+ users and high daily transaction volume.
 • Built React dashboards (HTML5, CSS3, JavaScript) on Spring Boot REST APIs; reduced reporting runtime by ~40% for field and office production decisions.
-• Supported Terraform and Jenkins infrastructure-as-code pipelines; reduced environment provisioning effort by ~25% for AWS-bound workloads.
-• Participated in Kubernetes operations (health checks, readiness probes, auto-scaling) with Oracle and MySQL on AWS for resilient energy data exchange.
+• Automated Terraform and Jenkins infrastructure-as-code pipelines; reduced environment provisioning effort by ~25% for AWS-bound workloads.
+• Operated Kubernetes (health checks, readiness probes, auto-scaling) with Oracle and MySQL on AWS for resilient energy data exchange.
 • Enhanced REST contracts and integration documentation for interfaces supporting high-volume field reporting across upstream/downstream systems.
 • Extended regression safety with JUnit and Mockito before production deployments on production-critical services.
 
 System Engineer – Infosys
-Jun 2021 – Jun 2022
-• Collaborated on Java and Spring Boot REST services on Oracle and PostgreSQL for automotive manufacturing and supply-chain analytics across plants, dealers, and logistics.
+Hyderabad, Telangana, India  |  Jun 2021 – Jun 2022
+• Built Java and Spring Boot REST services on Oracle and PostgreSQL for automotive manufacturing and supply-chain analytics across plants, dealers, and logistics.
 • Improved SQL and indexing for ~20% faster queries, reducing dashboard latency for 100+ manufacturing, dealer, and logistics users.
-• Supported ETL from vehicle production, dealer systems, and logistics into analytics stores for batch and near-real-time reporting.
+• Built ETL from vehicle production, dealer systems, and logistics into analytics stores for batch and near-real-time reporting.
 • Delivered contract-first REST layers with stable JSON for JavaScript KPI dashboards under concurrent load.
 • Implemented validation and reconciliation across plant and dealer feeds, improving downstream reporting reliability for 100+ business users.
-• Supported Jenkins CI/CD pipelines and coordinated deployments across lower environments while enforcing automated testing and release validation.
-• Participated in Agile delivery with analysts and QA, using JUnit regression prior to production releases.
+• Maintained Jenkins CI/CD pipelines and deployments across lower environments with automated testing and release validation.
+• Contributed in Agile squads with analysts and QA, shipping JUnit-backed changes before production releases.
 
-Associate System Engineer – Elder Pharmaceuticals
-Jun 2019 – May 2021
-• Collaborated on Spring Boot and Node.js REST services for production monitoring and ERP integration on Oracle and PostgreSQL in a regulated pharma environment.
-• Supported AngularJS and React dashboards (HTML5, CSS3, JavaScript) on secure APIs; reduced manual laboratory, QC, and inventory entry effort by ~40% and accelerated quality reviews.
+Associate System Engineer – Elder Pharmaceuticals Ltd.
+Mumbai, India  |  Jun 2019 – May 2021
+• Built Spring Boot and Node.js REST services for production monitoring and ERP integration on Oracle and PostgreSQL in a regulated pharma environment.
+• Delivered AngularJS and React dashboards (HTML5, CSS3, JavaScript) on secure APIs; reduced manual laboratory, QC, and inventory entry effort by ~40% and accelerated quality reviews.
 • Extended ETL consolidating lab, QC, and inventory data into validated reporting models; delivered SQL compliance reports aligned to GxP-style controls.
 • Implemented RBAC-aware validation, audit trails, and reporting pipelines for traceability across distributed manufacturing and quality sites.
-• Coordinated Jenkins and Maven CI/CD with mandatory JUnit gates on compliance-critical builds before promotion to controlled environments.
-• Participated in incremental, audit-friendly releases with operations and quality over 24 months, stabilizing regulated reporting and ERP integration.
+• Coordinated Jenkins and Maven CI/CD with mandatory JUnit-gated builds before promotion to controlled environments.
+• Supported incremental, audit-friendly releases with operations and quality over 24 months, stabilizing regulated reporting and ERP integration.
 
 CERTIFICATIONS
-• AWS Certified DevOps Engineer – Professional (March 2025 – March 2027)
-• AWS Certified Solutions Architect – Associate (February 2025 – February 2028)
-• HashiCorp Terraform Associate (March 2025 – March 2027)
+• AWS Certified DevOps Engineer – Professional
+• AWS Certified Solutions Architect – Associate
+• HashiCorp Terraform Associate
 • Oracle Certified Professional Java SE Developer (In Progress)
 
 EDUCATION

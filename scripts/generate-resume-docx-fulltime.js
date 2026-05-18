@@ -28,6 +28,45 @@ const sectionHeading = (text) =>
     spacing: { before: 120, after: 80 },
   });
 
+const SKILL_ROW_RULE = NAVY;
+
+function buildSummaryParagraphs() {
+  if (Array.isArray(data.summaryParagraphs) && data.summaryParagraphs.length > 0) {
+    return data.summaryParagraphs.map((text, idx) =>
+      new Paragraph({
+        children: [trN(text)],
+        spacing: { after: idx < data.summaryParagraphs.length - 1 ? 60 : 120 },
+      })
+    );
+  }
+  if (data.summaryLead && data.summaryBody) {
+    return [
+      new Paragraph({ children: [trN(data.summaryLead)], spacing: { after: 60 } }),
+      new Paragraph({ children: [trN(data.summaryBody)], spacing: { after: 120 } }),
+    ];
+  }
+  return [new Paragraph({ children: [trN(data.summary)], spacing: { after: 120 } })];
+}
+
+function buildTechnicalSkillParagraphs() {
+  if (Array.isArray(data.technicalSkillRows) && data.technicalSkillRows.length > 0) {
+    const rows = data.technicalSkillRows;
+    return rows.map((row, i) => {
+      const isLast = i === rows.length - 1;
+      return new Paragraph({
+        children: [trB(row.category + ': '), trN(row.detail)],
+        border: isLast
+          ? undefined
+          : {
+              bottom: { color: SKILL_ROW_RULE, space: 1, style: BorderStyle.SINGLE, size: 4 },
+            },
+        spacing: { after: isLast ? 120 : 50 },
+      });
+    });
+  }
+  return [new Paragraph({ children: [trN(data.technicalSkills)], spacing: { after: 120 } })];
+}
+
 const doc = new Document({
   sections: [
     {
@@ -59,39 +98,21 @@ const doc = new Document({
         }),
 
         sectionHeading('PROFESSIONAL SUMMARY'),
-        ...(data.summaryLead && data.summaryBody
-          ? [
-              new Paragraph({
-                children: [trN(data.summaryLead)],
-                spacing: { after: 60 },
-              }),
-              new Paragraph({
-                children: [trN(data.summaryBody)],
-                spacing: { after: 120 },
-              }),
-            ]
-          : [
-              new Paragraph({
-                children: [trN(data.summary)],
-                spacing: { after: 120 },
-              }),
-            ]),
+        ...buildSummaryParagraphs(),
 
         sectionHeading('TECHNICAL SKILLS'),
-        new Paragraph({
-          children: [trN(data.technicalSkills)],
-          spacing: { after: 120 },
-        }),
+        ...buildTechnicalSkillParagraphs(),
 
         sectionHeading('PROFESSIONAL EXPERIENCE'),
         ...data.experience.flatMap((job) => {
+          const meta = [job.location, job.dates].filter(Boolean).join('  |  ');
           const paras = [
             new Paragraph({
               children: [trB(job.role + ' – ' + job.company)],
               spacing: { after: 20 },
             }),
             new Paragraph({
-              children: [trN(job.dates)],
+              children: [trN(meta)],
               spacing: { after: 40 },
             }),
           ];
@@ -107,7 +128,7 @@ const doc = new Document({
         sectionHeading('CERTIFICATIONS'),
         ...data.certifications.map((c, i) =>
           new Paragraph({
-            children: [trN('• '), trB(c.name), trN(' (' + c.dates + ')')],
+            children: [trN('• ' + c.name)],
             spacing: { after: i < data.certifications.length - 1 ? 60 : 120 },
           })
         ),

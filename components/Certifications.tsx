@@ -22,7 +22,9 @@ export default function Certifications() {
                 <h3 className="text-lg font-semibold text-white">{cert.name}</h3>
                 <p className="text-zinc-500 text-sm mt-0.5">{cert.issuer}</p>
               </div>
-              <span className="text-accent-primary text-sm font-medium">{cert.dates}</span>
+              {cert.dates ? (
+                <span className="text-accent-primary text-sm font-medium">{cert.dates}</span>
+              ) : null}
             </div>
           ))}
         </div>
