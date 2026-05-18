@@ -38,7 +38,7 @@ export default function About() {
 
           <div className="flex-1">
             <p className="text-zinc-300 text-lg leading-relaxed mb-4">
-              Java Full Stack Engineer with 6+ years of experience building scalable enterprise applications using Java, Java 17, Spring Boot, microservices, React, Docker, Kubernetes, and AWS.
+              Java Full Stack Engineer with 6+ years delivering enterprise web platforms using Java 17, Spring Boot, microservices, React, Docker, Kubernetes, and AWS.
             </p>
             <p className="text-zinc-400 text-lg leading-relaxed mb-4">
               I specialize in REST APIs, cloud-native systems, and modern web interfaces. I enjoy solving complex backend challenges and collaborating on reliable systems that support large-scale business operations.

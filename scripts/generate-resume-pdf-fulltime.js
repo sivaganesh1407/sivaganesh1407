@@ -85,14 +85,5 @@ body();
 });
 doc.moveDown(0.3);
 
-// KEY PROJECTS
-sectionHeading('KEY PROJECTS');
-body();
-(data.projects || []).forEach((p) => {
-  doc.font('Times-Bold').text(p.name);
-  (p.bullets || []).forEach((b) => { bullet(); doc.font('Times-Roman').text(b, { align: 'justify' }); doc.moveDown(0.3); });
-  doc.moveDown(0.5);
-});
-
 doc.end();
 stream.on('finish', () => console.log('Generated public/Java_FullStack_FullTime_Resume.pdf'));

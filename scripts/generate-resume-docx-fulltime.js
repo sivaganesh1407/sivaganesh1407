@@ -115,18 +115,6 @@ const doc = new Document({
             spacing: { after: i < data.education.length - 1 ? 120 : 200 },
           }),
         ]),
-
-        sectionHeading('KEY PROJECTS'),
-        ...data.projects.flatMap((p) => {
-          const paras = [new Paragraph({ children: [trB(p.name)], spacing: { after: 20 } })];
-          (p.bullets || []).forEach((b, i) => {
-            paras.push(new Paragraph({
-              children: [trN('• ' + b)],
-              spacing: { after: i === (p.bullets || []).length - 1 ? 60 : 20 },
-            }));
-          });
-          return paras;
-        }),
       ],
     },
   ],

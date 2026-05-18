@@ -90,15 +90,5 @@ body();
 });
 doc.moveDown(0.3);
 
-// KEY PROJECTS
-sectionHeading('KEY PROJECTS');
-body();
-(data.projects || []).forEach((p) => {
-  doc.font('Times-Bold').text(p.name);
-  (p.bullets || []).forEach((b) => { bullet(); doc.font('Times-Roman').text(b, { align: 'justify' }); doc.moveDown(0.3); });
-  if (p.desc && !p.bullets) { bullet(); doc.font('Times-Roman').text(p.desc); }
-  doc.moveDown(0.5);
-});
-
 doc.end();
 stream.on('finish', () => console.log('Generated public/resume-c2c.pdf'));

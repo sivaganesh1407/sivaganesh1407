@@ -12,12 +12,12 @@ const resumeDataFulltime = {
     email: 'gsg1499@gmail.com',
   },
 
-  summaryLead: 'Java Full Stack Engineer with 6+ years of professional experience:',
+  summaryLead: 'Java Full Stack Engineer with 6+ years delivering enterprise web platforms:',
   summaryBody:
-    'Cloud-native architecture and distributed systems for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Delivers Java/Spring Boot microservices, REST APIs, React and Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps practices, and observability. Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
+    'Hands-on with Java 17, Spring Boot microservices, REST APIs, React, Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps, and observability. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Delivers cloud-native solutions for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
 
   technicalSkills:
-    'Backend: Java, Java 17, Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3, JavaScript | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, infrastructure as code | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
+    'Languages: Java, Java 17, TypeScript, JavaScript, SQL | Backend: Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3 | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, infrastructure as code | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
 
   experience: [
     {
@@ -92,6 +92,7 @@ const resumeDataFulltime = {
     { name: 'AWS Certified DevOps Engineer – Professional', dates: 'March 2025 – March 2027' },
     { name: 'AWS Certified Solutions Architect – Associate', dates: 'February 2025 – February 2028' },
     { name: 'HashiCorp Terraform Associate', dates: 'March 2025 – March 2027' },
+    { name: 'Oracle Certified Professional Java SE Developer', dates: 'In Progress' },
   ],
 
   education: [
@@ -104,30 +105,6 @@ const resumeDataFulltime = {
       degree: "Bachelor's, Electrical, Electronics and Communications Engineering",
       school: 'Karunya Institute of Technology and Sciences',
       details: 'Grade: 7.2/10. Coursework: Communication Systems, Embedded Systems, Computer Engineering.',
-    },
-  ],
-
-  projects: [
-    {
-      name: 'Retirement Investment Management Platform',
-      bullets: [
-        'Delivered a cloud-native retirement and portfolio stack: Spring Boot, JWT with RBAC, React on AWS and Docker.',
-        'Engineered REST APIs for authentication and portfolio tracking; PostgreSQL and Redis for persistence and sessions.',
-      ],
-    },
-    {
-      name: 'Smart Restaurant Platform',
-      bullets: [
-        'Built Spring Boot, React, and MySQL flows for menus, orders, inventory, and sales analytics.',
-        'Delivered REST APIs for orders and inventory sync; React admin UI that reduced manual operations by ~40%.',
-      ],
-    },
-    {
-      name: 'User Management Service',
-      bullets: [
-        'Implemented Spring Boot, JPA, and H2 with JWT authentication and RBAC using Spring Security.',
-        'Delivered registration, login, profile, and audit logging endpoints.',
-      ],
     },
   ],
 };
