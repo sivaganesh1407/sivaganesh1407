@@ -23,7 +23,7 @@ const resumeData = {
     { label: 'Location', href: '#', value: 'Tampa, FL, USA' },
   ],
 
-  summary: 'Java Full Stack Engineer with 6+ years delivering enterprise web platforms—scalable, secure web applications with Java 17, Spring Boot, React, Angular, RESTful APIs, microservices, Docker, Kubernetes, and AWS. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
+  summary: 'Java Full Stack Engineer with 6+ years of experience delivering enterprise web platforms—scalable, secure web applications with Java 17, Spring Boot, React, Angular, RESTful APIs, microservices, Docker, Kubernetes, and AWS. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
 
   technicalSkills: 'Languages: Java, Java 17, TypeScript, JavaScript, SQL | Frameworks: Spring Boot, Hibernate, Spring MVC, Angular, React | Backend: REST APIs, Microservices, JAX-RS, JDBC, OAuth2, JWT | DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Terraform | Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis | Messaging: Kafka, RabbitMQ | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Selenium, Cypress | Tools: JIRA, Swagger, Prometheus, Grafana',
 

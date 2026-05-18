@@ -7,21 +7,23 @@ const {
   TextRun,
   AlignmentType,
   BorderStyle,
-  ExternalHyperlink,
 } = require('docx');
 const data = require('../data/resume-data-c2c');
 
-// ATS-friendly: Times New Roman
-const font = 'Times New Roman';
-const tr = (opts) => new TextRun({ font, size: 22, ...opts });
+/** Enterprise ATS: Calibri, black body, navy (#1F3A5F) name / section headers / rules. */
+const FONT = 'Calibri';
+const NAVY = '1F3A5F';
+const BLACK = '000000';
+
+const tr = (opts) => new TextRun({ font: FONT, color: BLACK, size: 22, ...opts });
 const trB = (text) => tr({ text, bold: true });
 const trN = (text) => tr({ text });
 
 const sectionHeading = (text) =>
   new Paragraph({
-    children: [tr({ text, bold: true, size: 24 })],
+    children: [tr({ text, bold: true, size: 24, color: NAVY })],
     border: {
-      bottom: { color: '000000', space: 1, style: BorderStyle.SINGLE, size: 6 },
+      bottom: { color: NAVY, space: 1, style: BorderStyle.SINGLE, size: 6 },
     },
     spacing: { before: 120, after: 80 },
   });
@@ -72,7 +74,7 @@ const doc = new Document({
           spacing: { after: 40 },
         }),
         new Paragraph({
-          children: [tr({ text: data.header.name, bold: true, size: 44 })],
+          children: [tr({ text: data.header.name, bold: true, size: 44, color: NAVY })],
           alignment: AlignmentType.CENTER,
           spacing: { after: 80 },
         }),

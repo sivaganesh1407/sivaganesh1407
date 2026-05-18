@@ -12,7 +12,7 @@ const resumeDataFulltime = {
     email: 'gsg1499@gmail.com',
   },
 
-  summaryLead: 'Java Full Stack Engineer with 6+ years delivering enterprise web platforms:',
+  summaryLead: 'Java Full Stack Engineer with 6+ years of experience delivering enterprise web platforms:',
   summaryBody:
     'Hands-on with Java 17, Spring Boot microservices, REST APIs, React, Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps, and observability. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Delivers cloud-native solutions for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
 

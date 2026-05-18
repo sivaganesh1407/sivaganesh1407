@@ -3,23 +3,31 @@ const path = require('path');
 const PDFDocument = require('pdfkit');
 const data = require('../data/resume-data-fulltime');
 
+/** Enterprise ATS: white page, black body, navy (#1F3A5F) name / section headers / rules. */
+const NAVY = '#1F3A5F';
+const BLACK = '#000000';
+
 const doc = new PDFDocument({ margin: 40, size: 'A4', lineGap: 2 });
 const outPath = path.join(__dirname, '..', 'public', 'Java_FullStack_FullTime_Resume.pdf');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const stream = fs.createWriteStream(outPath);
 doc.pipe(stream);
 
-const h1 = () => { doc.fontSize(22).font('Times-Bold'); };
-const h2 = () => { doc.fontSize(12).font('Times-Bold'); };
-const body = () => { doc.fontSize(10).font('Times-Roman'); };
-const bullet = () => { doc.text('• ', { continued: true }); };
+const body = () => {
+  doc.fillColor(BLACK).fontSize(10).font('Helvetica');
+};
+
+const bullet = () => {
+  doc.fillColor(BLACK).font('Helvetica').text('• ', { continued: true });
+};
 
 const sectionHeading = (text) => {
   doc.moveDown(0.5);
-  h2();
+  doc.fillColor(NAVY).fontSize(12).font('Helvetica-Bold');
   doc.text(text);
   doc.moveDown(0.3);
-  doc.rect(40, doc.y, 515, 1).fill('#333333');
+  doc.rect(40, doc.y, 515, 1).fill(NAVY);
+  doc.fillColor(BLACK);
   doc.moveDown(0.5);
 };
 
@@ -27,13 +35,14 @@ const sectionHeading = (text) => {
 body();
 doc.text(data.header.phone || '', { align: 'center' });
 doc.moveDown(0.3);
-h1();
+doc.fillColor(NAVY).fontSize(22).font('Helvetica-Bold');
 doc.text(data.header.name, { align: 'center' });
-doc.fontSize(11).font('Times-Roman').text(data.header.title, { align: 'center' });
+doc.fillColor(BLACK).fontSize(11).font('Helvetica');
+doc.text(data.header.title, { align: 'center' });
 doc.fontSize(10).text(data.header.contact, { align: 'center' });
 doc.moveDown(1);
 
-// PROFESSIONAL SUMMARY (lead line + body paragraph, ATS-style)
+// PROFESSIONAL SUMMARY
 sectionHeading('PROFESSIONAL SUMMARY');
 body();
 if (data.summaryLead && data.summaryBody) {
@@ -51,15 +60,18 @@ body();
 doc.text(data.technicalSkills, { align: 'left' });
 doc.moveDown(0.8);
 
-// PROFESSIONAL EXPERIENCE (full-time format: Role – Company)
+// PROFESSIONAL EXPERIENCE
 sectionHeading('PROFESSIONAL EXPERIENCE');
 body();
 
 (data.experience || []).forEach((job) => {
-  doc.font('Times-Bold').text(job.role + ' – ' + job.company);
-  doc.font('Times-Roman').text(job.dates);
+  doc.fillColor(BLACK).font('Helvetica-Bold').text(job.role + ' – ' + job.company);
+  doc.font('Helvetica').text(job.dates);
   doc.moveDown(0.3);
-  (job.bullets || []).forEach((item) => { bullet(); doc.text(item, { align: 'justify' }); });
+  (job.bullets || []).forEach((item) => {
+    bullet();
+    doc.fillColor(BLACK).font('Helvetica').text(item, { align: 'justify' });
+  });
   doc.moveDown(0.5);
 });
 doc.moveDown(0.3);
@@ -69,8 +81,8 @@ sectionHeading('CERTIFICATIONS');
 body();
 (data.certifications || []).forEach((c) => {
   bullet();
-  doc.font('Times-Bold').text(c.name, { continued: true });
-  doc.font('Times-Roman').text(' (' + c.dates + ')');
+  doc.fillColor(BLACK).font('Helvetica-Bold').text(c.name, { continued: true });
+  doc.font('Helvetica').text(' (' + c.dates + ')');
 });
 doc.moveDown(0.8);
 
@@ -78,8 +90,8 @@ doc.moveDown(0.8);
 sectionHeading('EDUCATION');
 body();
 (data.education || []).forEach((edu) => {
-  doc.font('Times-Bold').text(edu.degree, { continued: true });
-  doc.font('Times-Roman').text(', ' + edu.school);
+  doc.fillColor(BLACK).font('Helvetica-Bold').text(edu.degree, { continued: true });
+  doc.font('Helvetica').text(', ' + edu.school);
   doc.text(edu.details || '', { indent: 15 });
   doc.moveDown(0.5);
 });
