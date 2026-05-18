@@ -4,7 +4,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Bump ?v= when regenerating the PDF so browsers/CDNs fetch the new file (not a stale cached copy).
-const PDF_URL = '/Java_FullStack_FullTime_Resume.pdf?v=30';
+const PDF_BASE = '/Java_FullStack_FullTime_Resume.pdf';
+const CACHE_BUSTER = '31';
+const PDF_URL = `${PDF_BASE}?v=${CACHE_BUSTER}`;
 
 export default function ResumePage() {
   return (
@@ -37,17 +39,33 @@ export default function ResumePage() {
             </a>
           </div>
           <p className="resume-cache-hint">
-            If the preview still shows an older version, hard-refresh this page (Cmd+Shift+R / Ctrl+Shift+R) or open the PDF in a new tab.
+            If the preview below is blank, use <strong>Open in new tab</strong> or <strong>Download PDF</strong>—Safari and many mobile browsers do not show embedded PDFs.
           </p>
         </div>
 
         <div className="resume-pdf-container">
-          <iframe
+          {/* object + embed: better PDF support than iframe alone; inner HTML is the fallback */}
+          <object
             key={PDF_URL}
-            src={`${PDF_URL}#toolbar=1`}
-            title="Siva Ganesh Golla Resume"
-            className="resume-pdf-iframe"
-          />
+            data={PDF_URL}
+            type="application/pdf"
+            className="resume-pdf-object"
+            aria-label="Resume PDF preview"
+          >
+            <embed src={PDF_URL} type="application/pdf" className="resume-pdf-embed" />
+            <div className="resume-pdf-fallback">
+              <p>Your browser did not load the embedded PDF.</p>
+              <p>
+                <a href={PDF_URL} target="_blank" rel="noopener noreferrer" className="resume-fallback-link">
+                  Open the PDF in a new tab
+                </a>
+                {' · '}
+                <a href={PDF_URL} download="Java_FullStack_FullTime_Resume.pdf" className="resume-fallback-link">
+                  Download
+                </a>
+              </p>
+            </div>
+          </object>
         </div>
       </div>
 
@@ -62,12 +80,27 @@ export default function ResumePage() {
         .resume-print-secondary:hover { background: #4b5563; }
         .resume-cache-hint { margin: 12px 0 0 0; font-size: 12px; color: #6b7280; max-width: 42rem; line-height: 1.4; }
         .resume-pdf-container { width: 100%; min-height: 90vh; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #f5f5f5; }
-        .resume-pdf-iframe { width: 100%; height: 90vh; min-height: 800px; border: none; }
+        .resume-pdf-object,
+        .resume-pdf-embed {
+          display: block;
+          width: 100%;
+          height: 90vh;
+          min-height: 800px;
+          border: none;
+        }
+        .resume-pdf-fallback {
+          padding: 2rem;
+          text-align: center;
+          background: #fff;
+          color: #374151;
+        }
+        .resume-fallback-link { color: #16a34a; font-weight: 600; }
         @media print {
           .no-print { display: none !important; }
           .resume-root { padding: 0; max-width: 100%; }
           .resume-pdf-container { min-height: auto; border: none; }
-          .resume-pdf-iframe { height: 100vh; }
+          .resume-pdf-object,
+          .resume-pdf-embed { height: 100vh; min-height: 100vh; }
           body { background: #fff; }
         }
       `}</style>
