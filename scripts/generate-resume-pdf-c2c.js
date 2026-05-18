@@ -31,10 +31,12 @@ const sectionHeading = (text) => {
   doc.moveDown(0.5);
 };
 
-// Header
+// Header (optional phone line if not already included in contact)
 body();
-doc.text(data.header.phone || '', { align: 'center' });
-doc.moveDown(0.3);
+if (data.header.phone && String(data.header.phone).trim()) {
+  doc.text(data.header.phone, { align: 'center' });
+  doc.moveDown(0.3);
+}
 doc.fillColor(NAVY).fontSize(22).font('Helvetica-Bold');
 doc.text(data.header.name, { align: 'center' });
 doc.fillColor(BLACK).fontSize(11).font('Helvetica');

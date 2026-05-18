@@ -6,10 +6,11 @@
 const resumeData = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Java Full Stack Engineer',
-    phone: '',
+    title: 'Senior Java Full Stack Developer',
+    phone: '456-961-7695',
     location: 'Tampa, FL, USA',
-    contact: 'Tampa, FL, USA  •  gsg1499@gmail.com  •  github.com/sivaganesh1407  •  linkedin.com/in/ganeshg7',
+    contact:
+      '456-961-7695  •  gsg1499@gmail.com  •  Tampa, FL  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
     email: 'gsg1499@gmail.com',
     linkedin: 'https://www.linkedin.com/in/ganeshg7/',
     github: 'https://github.com/sivaganesh1407',
@@ -17,24 +18,30 @@ const resumeData = {
 
   contactLinks: [
     { label: 'Email', href: 'mailto:gsg1499@gmail.com', value: 'gsg1499@gmail.com' },
+    { label: 'Phone', href: 'tel:+14569617695', value: '456-961-7695' },
     { label: 'GitHub', href: 'https://github.com/sivaganesh1407', value: 'github.com/sivaganesh1407' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ganeshg7/', value: 'linkedin.com/in/ganeshg7' },
-    { label: 'Phone', href: '#', value: 'Available on request' },
     { label: 'Location', href: '#', value: 'Tampa, FL, USA' },
   ],
 
-  summary: 'Java Full Stack Engineer with 6+ years of experience delivering enterprise web platforms—scalable, secure web applications with Java 17, Spring Boot, React, Angular, RESTful APIs, microservices, Docker, Kubernetes, and AWS. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
+  summary:
+    'Senior Java Full Stack Developer with 6+ years of experience delivering enterprise web platforms—cloud-native microservices, Spring Boot, React, Angular, OAuth2/JWT, AWS, Docker, Kubernetes, Kafka, PostgreSQL, MongoDB, Jenkins, GitHub Actions, and operational monitoring in production. AWS, HashiCorp, and Oracle Java SE certifications (Oracle in progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
 
-  technicalSkills: 'Languages: Java, Java 17, TypeScript, JavaScript, SQL | Frameworks: Spring Boot, Hibernate, Spring MVC, Angular, React | Backend: REST APIs, Microservices, JAX-RS, JDBC, OAuth2, JWT | DevOps: Jenkins, Docker, Kubernetes, Maven, Git, Terraform | Databases: PostgreSQL, MySQL, Oracle, MongoDB, Redis | Messaging: Kafka, RabbitMQ | Cloud: AWS (EC2, S3, RDS, Lambda) | Testing: JUnit, Mockito, Selenium, Cypress | Tools: JIRA, Swagger, Prometheus, Grafana',
+  technicalSkills:
+    'Languages: Java 17, TypeScript, JavaScript, SQL | Backend: Spring Boot, Spring Security, Hibernate/JPA, REST APIs, Microservices, OAuth2, JWT | Frontend: React, Angular, HTML5, CSS3 | Cloud & infrastructure: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, CI/CD | Messaging: Kafka, RabbitMQ | Datastores: PostgreSQL, MongoDB, Redis, Oracle, MySQL | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
 
   skillGroups: [
-    { title: 'Languages', items: ['Java', 'Java 17', 'TypeScript', 'JavaScript', 'SQL'] },
-    { title: 'Frameworks', items: ['Spring Boot', 'Spring MVC', 'Hibernate'] },
+    { title: 'Languages', items: ['Java 17', 'TypeScript', 'JavaScript', 'SQL'] },
+    { title: 'Frameworks', items: ['Spring Boot', 'Spring Security', 'Spring MVC', 'Hibernate'] },
     { title: 'Frontend', items: ['React', 'Angular', 'HTML5', 'CSS3', 'Bootstrap'] },
-    { title: 'Backend', items: ['Node.js', 'REST APIs', 'Microservices', 'Spring Security'] },
-    { title: 'DevOps & Cloud', items: ['Jenkins', 'Docker', 'Kubernetes', 'AWS', 'Maven', 'Git'] },
-    { title: 'Databases', items: ['PostgreSQL', 'MySQL', 'Oracle', 'MongoDB', 'SQL'] },
-    { title: 'Testing & Tools', items: ['JUnit', 'Mockito', 'Postman', 'JIRA', 'Swagger'] },
+    { title: 'Backend', items: ['REST APIs', 'Microservices', 'Node.js'] },
+    {
+      title: 'DevOps & Cloud',
+      items: ['Jenkins', 'GitHub Actions', 'Docker', 'Kubernetes', 'AWS', 'Terraform', 'Maven', 'Git'],
+    },
+    { title: 'Databases', items: ['PostgreSQL', 'MongoDB', 'Redis', 'Oracle', 'MySQL', 'SQL'] },
+    { title: 'Messaging', items: ['Kafka', 'RabbitMQ'] },
+    { title: 'Testing & Tools', items: ['JUnit', 'Mockito', 'Prometheus', 'Grafana', 'Postman', 'JIRA', 'Swagger'] },
   ],
 
   experience: [
@@ -50,7 +57,7 @@ const resumeData = {
         'Participated in event-driven integration (Kafka, RabbitMQ, Redis) for high daily transaction volume with circuit breakers for order and payment paths.',
         'Built REST APIs with OAuth2, JWT, and RBAC; enhanced Angular and React UIs for peak-hour restaurant throughput.',
         'Supported Spring Data JPA, Oracle, and MongoDB with Docker and Kubernetes on AWS (EC2, ECS).',
-        'Coordinated Jenkins and Bitbucket CI/CD with quality gates; extended observability with Prometheus, Grafana, and JUnit/Mockito.',
+        'Coordinated Jenkins, Bitbucket, and GitHub Actions CI/CD checks with quality gates; extended observability with Prometheus, Grafana, and JUnit/Mockito.',
       ],
       environment: 'Java 17, Spring Boot, Angular, React, Oracle, MongoDB, Kafka, RabbitMQ, Redis, Docker, Kubernetes, AWS, Jenkins, Bitbucket, JUnit, Mockito',
     },
@@ -65,7 +72,7 @@ const resumeData = {
         'Supported Docker and Kubernetes releases on AWS with OAuth2, JWT, Redis, and RBAC for compliant workloads.',
         'Enhanced Angular and React on Spring Boot APIs; improved API latency by ~20% and reduced data issues on policy and claims journeys.',
         'Coordinated API specifications with architecture and compliance partners; participated in on-schedule policy and claims deliveries.',
-        'Participated in Agile delivery with Product/QA and Jenkins/Bitbucket CI/CD.',
+        'Participated in Agile delivery with Product/QA and CI/CD (Jenkins, Bitbucket, GitHub Actions) improving feedback from test to production.',
         'Extended fault-tolerance and observability with JUnit, Mockito, Prometheus, and Grafana.',
       ],
       environment: 'Java, Spring Boot, Hibernate, Angular, React, MySQL, PostgreSQL, Docker, Kubernetes, AWS, Jenkins, OAuth2, JWT, Redis, Kafka, RabbitMQ, JUnit, Mockito',

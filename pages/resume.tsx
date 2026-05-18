@@ -5,15 +5,15 @@ import Link from 'next/link';
 
 // Bump ?v= when regenerating the PDF so browsers/CDNs fetch the new file (not a stale cached copy).
 const PDF_BASE = '/Java_FullStack_FullTime_Resume.pdf';
-const CACHE_BUSTER = '31';
+const CACHE_BUSTER = '32';
 const PDF_URL = `${PDF_BASE}?v=${CACHE_BUSTER}`;
 
 export default function ResumePage() {
   return (
     <>
       <Head>
-        <title>Siva Ganesh Golla | Resume | Java Full Stack Engineer</title>
-        <meta name="description" content="Resume - Siva Ganesh Golla, Java Full Stack Engineer, 6+ years, Java 17, Spring Boot, React, AWS" />
+        <title>Siva Ganesh Golla | Resume | Senior Java Full Stack Developer</title>
+        <meta name="description" content="Resume - Siva Ganesh Golla, Senior Java Full Stack Developer, 6+ years, Java 17, Spring Boot, React, AWS" />
         <link rel="canonical" href="https://sivaganesh1407.vercel.app/resume" />
       </Head>
       <div className="resume-root">

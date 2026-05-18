@@ -5,19 +5,20 @@
 const resumeDataFulltime = {
   header: {
     name: 'Siva Ganesh Golla',
-    title: 'Java Full Stack Engineer | Spring Boot | React | Angular | AWS',
-    phone: '456-961-7695',
+    title: 'Senior Java Full Stack Developer | Spring Boot | React | Angular | AWS',
+    phone: '',
     location: 'Tampa, FL, USA',
-    contact: 'gsg1499@gmail.com  •  github.com/sivaganesh1407  •  linkedin.com/in/ganeshg7',
+    contact:
+      '456-961-7695  •  gsg1499@gmail.com  •  Tampa, FL  •  linkedin.com/in/ganeshg7  •  github.com/sivaganesh1407',
     email: 'gsg1499@gmail.com',
   },
 
-  summaryLead: 'Java Full Stack Engineer with 6+ years of experience delivering enterprise web platforms:',
+  summaryLead: 'Senior Java Full Stack Developer with 6+ years of experience delivering enterprise web platforms:',
   summaryBody:
-    'Hands-on with Java 17, Spring Boot microservices, REST APIs, React, Angular, AWS, Docker, Kubernetes, Jenkins/Bitbucket CI/CD, DevSecOps, and observability. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Delivers cloud-native solutions for retail/restaurant POS, insurance and retirement, energy, automotive supply chain, and pharma compliance. Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
+    'Hands-on enterprise production support for cloud-native microservices and full-stack systems using Java 17, Spring Boot, React, Angular, REST APIs, OAuth2/JWT, AWS, Docker, and Kubernetes. Builds on Kafka, PostgreSQL, MongoDB, Jenkins, GitHub Actions, and operational monitoring (Prometheus/Grafana) across retail/POS, financial services, energy, automotive supply chain, and pharma. Certifications: AWS Certified DevOps Engineer – Professional, AWS Certified Solutions Architect – Associate, HashiCorp Terraform Associate; Oracle Certified Professional Java SE Developer (In Progress). Familiar with AI-assisted developer tools including GitHub Copilot and Cursor AI for development acceleration and documentation support.',
 
   technicalSkills:
-    'Languages: Java, Java 17, TypeScript, JavaScript, SQL | Backend: Spring Boot, microservices, REST APIs, Spring Security (OAuth2, JWT, RBAC), Hibernate/JPA | Frontend: React, Angular, HTML5, CSS3 | Cloud & DevOps: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Jenkins, Bitbucket, CI/CD, DevSecOps, Terraform, infrastructure as code | Event-driven architecture & messaging: Kafka, RabbitMQ, Redis | Databases: Oracle, MySQL, PostgreSQL, MongoDB | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
+    'Languages: Java 17, TypeScript, JavaScript, SQL | Backend: Spring Boot, Spring Security, Hibernate/JPA, REST APIs, Microservices, OAuth2, JWT | Frontend: React, Angular, HTML5, CSS3 | Cloud & infrastructure: AWS (EC2, S3, RDS, Lambda, ECS), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, CI/CD | Messaging: Kafka, RabbitMQ | Datastores: PostgreSQL, MongoDB, Redis, Oracle, MySQL | Quality & observability: JUnit, Mockito, Prometheus, Grafana',
 
   experience: [
     {
@@ -30,7 +31,7 @@ const resumeDataFulltime = {
         'Participated in event-driven integration (Kafka, RabbitMQ, Redis) for 10K+ daily transactions with circuit breakers for resilient order and payment flows.',
         'Built REST APIs with OAuth2, JWT, and RBAC (Spring Security) for 500+ concurrent users; enhanced Angular and React UIs for peak-hour restaurant throughput.',
         'Supported Spring Data JPA, Oracle, and MongoDB with Docker and Kubernetes on AWS (EC2, ECS) for scalable POS services.',
-        'Coordinated Jenkins and Bitbucket CI/CD with quality gates; extended observability with Prometheus, Grafana, and JUnit/Mockito.',
+        'Coordinated Jenkins, Bitbucket, and GitHub Actions CI/CD checks with quality gates; extended observability with Prometheus, Grafana, and JUnit/Mockito.',
       ],
     },
     {
@@ -42,7 +43,7 @@ const resumeDataFulltime = {
         'Supported Docker and Kubernetes releases on AWS (EC2, S3, RDS, Lambda) with OAuth2, JWT, Redis sessions, and RBAC for compliant financial workloads.',
         'Enhanced Angular and React (HTML5, CSS3, JavaScript) on Spring Boot APIs; improved API latency by ~20% and reduced data issues on policy and claims journeys.',
         'Coordinated API specifications and integrations with architecture and compliance partners; participated in on-schedule policy, claims, and reporting deliveries.',
-        'Participated in Agile delivery with Product/QA and Jenkins/Bitbucket CI/CD, improving feedback from test to production.',
+        'Participated in Agile delivery with Product/QA and CI/CD (Jenkins, Bitbucket, GitHub Actions) improving feedback from test to production.',
         'Extended fault-tolerance patterns with JUnit and Mockito; supported production observability with Prometheus and Grafana on critical services.',
       ],
     },

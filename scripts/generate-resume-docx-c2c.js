@@ -68,11 +68,15 @@ const doc = new Document({
     {
       properties: { page: { margin: { top: 576, right: 576, bottom: 576, left: 576 } } },
       children: [
-        new Paragraph({
-          children: [trN(data.header.phone || '')],
-          alignment: AlignmentType.CENTER,
-          spacing: { after: 40 },
-        }),
+        ...(data.header.phone && String(data.header.phone).trim()
+          ? [
+              new Paragraph({
+                children: [trN(data.header.phone)],
+                alignment: AlignmentType.CENTER,
+                spacing: { after: 40 },
+              }),
+            ]
+          : []),
         new Paragraph({
           children: [tr({ text: data.header.name, bold: true, size: 44, color: NAVY })],
           alignment: AlignmentType.CENTER,

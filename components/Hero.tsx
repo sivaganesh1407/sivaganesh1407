@@ -107,7 +107,7 @@ export default function Hero() {
           <span className="text-accent-primary">Golla</span>
         </h1>
         <p className="text-xl sm:text-2xl font-semibold text-white mb-2">
-          Java Full Stack Engineer
+          Senior Java Full Stack Developer
         </p>
         <p className="text-zinc-400 text-lg max-w-xl mb-8 md:mb-10">
           Building scalable backend systems and modern web applications
