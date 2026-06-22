@@ -59,15 +59,15 @@ cd jobfit-resume-engine && make docker-up
 
 ---
 
-## Experience
+## Industry Domains
 
-| Role | Company | Dates |
-|------|---------|-------|
-| Senior Java Full Stack Developer | Mad Mobile | Nov 2025 – Present |
-| Java Full Stack Engineer | Corebridge Financial | Feb 2025 – Oct 2025 |
-| Java Developer | ConocoPhillips | Feb 2024 – Dec 2024 |
-| System Engineer | Infosys | Jun 2021 – Jun 2022 |
-| Associate System Engineer | Elder Pharmaceuticals | Jun 2019 – May 2021 |
+| Domain | Focus |
+|--------|-------|
+| Retail & Restaurant POS | Commerce platforms, order flows, kiosk-style UIs |
+| Financial Services | Regulated APIs, security, retirement & investment workflows |
+| Energy Operations | Asset visibility, operational data integration |
+| Automotive Manufacturing | Supply-chain analytics and ETL pipelines |
+| Pharmaceutical (GxP) | Controlled environments and compliance-oriented delivery |
 
 ---
 
